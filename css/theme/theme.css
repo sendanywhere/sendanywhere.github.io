@@ -1,0 +1,98 @@
+body{background-color: #fefefe;}
+
+.hero .icon{
+	/*margin-top:120px;*/
+	font-size: 50px ;
+	/*color:white;*/
+	color: #333;
+}
+
+
+p{
+	color: #8c9398;
+word-spacing: 1px;
+line-height: 1.6em;
+font-size: 14px;
+}
+
+
+
+footer .icon{
+	color:white;
+	font-size: 30px;
+	float: left;
+	margin-right: 20px;
+}
+
+footer li{color:white;list-style: none;}
+#product ul{list-style: none;}
+#product li{padding:11px;margin:20px;float: left;color:white;font-size:16px;}
+#support ul{padding:0;}
+#support li{list-style: none;float: left;text-align: center;margin:30px 30px 30px -5px;}
+#support a{color: #333;}
+#support .icon{font-size:30px;}
+#support a:hover{text-decoration: none;color:rgb(0,190,221);}
+.carousel-control.left, .carousel-control.right{
+	background-image:none;
+}
+
+#device span{font-size:1.5em;margin-right: 20px;}
+#device li{list-style: none;float: left;font-size:15px;margin-bottom:13px;}
+#device{
+	margin-top: 50px;
+	border-top: 1px solid #333);
+	padding-top:10px;
+}
+
+.user-profile{
+	font-size:60px;
+
+}
+
+
+.carousel-indicators .active{
+	background-color: #333;
+}
+
+.carousel-indicators li{
+
+	background-color: #888;
+	border: none;
+}
+#widget	{float:left;margin: 0 31px;}
+#widget .badge{
+	background-color: rgb(0,190,221);
+}
+
+.carousel-control{
+position: relative;
+width:100%;
+opacity: 1;
+text-shadow:none;
+font-size: 1em;
+}
+
+
+.line-drawing,
+.illustration {
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.line-drawing path {
+	fill: none;
+	stroke: white;
+	stroke-width: 3;
+}
+
+path.line-round {
+	stroke-linecap: round;
+}
+
+path.stroke-medium {
+	stroke-width: 2;
+}
+
+path.stroke-thin {
+	stroke-width: 1;
+}

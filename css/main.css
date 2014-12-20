@@ -1,0 +1,106 @@
+/*************************************
+1.base : 기본적인 스타일을 정의 하는 CSS 섹션입니다.;
+2.layout
+3.module
+4.state
+5.theme
+Theme defines color and images in this page
+
+
+
+
+*************************************/
+
+
+/*** base css ****/
+
+
+@import url('base/base.css');
+@import url('base/normalize.css');
+@import url('base/bootstrap.css');
+@import url('base/icon-font.css');
+@import url('base/font.css');
+
+
+
+/*** Layout css ****/
+@import url('layout/layout.css');
+@import url('layout/media.css');
+
+
+
+
+/*** module css ****/
+@import url('module/panel.css');
+@import url('module/shape.css');
+@import url('module/carousel.css');
+/*** State css ****/
+@import url('state/progress.css');
+@import url('state/state.css');
+@import url('state/animated.css');
+/*** theme css ****/
+@import url('theme/nav_theme.css');
+@import url('theme/theme.css');
+@import url('theme/button.css');
+
+.hero{
+	background-color: rgb(0,190,221);
+	/*width:100%;*/
+	padding:100px 0;
+	text-align:center;
+	/*background: url('../img/hero.jpg') no-repeat top center;*/
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+
+
+.about-img{
+	background: url('../img/about.jpg') no-repeat center center;
+	background-size: cover;
+	height: 500px;
+}
+
+
+
+.about-branding{
+	background: url('../img/contact.jpg') no-repeat center center;
+	background-size: cover;
+	height: 300px;
+}
+
+.branding { 
+	background: url('../img/hero.jpg') no-repeat center center; 
+	-webkit-background-size: cover; 
+	-moz-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover; 
+	background-attachment: fixed; 
+	padding: 150px 0; 
+
+}
+.branding h3 { 
+	color: white; 
+	margin-bottom: 40px;
+	font-weight:100;
+	text-transform: uppercase; 
+	margin-top: 20px; 
+	letter-spacing: 4px;
+}
+
+@import url('layout/media.css');
+
+
+@font-face {
+  font-family: 'NettoOT';
+  src: url('NettoOT.otf'); /* IE9 Compat Modes */
+  
+}
+
+
+@font-face {
+    font-family: 'NettoOT';
+    src: url('font/NettoOT.otf');
+    font-weight: normal;
+    font-style: normal;
+}

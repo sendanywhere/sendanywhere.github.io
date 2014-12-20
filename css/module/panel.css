@@ -1,0 +1,24 @@
+.panel-view{
+	padding:30px 20px;
+	margin:50px 0;
+
+}
+
+.card{
+	height:400px;
+	/*background-color: #fdfdfd;*/
+	/*background-color: rgba(255,255,255,0.8);*/
+	border-radius: 5px;
+	border: 2px solid white;
+	width: 300px;
+	margin: 0 auto;
+	/*margin-right: 50px;*/
+	/*-webkit-box-shadow: 0 5px 6px -6px #333;
+	   -moz-box-shadow: 0 5px 6px -6px #333;
+	        box-shadow: 0 5px 6px -6px #333; */
+	overflow: hidden;
+}
+
+.card img{width:60px;}
+
+

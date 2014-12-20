@@ -1,0 +1,110 @@
+.container-sm{
+	width: 800px;
+	margin: 0 auto;
+}
+
+
+.hero h2{
+	margin-bottom:100px;
+	color:#ffffff; 
+	font-weight: 100;
+	font-size: 25px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	line-height: 1.5em; 
+}
+
+
+#benefit{
+	text-align: center;
+	color:#333;
+}
+
+#benefit .icon{
+	font-size:50px;
+}
+
+/*#benefit p{
+	text-align: left;
+}*/
+
+#product img,#multi-device img{
+	width: 80%;
+	/*margin: 0 auto;*/
+}
+
+#howitworks{
+	/*border-top: 1px solid rgba(0,0,0,0.1);*/
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#howitworks img{width:60%;}
+
+
+#product{
+	text-align: center;
+
+}
+
+#press img{
+	width:70px;
+}
+
+
+.about-img h3{
+	margin-top:123px;
+}
+
+.section-spacing{
+	margin:50px 0;
+}
+
+
+/*#user div:first-child{margin-bottom: 30px;}*/
+
+#user{
+	border-top: 1px solid rgba(0,0,0,0.1);
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+#user span{margin-right:13px;}
+/*#company-info li{float: left; margin-right: 10px;}*/
+
+footer ul{margin-bottom:50px;}
+
+footer {
+  /*position: absolute;*/
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height:400px;
+  background-color: #2c3e50;
+}
+
+footer a { color: #fff;}
+footer li{margin-bottom: 5px;}
+footer a:hover{color:rgb(0,190,221);text-decoration: none;}
+footer { background-color: #242830; padding: 40px 0 30px; }
+footer p { color: #fff; }
+ul.legals { list-style: none; color: #fff; line-height: 25px; }
+ul.legals li { display: inline-block; }
+ul.legals li::after { content: " |"; }
+ul.legals li:last-child::after { content: ""; }
+.legals { text-align: left; }
+.credit { text-align: right; }
+
+
+	
+.item{padding:50px;}
+
+.space-top20{
+	margin-top: 20px;
+}
+.space-bot40{
+	margin-bottom: 40px;
+}
+
+.space-bot60{
+	margin-bottom: 60px;
+}
+
+.item img{margin: 0 auto;}
