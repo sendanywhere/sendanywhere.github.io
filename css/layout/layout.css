@@ -110,7 +110,7 @@ ul.legals li:last-child::after { content: ""; }
 
 
 	
-.item{padding:50px;}
+.item{padding:30px 50px;height:230px;}
 
 .space-top20{
 	margin-top: 20px;

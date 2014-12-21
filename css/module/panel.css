@@ -6,7 +6,7 @@
 }
 
 .card{
-	height:450px;
+	height:460px;
 	/*background-color: #00cced;*/
 	/*background-color: rgba(255,255,255,0.8);*/
 	border-radius: 10px;
@@ -38,13 +38,14 @@
 	background-color: rgba(255,255,255,0.9);
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
-	padding:10px;
+	padding:20px;
 	width: 300px;
 	/* margin: 0 auto; */
 	/* overflow: scroll; */
 	height: 300px;
-	z-index: 1000;
+	/*z-index: 1000;*/
 	position: relative;
+	overflow: scroll;
 }
 
 /*
