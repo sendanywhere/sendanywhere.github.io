@@ -36,6 +36,7 @@ Theme defines color and images in this page
 @import url('module/carousel.css');
 @import url('module/table.css');
 @import url('module/user.css');
+@import url('module/tabbed.css');
 /*@import url('module/side.css');*/
 /*** State css ****/
 @import url('state/progress.css');
@@ -64,6 +65,13 @@ Theme defines color and images in this page
 	background: url('../img/hero.jpg') no-repeat center center;
 	background-size: cover;
 	height: 500px;
+}
+
+
+.device-img{
+	background: url('../img/device.jpg') no-repeat center center;
+	background-size: cover;
+	width: 700px;
 }
 
 

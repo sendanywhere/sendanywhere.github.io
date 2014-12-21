@@ -72,7 +72,7 @@ footer li{color:white;list-style: none;}
 	background-color: #fff;
 	color:#333;
 }
-
+#faq,#contact,#about,#support{color:#333;}
 .carousel-control{
 position: relative;
 width:100%;
