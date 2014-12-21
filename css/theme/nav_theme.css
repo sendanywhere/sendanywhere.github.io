@@ -22,8 +22,9 @@ nav ul li a:hover, nav ul li a:focus { text-decoration: none; color: rgba(255, 2
 }*/
 
 .navbar-default{
-	background:rgb(0,190,221);
-	/*background: #007EA7;*/
+	background:#00bedd;
+	/*background:#223544;*/
+	/*background: rgba(255,255,255,0.8);*/
 	border: none;
 	-webkit-box-shadow: 0 3px 6px -6px #333;
 	   -moz-box-shadow: 0 3px 6px -6px #333;

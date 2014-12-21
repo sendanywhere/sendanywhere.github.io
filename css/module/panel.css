@@ -1,15 +1,16 @@
 .panel-view{
-	padding:30px 20px;
-	margin:50px 0;
+	padding:70px 20px;
+	/*margin:50px 0;*/
+	color:white;
 
 }
 
 .card{
-	height:400px;
-	/*background-color: #fdfdfd;*/
+	height:450px;
+	/*background-color: #00cced;*/
 	/*background-color: rgba(255,255,255,0.8);*/
-	border-radius: 5px;
-	border: 2px solid white;
+	border-radius: 10px;
+	/*border: 2px solid white;*/
 	width: 300px;
 	margin: 0 auto;
 	/*margin-right: 50px;*/
@@ -21,4 +22,41 @@
 
 .card img{width:60px;}
 
+#send{
+	background-color: #223544;
+	color:white;
+}
+#receive{
+	/*border-top: 1px solid white;*/
+	background-color: #ecf0f1;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
 
+
+.overlay-card{
+	background-color: rgba(255,255,255,0.9);
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding:10px;
+	width: 300px;
+	/* margin: 0 auto; */
+	/* overflow: scroll; */
+	height: 300px;
+	z-index: 1000;
+	position: relative;
+}
+
+/*
+#00bedd
+#223544 navy
+#3550877 sea blue
+#fe7260 orange
+#9ED61A green
+#4F87FF blue
+
+#223544
+
+
+
+*/

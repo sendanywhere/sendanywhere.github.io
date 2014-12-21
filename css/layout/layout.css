@@ -5,7 +5,7 @@
 
 
 .hero h2{
-	margin-bottom:100px;
+	/*margin-bottom:100px;*/
 	color:#ffffff; 
 	font-weight: 100;
 	font-size: 25px;
@@ -59,14 +59,30 @@
 	margin:50px 0;
 }
 
-
+#download{background-color: #355087;}
 /*#user div:first-child{margin-bottom: 30px;}*/
-
-#user{
-	border-top: 1px solid rgba(0,0,0,0.1);
-	border-bottom: 1px solid rgba(0,0,0,0.1);
+#testimony{
+	/*background-color: #222;*/
+	/*border: 4px dotted #333;*/
+border-radius: 10px;
+padding:20px;
+color:#333;
 }
-#user span{margin-right:13px;}
+#testimony p{
+	font-size:20px;
+	line-height: 1.6em;
+	font-family: "Georgia" serif;
+	font-style: italic;
+	/*color:#E4EFF7;*/color: #333;
+}
+#user{
+	background-color: #9ED61A;
+	color: white;
+	list-style: none;
+	/*border-top: 1px solid rgba(0,0,0,0.1);
+	border-bottom: 1px solid rgba(0,0,0,0.1);*/
+}
+/*#user span{margin-right:13px;}*/
 /*#company-info li{float: left; margin-right: 10px;}*/
 
 footer ul{margin-bottom:50px;}
