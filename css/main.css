@@ -61,6 +61,128 @@ Theme defines color and images in this page
 }
 
 
+#iphone{
+	top:-25%;
+	top:-23%;
+	background-image:url('../img/iphone.png');
+	transform: scale(0.5);
+	-ms-transform :scale(0.5);
+	-webkit-transform: scale(0.5);
+}
+#ipad{
+	left:-34%;
+	top: 73%;
+	background-image:url('../img/ipad.png');
+	transform: scale(0.5);
+	-ms-transform :scale(0.5);
+	-webkit-transform: scale(0.5);
+}
+#imac{
+	left:100%;
+	background-image:url('../img/imac.png');
+	transform: scale(0.5);
+	-ms-transform :scale(0.5);
+	-webkit-transform: scale(0.5);
+}
+
+
+#widget:hover #iphone {
+	opacity: 1;
+	top: -12%;
+	left: 46%;
+	transform: scale(1.0);
+	-ms-transform :scale(1);
+	-webkit-transform: scale(1);
+	
+}
+
+
+#widget:hover #ipad {
+	opacity: 1;
+	top:19%;
+	left: 5%;
+	transform: scale(1.0);
+	-ms-transform :scale(1);
+	-webkit-transform: scale(1);
+	
+}
+
+
+#widget:hover #imac {
+	opacity: 1;
+	top:19%;
+	left:88%;
+	transform: scale(1.0);
+	-ms-transform :scale(1);
+	-webkit-transform: scale(1);
+	
+}
+
+
+/* Hover on Reciever */
+
+#iphone-r{
+	top:125%;
+	top:-23%;
+	background-image:url('../img/iphone.png');
+	transform: scale(0.2);
+	-ms-transform :scale(0.2);
+	-webkit-transform: scale(0.2);
+
+}
+#ipad-r{
+	left:-54%;
+	top: 33%;
+	background-image:url('../img/ipad.png');
+	transform: scale(0.2);
+	-ms-transform :scale(0.2);
+	-webkit-transform: scale(0.2);
+
+}
+#imac-r{
+	left:100%;
+	top:50%;
+	background-image:url('../img/imac.png');
+	transform: scale(0.2);
+	-ms-transform :scale(0.2);
+	-webkit-transform: scale(0.2);
+
+}
+
+
+#widget:hover #iphone-r {
+	opacity: 0.2;
+	/*top: 62%;*/
+	/*left: 46%;*/
+	transform: scale(0.3);
+	-ms-transform :scale(0.3);
+	-webkit-transform: scale(0.3);
+	
+}
+
+
+#widget:hover #ipad-r {
+	opacity: 0.2;
+	/*top:69%;*/
+	/*left: 5%;*/
+	transform: scale(0.3);
+	-ms-transform :scale(0.3);
+	-webkit-transform: scale(0.3);
+	
+}
+
+
+#widget:hover #imac-r {
+	opacity: 0.2;
+	/*top:89%;*/
+	/*left:88%;*/
+	transform: scale(0.3);
+	-ms-transform :scale(0.3);
+	-webkit-transform: scale(0.3);
+	
+}
+
+
 .about-img{
 	background: url('../img/hero.jpg') no-repeat center center;
 	background-size: cover;

@@ -12,6 +12,26 @@
 }
 
 
+
+.circle-btn{
+	display: block;
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	position: absolute;
+	background-color: #00bedd;
+	left: 50%;
+	margin-left: -29px;
+	z-index: 10000;
+	margin-top: -30px;
+	-moz-box-shadow: inset 0 0 4px #006070;
+	-webkit-box-shadow: inset 0 0 4px #006070;
+	box-shadow: inset 0 0 4px #006070;
+}
+
+
+
+
 .bottom-arrow{
 	display: block;
 	width: 0;

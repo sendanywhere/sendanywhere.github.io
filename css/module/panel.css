@@ -20,12 +20,15 @@
 	overflow: hidden;
 }
 
-.card img{width:60px;}
+.card img{width:40px;margin-top: 13px}
 
 #send{
 	background-color: #223544;
 	color:white;
 }
+
+#secure-code{font-size: 30px;}
+#secure-code span{float:left;margin-right: 20px;}
 #receive{
 	/*border-top: 1px solid white;*/
 	background-color: #ecf0f1;
