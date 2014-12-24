@@ -57,7 +57,8 @@ footer li{color:white;list-style: none;}
 	font-size:60px;
 	
 }
-#press .icon{color:#355087;}
+/*#press .icon{color:#355087;}*/
+#press .icon{color:#00bedd;}
 #user .icon{color:#00bedd;}
 
 

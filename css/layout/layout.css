@@ -48,9 +48,10 @@
 
 
 #press{
-	background-color: #9ED61A;
+	/*background-color: #9ED61A;*/
 	color: #333;
 	list-style: none;
+	border-top:1px solid #00bedd;
 }
 #press img{
 	width:70px;
@@ -79,9 +80,10 @@ color:#fff;
 	line-height: 1.6em;
 	font-family: 'Arvo', serif;
 	font-weight: 400;
-	color:#fff;
+	color:#333;
 }
-#user,#download{
+#user{background-color: #fff;color:#333;}
+#download{
 	background-color: #355087;
 	/*background-color: #9ED61A;
 	color: white;
