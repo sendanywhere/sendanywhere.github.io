@@ -184,10 +184,10 @@ Theme defines color and images in this page
 
 #receive-hover h4{
 	opacity:0.1;
-	position: absolute;
+	/*position: absolute;
 	top: 10%;
 	left: 67%;
-	width: 100%;
+	width: 100%;*/
 }
 #widget:hover #receive-hover h4{opacity: 1; color:white;}
 .about-img{
