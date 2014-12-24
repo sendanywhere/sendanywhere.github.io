@@ -51,7 +51,7 @@
 	/*background-color: #9ED61A;*/
 	color: #333;
 	list-style: none;
-	border-top:1px solid #00bedd;
+	border-top:1px solid #e5e5e5;
 }
 #press img{
 	width:70px;
@@ -80,7 +80,7 @@ color:#fff;
 	line-height: 1.6em;
 	font-family: 'Arvo', serif;
 	font-weight: 400;
-	color:#333;
+	color:#5c5c5c;
 }
 #user{background-color: #fff;color:#333;}
 #download{
