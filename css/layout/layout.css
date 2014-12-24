@@ -116,10 +116,10 @@ ul.legals li:last-child::after { content: ""; }
 .credit { text-align: right; }
 
 figure{
-	webkit-background-size: 45px 45px;
--moz-background-size: 45px 45px;
-width: 45px;
-height: 45px;
+	webkit-background-size: 47px 47px;
+-moz-background-size: 47px 47px;
+width: 47px;
+height: 47px;
 text-indent: -1000px;
 overflow: hidden;
 background-repeat: no-repeat;

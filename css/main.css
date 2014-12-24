@@ -121,28 +121,28 @@ Theme defines color and images in this page
 
 /* Hover on Reciever */
 
-#iphone-r{
+#music{
 	top:125%;
 	top:-23%;
-	background-image:url('../img/iphone.png');
+	background-image:url('../img/music.png');
 	transform: scale(0.2);
 	-ms-transform :scale(0.2);
 	-webkit-transform: scale(0.2);
 
 }
-#ipad-r{
+#play{
 	left:-54%;
 	top: 33%;
-	background-image:url('../img/ipad.png');
+	background-image:url('../img/play.png');
 	transform: scale(0.2);
 	-ms-transform :scale(0.2);
 	-webkit-transform: scale(0.2);
 
 }
-#imac-r{
+#video{
 	left:100%;
 	top:50%;
-	background-image:url('../img/imac.png');
+	background-image:url('../img/video.png');
 	transform: scale(0.2);
 	-ms-transform :scale(0.2);
 	-webkit-transform: scale(0.2);
@@ -150,35 +150,35 @@ Theme defines color and images in this page
 }
 
 
-#widget:hover #iphone-r {
-	opacity: 0.2;
-	/*top: 62%;*/
-	/*left: 46%;*/
-	transform: scale(0.3);
-	-ms-transform :scale(0.3);
-	-webkit-transform: scale(0.3);
+#widget:hover #music {
+	opacity: 1;
+	top:19%;
+	left:118%;
+	transform: scale(0.7);
+	-ms-transform :scale(0.7);
+	-webkit-transform: scale(0.7);
 	
 }
 
 
-#widget:hover #ipad-r {
-	opacity: 0.2;
-	/*top:69%;*/
-	/*left: 5%;*/
-	transform: scale(0.3);
-	-ms-transform :scale(0.3);
-	-webkit-transform: scale(0.3);
+#widget:hover #video {
+	opacity: 1;
+	top:19%;
+	left:98%;
+	transform: scale(0.7);
+	-ms-transform :scale(0.7);
+	-webkit-transform: scale(0.7);
 	
 }
+/**/
 
-
-#widget:hover #imac-r {
-	opacity: 0.2;
-	/*top:89%;*/
-	/*left:88%;*/
-	transform: scale(0.3);
-	-ms-transform :scale(0.3);
-	-webkit-transform: scale(0.3);
+#widget:hover #play {
+	opacity: 1;
+	top:19%;
+	left:108%;
+	transform: scale(0.7);
+	-ms-transform :scale(0.7);
+	-webkit-transform: scale(0.7);
 	
 }
 
