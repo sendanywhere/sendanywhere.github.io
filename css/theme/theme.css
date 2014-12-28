@@ -53,10 +53,13 @@ footer li{color:white;list-style: none;}
 	position: absolute;
 	right: 29px;
 }
-#press .icon,#user .icon{
+#press .icon{
 	font-size:60px;
 	
 }
+
+
+#user .icon{font-size: 30px;}
 /*#press .icon{color:#355087;}*/
 #press .icon{color:#00bedd;}
 #user .icon{color:#00bedd;}

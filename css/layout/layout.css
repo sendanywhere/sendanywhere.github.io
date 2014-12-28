@@ -18,10 +18,14 @@
 #benefit{
 	text-align: center;
 	color:#333;
+	border-bottom:1px solid #e5e5e5;
 }
 
 #benefit .icon{
-	font-size:50px;
+	font-size: 50px;
+	color:white;
+	padding: 22px;
+	margin:0 auto;
 }
 
 /*#benefit p{

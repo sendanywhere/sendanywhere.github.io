@@ -128,63 +128,44 @@
             </div><!-- download panel end -->
         </div>
 
-    <!--benefit-->
+    
+
+
+    <!--download specification tab-->
     <div class="panel-view" id="benefit">
         <div class="container">
             <div class="row">
-                <section class="col-md-3 col-xs-12">
-                    <div class="icon icon-clock"></div>
-                    <h3>Easy</h3>
-                    <p>No signup or login required; the process could not be easier!</p>
-                </section>
-                <section class="col-md-3 col-xs-12">
-                    <div class="icon icon-stack"></div>
-                    <h3>Free & Unlimited</h3>
-                    <p>Any file type, of any size, as many times as you want.No limits and it’s free.</p>
-                </section>
-                <section class="col-md-3 col-xs-12">
-                    <div class="icon icon-mobile"></div>
-                    <h3>Safe</h3>
-                    <p>Safely send files directly between devices without touching the cloud</p>
-                </section>
-                <section class="col-md-3 col-xs-12">
-                    <div class="icon icon-mobile"></div>
-                    <h3>Anonymous</h3>
-                    <p>Share your data without sharing your personal information</p>
-                </section>
+                <div class="tabs">
+                    <!-- navigation part -->
+                    <nav>
+                        <ul class="tab-nav"> 
+                            <li><a data-content="mobile" class="selected" href="#0">Mobile</a></li>
+                            <li><a data-content="desktop" href="#0">Desktop</a></li>
+                            <li><a data-content="web" href="#0">Web</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- tab content part -->
+                    <ul class="tab-content">
+                        <li data-content="mobile" class="selected">
+                            content1
+                        </li>
+
+                        <li data-content="desktop">
+                            content2
+                        </li>
+
+                        <li data-content="web">
+                            content3
+                        </li>
+
+                    </ul>
+                </div>
             </div>
         </div>
-    </div><!--benefit end -->
+    </div><!--download tab -->
 
-
-    <!--download specification-->
-    <div class="panel-view" id="benefit">
-        <div class="container">
-            <div class="row">
-                <section class="col-md-3 col-xs-12">
-                    <div class="icon icon-clock"></div>
-                    <h3>Easy</h3>
-                    <p>No signup or login required; the process could not be easier!</p>
-                </section>
-                <section class="col-md-3 col-xs-12">
-                    <div class="icon icon-stack"></div>
-                    <h3>Free & Unlimited</h3>
-                    <p>Any file type, of any size, as many times as you want.No limits and it’s free.</p>
-                </section>
-                <section class="col-md-3 col-xs-12">
-                    <div class="icon icon-mobile"></div>
-                    <h3>Safe</h3>
-                    <p>Safely send files directly between devices without touching the cloud</p>
-                </section>
-                <section class="col-md-3 col-xs-12">
-                    <div class="icon icon-mobile"></div>
-                    <h3>Anonymous</h3>
-                    <p>Share your data without sharing your personal information</p>
-                </section>
-            </div>
-        </div>
-    </div><!--benefit end -->
-
+    
 
 
 
@@ -279,7 +260,7 @@
 
         <script src="js/main.js"></script>
         <script src="js/flexslider.js"></script>
-
+        <script src="js/tab.js"></script>
         <script src="js/modernizr.js"></script>
         <script src="js/plugin.js"></script>
         <!--<script src="js/vendor/jquery.ui.widget.js"></script>
