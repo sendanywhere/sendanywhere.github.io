@@ -86,8 +86,9 @@
 	color:white;
 	padding:15px;
 	z-index: 100;
+	transition: background-color 0.8s ease;
 }
-
+.widget-btn:hover{background-color: #fe7260;}
 .widget{
 	background-color: #223544;
 	/*border-bottom-right-radius: 10px;*/
@@ -103,6 +104,10 @@
 	position: absolute;
 	/*visibility: hidden;*/
 }
+
+#download-btn{transition: background-color 0.3s ease;}
+#download-btn:hover{background-color: #fe7260;border-color: #fe7260;}
+.hero a:hover{text-decoration: none;}
 /*
 #00bedd
 #223544 navy
