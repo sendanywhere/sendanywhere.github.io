@@ -1,5 +1,5 @@
 .panel-view{
-	padding:70px 20px;
+	padding:50px 20px;
 	/*margin:50px 0;*/
 	color:white;
 
@@ -27,30 +27,68 @@
 	color:white;
 }
 
-#secure-code{font-size: 30px;}
-#secure-code span{float:left;margin-right: 20px;}
+#secure-code{
+	font-size: 20px;
+	padding: 0 47px;
+	margin-bottom: 18px;
+}
+#secure-code span{float:left;margin-right: 15px;color: white;}
 #receive{
 	/*border-top: 1px solid white;*/
-	background-color: #ecf0f1;
+	/*background-color: #ecf0f1;*/
+	background-color: #223544;
 	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+	/*border-bottom-right-radius: 10px;*/
+	border-top:1px solid #00bedd;
 }
 
 
 .overlay-card{
-	background-color: rgba(255,255,255,0.9);
-	border-bottom-right-radius: 10px;
+	/*background-color: rgba(255,255,255,0.9);*/
+	background-color: #00bedd;
+	/*border-bottom-right-radius: 10px;*/
+	/*border-bottom-left-radius: 10px;*/
+	padding:20px;
+	width: 300px;
+	border-top:1px solid #51718A;
+	/* margin: 0 auto; */
+	/* overflow: scroll; */
+	height: 200px;
+	/*z-index: 1000;*/
+	position: relative;
+	overflow: scroll;
+	-moz-box-shadow:    inset 0 0 10px #044E5A;
+   -webkit-box-shadow: inset 0 0 10px #044E5A;
+   box-shadow:         inset 0 0 10px #044E5A;
+}
+
+.widget-btn{
+	position: absolute;
+	right: 100%;
+	top: 0%;
+	background-color: #223544;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	color:white;
+	padding:15px;
+	z-index: 100;
+}
+
+.widget{
+	background-color: #223544;
+	/*border-bottom-right-radius: 10px;*/
 	border-bottom-left-radius: 10px;
 	padding:20px;
 	width: 300px;
 	/* margin: 0 auto; */
 	/* overflow: scroll; */
-	height: 300px;
-	/*z-index: 1000;*/
-	position: relative;
-	overflow: scroll;
+	height: 400px;
+	right: -300px;
+	top: 10%;
+	z-index: 1000;
+	position: absolute;
+	/*visibility: hidden;*/
 }
-
 /*
 #00bedd
 #223544 navy

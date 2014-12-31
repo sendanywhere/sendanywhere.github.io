@@ -7,11 +7,17 @@
 .hero h2{
 	/*margin-bottom:100px;*/
 	color:#ffffff; 
-	font-weight: 100;
-	font-size: 25px;
+	/*font-weight: 100;*/
+	font-size: 29px;
 	letter-spacing: 3px;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	line-height: 1.5em; 
+	/*text-shadow: 0px 1px 7px #028CA3;*/
+               
+color: #FFFFFF;
+line-height: 50px;
+text-shadow: 0px 2px 4px rgba(0,180,211,0.9);
+
 }
 
 #dragzone{padding:10px;border:2px dotted #446987;border-radius: 10px;}
@@ -20,6 +26,7 @@
 	color:#333;
 	border-bottom:1px solid #e5e5e5;
 }
+
 
 #benefit .icon{
 	font-size: 50px;
@@ -58,7 +65,7 @@
 	border-top:1px solid #e5e5e5;
 }
 #press img{
-	width:70px;
+	width:60px;
 }
 
 
@@ -155,12 +162,14 @@ filter: alpha(opacity=0);
 	margin-bottom: 40px;
 }
 
-.space-bot60{
-	margin-bottom: 60px;
+.space-bot30{
+	margin-bottom: 30px;
 }
 
 .item img{margin: 0 auto;}
 
 
-#send .item:first-child,#receive .item:first-child{padding-top: 82px;}
+/*#send .item:first-child,#receive .item:first-child{padding-top: 82px;}*/
 #receive .item:nth-child(2){padding-top: 52px;};
+
+
