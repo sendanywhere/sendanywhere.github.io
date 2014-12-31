@@ -41,7 +41,7 @@
 	/*border-bottom-right-radius: 10px;*/
 	border-top:1px solid #00bedd;
 }
-
+#receive .item{padding-top: 45px;}
 #receive,#social-btn{
 	background-color: #223544;
 	
