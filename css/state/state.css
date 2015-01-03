@@ -26,6 +26,8 @@ visibility: visible;
 .delay-05s { animation-delay: 0.5s; -webkit-animation-delay: 0.5s; }
 .delay-1s { animation-delay: 1s; -webkit-animation-delay: 1s; }
 
-
+.clicked{
+	background-color: #fe7260;
+}
 
 

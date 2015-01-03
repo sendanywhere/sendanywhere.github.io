@@ -4,6 +4,15 @@
 	border-radius:100%;
 }
 
+.circlebg{
+	width: 200px;
+height: 200px;
+padding: 20px;
+background-color: #f9f9f9;
+border-radius: 200px;
+}
+
+.circlebg img{margin-top: 49px;}
 .circle-icon{
 	width:100px;
 	height:100px;
@@ -74,7 +83,7 @@
 .navy
 {
 	border-top: 28px solid #355087;
-	bottom: -98px;
+	bottom: -78px;
 }
 
 
