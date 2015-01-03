@@ -13,9 +13,16 @@ border-radius: 200px;
 -moz-box-shadow:    inset 0 5px 10px #f1f1f1;
    -webkit-box-shadow: inset 0 5px 10px #f1f1f1;
    box-shadow:         inset 0 5px 10px #f1f1f1;
+   overflow: hidden;
+   
 }
 
-.circlebg img{margin-top: 49px;}
+.circlebg:hover img{
+margin-top:-125px;
+}
+.circlebg p{opacity: 0;transition: opacity 0.9s ease;margin-top: 30px;}
+.circlebg:hover p{opacity: 1;}
+.circlebg img{margin-top: 53px;transition: margin-top 0.9s ease;}
 .circle-icon{
 	width:100px;
 	height:100px;
