@@ -26,6 +26,7 @@ Theme defines color and images in this page
 /*** Layout css ****/
 @import url('layout/layout.css');
 @import url('layout/media.css');
+@import url('layout/parallax.css');
 
 
 
@@ -38,6 +39,7 @@ Theme defines color and images in this page
 @import url('module/user.css');
 @import url('module/tabbed.css');
 @import url('module/offnav.css');
+@import url('module/card.css');
 /*** State css ****/
 @import url('state/progress.css');
 @import url('state/state.css');
@@ -55,7 +57,7 @@ Theme defines color and images in this page
 	/*width:100%;*/
 	padding:192px 0;
 	text-align:center;
-	background: url('../img/hero.jpg') no-repeat top center;
+	background: url('../img/heroplane.jpg') no-repeat top center;
 	background-size: cover;
 	background-attachment: fixed;
 	height: 700px;
@@ -75,6 +77,7 @@ height: 300px;
 z-index: 1;
 max-width: 100%;
 }
+
 /*
 #iphone{
 	top:-25%;
@@ -312,4 +315,8 @@ max-width: 100%;
 @media screen and (min-width: 768px){
 	.carousel-indicators {bottom: -49px;}
 }
+
+
+
+
 

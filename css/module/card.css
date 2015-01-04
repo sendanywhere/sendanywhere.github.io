@@ -1,0 +1,267 @@
+/* Common style */
+.cardclip {
+	margin: -20px auto 20px;
+	max-width: 1000px;
+	width: 90%;
+}
+
+.cardclip a {
+	float: left;
+	max-width: 300px;
+	/*width: 25%;*/
+	color: #333;
+}
+
+.cardclip a:nth-child(odd) {
+	/*margin: 30px 0 -30px 0;*/
+	margin:0;
+}
+
+.cardclip div {
+	position: relative;
+	overflow: hidden;
+	margin: 5px;
+	background: #333;
+}
+
+.cardclip div img {
+	position: relative;
+	display: block;
+	width: 100%;
+	opacity: 0.1;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.cardclip figcaption {
+	position: absolute;
+	top: 0;
+	z-index: 11;
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.cardclip figcaption h2 {
+	margin: 0 0 20px 0;
+	color: #333;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 300;
+	font-size: 130%;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.cardclip figcaption p {
+	padding: 0 20px;
+	color: #333;
+	font-weight: 300;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.cardclip figcaption h2,
+.cardclip figcaption p {
+	-webkit-transform: translateY(50px);
+	transform: translateY(50px);
+	color: #fff;
+}
+
+.cardclip div button {
+	position: absolute;
+	padding: 4px 20px;
+	border: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.cardclip figcaption,
+.cardclip figcaption h2,
+.cardclip figcaption p,
+.cardclip div button {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+/* Style for SVG */
+.cardclip svg {
+	position: absolute;
+	top: -1px;
+	/* left: 14px; */
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	/* padding-right: 114px; */
+}
+
+.cardclip svg path {
+	fill: #00bedd;
+}
+
+/* Hover effects */
+.cardclip a:hover div img {
+	opacity: 0.4;
+}
+
+.cardclip a:hover figcaption h2,
+.cardclip a:hover figcaption p {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.cardclip a:hover figcaption p {
+	opacity: 1;
+}
+
+/* Individual styles */
+.demo-1 body {
+	background: #3498db;
+}
+
+.demo-1 .cardclip div button,
+.demo-3 .cardclip div button {
+	top: 50%;
+	left: 50%;
+	border: 3px solid #fff;
+	background: transparent;
+	color: #fff;
+	opacity: 0;
+	-webkit-transform: translateY(-50%) translateX(-50%) scale(0.25);
+	transform: translateY(-50%) translateX(-50%) scale(0.25);
+}
+
+.demo-1 .cardclip a:hover div button,
+.demo-3 .cardclip a:hover div button {
+	opacity: 1;
+	-webkit-transform: translateY(-50%) translateX(-50%) scale(1);
+	transform: translateY(-50%) translateX(-50%) scale(1);
+}
+
+.demo-2 body {
+	background: #e74c3c;
+}
+
+.demo-2 .cardclip figcaption h2 {
+	color: #e74c3c;
+}
+
+.demo-2 .cardclip figcaption p {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+.demo-2 .cardclip div button {
+	bottom: 0;
+	left: 0;
+	padding: 15px;
+	width: 100%;
+	background: #fe7260;
+	color: #333;
+	font-weight: 300;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+}
+
+.demo-2 .cardclip a:hover div button {
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.demo-2 .cardclip figcaption h2, 
+.demo-2 .cardclip figcaption p,
+.demo-3 .cardclip figcaption h2,
+.demo-3 .cardclip figcaption p {
+	-webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.115, 1); /* older webkit */
+	-webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.115, 1.445);
+	timing-function: cubic-bezier(0.250, 0.250, 0.115, 1.445);
+}
+
+.demo-2 .cardclip a:hover figcaption p,
+.demo-3 .cardclip a:hover figcaption p {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+	-webkit-transition-duration: 0.1s;
+	transition-duration: 0.1s;
+}
+
+.demo-3 body {
+	background: #52be7f;
+}
+
+.demo-3 .cardclip figcaption h2 {
+	color: #52be7f;
+}
+
+.demo-3 .cardclip a:hover figcaption h2 {
+	-webkit-transform: translateY(5px);
+	transform: translateY(5px);
+}
+
+/* Media Queries */
+/* Let's redefine the width of each anchor and the margins */
+
+@media screen and (max-width: 58em) {
+	.cardclip a {
+		width: 33.333%;
+	}
+
+	.cardclip a:nth-child(odd) {
+		margin: 0;
+	}
+
+	.cardclip a:nth-child(3n-1) {
+		margin: 30px 0 -30px 0;
+	}
+}
+
+@media screen and (max-width: 45em) {
+	.cardclip {
+		max-width: 500px;
+	}
+
+	.cardclip a {
+		width: 50%;
+	}
+
+	.grid a:nth-child(3n-1) {
+		margin: 0;
+	}
+
+	.cardclip a:nth-child(even) {
+		margin: 30px 0 -30px 0;
+	}
+
+
+	.cardclip figcaption h2 {
+		margin-bottom: 0px;
+		-webkit-transform: translateY(30px);
+		transform: translateY(30px);
+	}
+
+	.cardclip figcaption p {
+		margin: 0;
+		padding: 0 10px;
+	}
+}
+
+@media screen and (max-width: 27em) {
+	.cardclip {
+		max-width: 250px;
+	}
+
+	.cardclip a {
+		width: 100%;
+	}
+
+	.cardclip a:nth-child(even) {
+		margin: 0;
+	}
+}

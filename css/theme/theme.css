@@ -64,6 +64,7 @@ footer li{color:white;list-style: none;}
 	
 }
 
+#press div{padding: 0 34px;}
 
 #user .icon{font-size: 30px;}
 /*#press .icon{color:#355087;}*/
@@ -125,3 +126,9 @@ path.stroke-medium {
 path.stroke-thin {
 	stroke-width: 1;
 }
+
+.cardclip span{font-size:30px;}
+#usecase section, #feature section{padding: 0 39px;}
+
+#feature,#usecase{color:#333;border-bottom: 1px solid #e5e5e5;border-top: 1px solid #e5e5e5;}
+#feature h2, #usecase h2{text-align: center;}
