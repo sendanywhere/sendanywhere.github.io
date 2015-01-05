@@ -1,8 +1,21 @@
 @import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic);
-@font-face {
+/*@font-face {
     font-family: 'netto';
     src: url('../font/NettoOT.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+}*/
+
+@font-face {
+font-family: ff-netto;
+src: url("../font/NettoOT.otf") format("opentype");
+font-weight: normal;
 }
+
+@font-face {
+font-family: ff-netto;
+font-weight: light;
+src: url("../font/NettoOT-Thin.otf") format("opentype");
+}
+
 

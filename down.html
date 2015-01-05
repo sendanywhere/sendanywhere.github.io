@@ -134,22 +134,47 @@
     
 
 
-    <!--download specification tab-->
+    <!--download tab button-->
     <div class="panel-view" id="benefit">
         <div class="container">
             <div class="row">
-                <div class="btn-group" role="group" aria-label="...">
-                  <button type="button" class="btn btn-lg btn-default">Mobile</button>
-                  <button type="button" class="btn btn-lg btn-default">Desktop</button>
-                  <button type="button" class="btn btn-lg btn-default">Web</button>
-                </div>
+            <ul class="nav nav-tabs btn-group" role="tablist" role="group" aria-label="...">
+                <li role="presentation" class="active">
+                    <a href="#mobile" aria-controls="home" role="tab" data-toggle="tab">
+                        <button type="button" class="btn btn-lg btn-default">Mobile</button>
+                    </a>
+                </li>
+
+                <li role="presentation">
+                    <a href="#desktop" aria-controls="home" role="tab" data-toggle="tab">
+                        <button type="button" class="btn btn-lg btn-default">Desktop</button>
+                    </a>
+                </li>
+
+                <li role="presentation">
+                    <a href="#web" aria-controls="home" role="tab" data-toggle="tab">
+                        <button type="button" class="btn btn-lg btn-default">Web</button>
+                    </a>
+                </li>
+            </ul>
+
+        
+      
             </div>
         </div>
     </div><!--download tab -->
 
 
-    <!-- use case -->
-    <div class="panel-view" id="feature">
+    <div role="tabpanel">
+
+      
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="mobile">
+
+    <!-- mobile tab -->
+     <div class="panel-view" id="feature">
         <div class="container">
             <div class="row"style="margin-bottom:50px">
                 <div class="col-md-12"><h2>Mobile</h2></div>
@@ -158,14 +183,14 @@
                 <!-- <section id="grid" class="grid clearfix"> -->
                 <section class="col-md-3">
                     <div class="cardclip">
-                        <a href="#" data-path-hover="M90,230.588409 L0,161 L0,1 L180,1 L180,161 L90,230.588409 Z">
+                        <a href="#" data-path-hover="M90,272.856994 L0,190.153846 L0,0 L180,0 L180,190.153846 L90,272.856994 L90,272.856994 Z">
                             <div>
-                                <img src="img/platformbg.jpg">
+                                <img src="img/ios.png">
                                 <svg viewBox="0 0 180 320" preserveAspectRatio="none"><svg viewBox="0 0 180 320" preserveAspectRatio="none">   <path d="m 180,64.57627 -180,0 L 0,0 180,0 z" id="Shape" transform="translate(90.000000, 115.794205) scale(-1, 1) translate(-90.000000, -115.794205) "></path><defs></defs></svg><defs></defs></svg>
                                 <figcaption>
                                     <h2>Apple</h2>
                                     <span class="icon-apple"></span>
-                                    <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p> -->
+                                    <p>iOS phones & Tablets </p>
                                     <!-- <button>View</button> -->
                                 </figcaption>
                             </div>
@@ -176,30 +201,31 @@
 
                 <section class="col-md-3">
                     <div class="cardclip">
-                <a href="#" data-path-hover="M90,230.588409 L0,161 L0,1 L180,1 L180,161 L90,230.588409 Z">
-                    <div>
-                        <img src="img/platformbg.jpg">
-                        <svg viewBox="0 0 180 320" preserveAspectRatio="none"><svg viewBox="0 0 180 320" preserveAspectRatio="none">  <path d="m 180,64.57627 -180,0 L 0,0 180,0 z" id="Shape" transform="translate(90.000000, 115.794205) scale(-1, 1) translate(-90.000000, -115.794205) "></path><defs></defs></svg><defs></defs></svg>
-                        <figcaption>
-                            <h2>Google</h2>
-                            <span class="icon-google"></span>
-                            <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p> -->
-                            <!-- <button>View</button> -->
-                        </figcaption>
+                        <a href="#" data-path-hover="M90,272.856994 L0,190.153846 L0,0 L180,0 L180,190.153846 L90,272.856994 L90,272.856994 Z">
+                            <div>
+                                <img src="img/platformbg.jpg">
+                                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><svg viewBox="0 0 180 320" preserveAspectRatio="none">  <path d="m 180,64.57627 -180,0 L 0,0 180,0 z" id="Shape" transform="translate(90.000000, 115.794205) scale(-1, 1) translate(-90.000000, -115.794205) "></path><defs></defs></svg><defs></defs></svg>
+                                <figcaption>
+                                    <h2>Google</h2>
+                                    <span class="icon-android"></span>
+                                    <p>Android phones & Tablets</p>
+                                    <!-- <button>View</button> -->
+                                </figcaption>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
                 </section>
+
                 <section class="col-md-3">
                     <div class="cardclip">
-                <a href="#" data-path-hover="M90,230.588409 L0,161 L0,1 L180,1 L180,161 L90,230.588409 Z">
+                <a href="#" data-path-hover="M90,272.856994 L0,190.153846 L0,0 L180,0 L180,190.153846 L90,272.856994 L90,272.856994 Z">
                     <div>
                         <img src="img/platformbg.jpg">
                         <svg viewBox="0 0 180 320" preserveAspectRatio="none"><svg viewBox="0 0 180 320" preserveAspectRatio="none">     <path d="m 180,64.57627 -180,0 L 0,0 180,0 z" id="Shape" transform="translate(90.000000, 115.794205) scale(-1, 1) translate(-90.000000, -115.794205) "></path><defs></defs></svg><defs></defs></svg>
                         <figcaption>
-                            <h2>Window</h2>
+                            <h2>Windows</h2>
                             <span class="icon-windows"></span>
-                           <!--  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p> -->
+                            <p>Phone & Tablets</p>
                             <!-- <button>View</button> -->
                         </figcaption>
                     </div>
@@ -209,75 +235,200 @@
 
                 <section class="col-md-3">
                     <div class="cardclip">
-                <a href="#" data-path-hover="M90,230.588409 L0,161 L0,1 L180,1 L180,161 L90,230.588409 Z">
+                <a href="#" data-path-hover="M90,272.856994 L0,190.153846 L0,0 L180,0 L180,190.153846 L90,272.856994 L90,272.856994 Z">
                     <div>
                         <img src="img/platformbg.jpg">
                         <svg viewBox="0 0 180 320" preserveAspectRatio="none"><svg viewBox="0 0 180 320" preserveAspectRatio="none">    <path d="m 180,64.57627 -180,0 L 0,0 180,0 z" id="Shape" transform="translate(90.000000, 115.794205) scale(-1, 1) translate(-90.000000, -115.794205) "></path><defs></defs></svg><defs></defs></svg>
                         <figcaption>
                             <h2>Amazon Kindle</h2>
                             <span class="icon-apple"></span>
-                            <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p> -->
+                            <p>Phone & Tablets</p>
+                            <!-- <button>View</button> -->
+                        </figcaption>
+                    </div>
+                </a>
+            </div> 
+            </section><!--row end-->
+
+            </div>
+        </div>
+    </div>
+
+</div>
+        <div role="tabpanel" class="tab-pane" id="desktop">
+    <!-- mobile tab -->
+     <div class="panel-view" id="feature">
+        <div class="container">
+            <div class="row"style="margin-bottom:50px">
+                <div class="col-md-12"><h2>Desktop</h2></div>
+            </div>
+            <div class="row">
+                <!-- <section id="grid" class="grid clearfix"> -->
+                <section class="col-md-3">
+                    <div class="cardclip">
+                        <a href="#" data-path-hover="M90,272.856994 L0,190.153846 L0,0 L180,0 L180,190.153846 L90,272.856994 L90,272.856994 Z">
+                            <div>
+                                <img src="img/platformbg.jpg">
+                                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><svg viewBox="0 0 180 320" preserveAspectRatio="none">   <path d="m 180,64.57627 -180,0 L 0,0 180,0 z" id="Shape" transform="translate(90.000000, 115.794205) scale(-1, 1) translate(-90.000000, -115.794205) "></path><defs></defs></svg><defs></defs></svg>
+                                <figcaption>
+                                    <h2>Apple</h2>
+                                    <span class="icon-apple"></span>
+                                    <p>iOS phones & Tablets </p>
+                                    <!-- <button>View</button> -->
+                                </figcaption>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+
+                <section class="col-md-3">
+                    <div class="cardclip">
+                        <a href="#" data-path-hover="M90,272.856994 L0,190.153846 L0,0 L180,0 L180,190.153846 L90,272.856994 L90,272.856994 Z">
+                            <div>
+                                <img src="img/platformbg.jpg">
+                                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><svg viewBox="0 0 180 320" preserveAspectRatio="none">  <path d="m 180,64.57627 -180,0 L 0,0 180,0 z" id="Shape" transform="translate(90.000000, 115.794205) scale(-1, 1) translate(-90.000000, -115.794205) "></path><defs></defs></svg><defs></defs></svg>
+                                <figcaption>
+                                    <h2>Google</h2>
+                                    <span class="icon-android"></span>
+                                    <p>Android phones & Tablets</p>
+                                    <!-- <button>View</button> -->
+                                </figcaption>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="col-md-3">
+                    <div class="cardclip">
+                <a href="#" data-path-hover="M90,272.856994 L0,190.153846 L0,0 L180,0 L180,190.153846 L90,272.856994 L90,272.856994 Z">
+                    <div>
+                        <img src="img/platformbg.jpg">
+                        <svg viewBox="0 0 180 320" preserveAspectRatio="none"><svg viewBox="0 0 180 320" preserveAspectRatio="none">     <path d="m 180,64.57627 -180,0 L 0,0 180,0 z" id="Shape" transform="translate(90.000000, 115.794205) scale(-1, 1) translate(-90.000000, -115.794205) "></path><defs></defs></svg><defs></defs></svg>
+                        <figcaption>
+                            <h2>Windows</h2>
+                            <span class="icon-windows"></span>
+                            <p>Phone & Tablets</p>
                             <!-- <button>View</button> -->
                         </figcaption>
                     </div>
                 </a>
             </div>
-                
             </section>
+
+                <section class="col-md-3">
+                    <div class="cardclip">
+                <a href="#" data-path-hover="M90,272.856994 L0,190.153846 L0,0 L180,0 L180,190.153846 L90,272.856994 L90,272.856994 Z">
+                    <div>
+                        <img src="img/platformbg.jpg">
+                        <svg viewBox="0 0 180 320" preserveAspectRatio="none"><svg viewBox="0 0 180 320" preserveAspectRatio="none">    <path d="m 180,64.57627 -180,0 L 0,0 180,0 z" id="Shape" transform="translate(90.000000, 115.794205) scale(-1, 1) translate(-90.000000, -115.794205) "></path><defs></defs></svg><defs></defs></svg>
+                        <figcaption>
+                            <h2>Amazon Kindle</h2>
+                            <span class="icon-apple"></span>
+                            <p>Phone & Tablets</p>
+                            <!-- <button>View</button> -->
+                        </figcaption>
+                    </div>
+                </a>
+            </div> 
+            </section><!--row end-->
             </div>
         </div>
     </div>
+</div>
 
-
-    <div class="panel-view" id="feature">
+        <div role="tabpanel" class="tab-pane" id="web">
+    <!-- web tab -->
+     <div class="panel-view" id="feature">
         <div class="container">
-            <div class="row"style="margin-bottom:50px"><div class="col-md-12"><h2>Feature</h2></div></div>
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="row">
-                        <div class="col-md-6"><img src="img/iphone6.png"/></div>
-                        <div class="col-md-6">
-                            <h3>Seamlessly Send & 6 Digitcode</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="row"style="margin-bottom:50px">
+                <div class="col-md-12"><h2>Web</h2></div>
             </div>
-        <!-- </div> -->
-    <!-- </div> -->
-    <!-- <div class="panel-view" id="feature"> -->
-        <!-- <div class="container"> -->
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="row">
-                        <div class="col-md-6 pull-right"><img src="img/iphone6.png"/></div>
-                        <div class="col-md-6">
-                            <h3>Receive</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to </p>
-                        </div>
+                <section class="col-md-3">
+                    <div class="cardclip">
+                        <a href="#" data-path-hover="M90,272.856994 L0,190.153846 L0,0 L180,0 L180,190.153846 L90,272.856994 L90,272.856994 Z">
+                            <div>
+                                <img src="img/platformbg.jpg">
+                                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><svg viewBox="0 0 180 320" preserveAspectRatio="none">   <path d="m 180,64.57627 -180,0 L 0,0 180,0 z" id="Shape" transform="translate(90.000000, 115.794205) scale(-1, 1) translate(-90.000000, -115.794205) "></path><defs></defs></svg><defs></defs></svg>
+                                <figcaption>
+                                    <h2>Apple</h2>
+                                    <span class="icon-apple"></span>
+                                    <p>iOS phones & Tablets </p>
+                                    <!-- <button>View</button> -->
+                                </figcaption>
+                            </div>
+                        </a>
                     </div>
-                </div>
-            </div>
-        <!-- </div> -->
-    <!-- </div> -->
+                </section>
 
-    <!-- <div class="panel-view" id="feature"> -->
-        <!-- <div class="container"> -->
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="row">
-                        <div class="col-md-6"><img src="img/iphone6.png"/></div>
-                        <div class="col-md-6">
-                            <h3>My Device</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><!--product feature end-->
 
-    
+                <section class="col-md-3">
+                    <div class="cardclip">
+                        <a href="#" data-path-hover="M90,272.856994 L0,190.153846 L0,0 L180,0 L180,190.153846 L90,272.856994 L90,272.856994 Z">
+                            <div>
+                                <img src="img/platformbg.jpg">
+                                <svg viewBox="0 0 180 320" preserveAspectRatio="none"><svg viewBox="0 0 180 320" preserveAspectRatio="none">  <path d="m 180,64.57627 -180,0 L 0,0 180,0 z" id="Shape" transform="translate(90.000000, 115.794205) scale(-1, 1) translate(-90.000000, -115.794205) "></path><defs></defs></svg><defs></defs></svg>
+                                <figcaption>
+                                    <h2>Google</h2>
+                                    <span class="icon-android"></span>
+                                    <p>Android phones & Tablets</p>
+                                    <!-- <button>View</button> -->
+                                </figcaption>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="col-md-3">
+                    <div class="cardclip">
+                <a href="#" data-path-hover="M90,272.856994 L0,190.153846 L0,0 L180,0 L180,190.153846 L90,272.856994 L90,272.856994 Z">
+                    <div>
+                        <img src="img/platformbg.jpg">
+                        <svg viewBox="0 0 180 320" preserveAspectRatio="none"><svg viewBox="0 0 180 320" preserveAspectRatio="none">     <path d="m 180,64.57627 -180,0 L 0,0 180,0 z" id="Shape" transform="translate(90.000000, 115.794205) scale(-1, 1) translate(-90.000000, -115.794205) "></path><defs></defs></svg><defs></defs></svg>
+                        <figcaption>
+                            <h2>Windows</h2>
+                            <span class="icon-windows"></span>
+                            <p>Phone & Tablets</p>
+                            <!-- <button>View</button> -->
+                        </figcaption>
+                    </div>
+                </a>
+            </div>
+            </section>
+
+                <section class="col-md-3">
+                    <div class="cardclip">
+                <a href="#" data-path-hover="M90,272.856994 L0,190.153846 L0,0 L180,0 L180,190.153846 L90,272.856994 L90,272.856994 Z">
+                    <div>
+                        <img src="img/platformbg.jpg">
+                        <svg viewBox="0 0 180 320" preserveAspectRatio="none"><svg viewBox="0 0 180 320" preserveAspectRatio="none">    <path d="m 180,64.57627 -180,0 L 0,0 180,0 z" id="Shape" transform="translate(90.000000, 115.794205) scale(-1, 1) translate(-90.000000, -115.794205) "></path><defs></defs></svg><defs></defs></svg>
+                        <figcaption>
+                            <h2>Amazon Kindle</h2>
+                            <span class="icon-apple"></span>
+                            <p>Phone & Tablets</p>
+                            <!-- <button>View</button> -->
+                        </figcaption>
+                    </div>
+                </a>
+            </div> 
+            </section><!--row end-->
+
+    </div></div>
+      </div>
+
+    </div>
+</div>
+
+
+
+    <!-- Desktop tab -->
+
+
+    <!-- web tab -->
+   
+
+
 
 
 

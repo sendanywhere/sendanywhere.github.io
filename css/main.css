@@ -51,6 +51,11 @@ Theme defines color and images in this page
 @import url('theme/theme.css');
 @import url('theme/button.css');
 
+
+
+/*body{font-family: 'ff-netto' Sans-serif;}
+*/
+
 .hero{
 	background-color: #00BEDD;
 	/*background-color: #223544;*/
@@ -214,10 +219,11 @@ max-width: 100%;
 	width: 100%;*/
 }
 #widget:hover #receive-hover h4{opacity: 1; color:white;}
-.about-img{
-	background: url('../img/hero.jpg') no-repeat center center;
+.product-img{
+	/*background: url('../img/hero2.jpg') no-repeat center center;*/
+	background-color: #00bedd;
 	background-size: cover;
-	height: 500px;
+	height: 600px;
 }
 
 
@@ -225,6 +231,13 @@ max-width: 100%;
 	background: url('../img/device.jpg') no-repeat center center;
 	background-size: cover;
 	width: 700px;
+}
+
+
+.api-bg{
+	background: url('../img/apibg.jpg') no-repeat top center;
+	height: 300px;
+	padding-top:22px;
 }
 
 

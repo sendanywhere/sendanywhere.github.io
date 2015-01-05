@@ -132,3 +132,42 @@ path.stroke-thin {
 
 #feature,#usecase{color:#333;border-bottom: 1px solid #e5e5e5;border-top: 1px solid #e5e5e5;}
 #feature h2, #usecase h2{text-align: center;}
+
+
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+
+	border:none;
+	background-color: transparent;
+
+}
+
+
+
+#benefit .nav > li > a{padding: 0;border:none;}
+#benefit li:first-child button{
+	border-top-right-radius: 0;
+border-bottom-right-radius: 0;
+border-right: none;
+}
+
+#benefit li:nth-child(2) button{
+	border-radius: 0;
+	border-right: none;
+}
+
+#benefit li:nth-child(3) button{
+	border-top-left-radius: 0;
+border-bottom-left-radius: 0;
+}
+
+.nav-tabs{border-bottom: none;}
+.nav-tabs > li > a{margin:0;}
+
+
+
+
+
+
+
+
