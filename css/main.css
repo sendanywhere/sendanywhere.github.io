@@ -40,6 +40,7 @@ Theme defines color and images in this page
 @import url('module/tabbed.css');
 @import url('module/offnav.css');
 @import url('module/card.css');
+@import url('module/pointcircle.css');
 /*** State css ****/
 @import url('state/progress.css');
 @import url('state/state.css');
@@ -75,12 +76,12 @@ Theme defines color and images in this page
 	background-color: #00BEDD;
 	/*background-color: #223544;*/
 	/*width:100%;*/
-	padding:192px 0;
+	padding:130px 0;
 	text-align:center;
-	background: url('../img/hero.jpg') no-repeat top center;
+	/*background: url('../img/productbg.jpg') no-repeat top center;*/
 	background-size: cover;
 	background-attachment: fixed;
-	height: 700px;
+	height: 800px;
 	/*padding-top: 242px;*/
 
 
@@ -98,63 +99,6 @@ z-index: 1;
 max-width: 100%;
 }
 
-/*
-#iphone{
-	top:-25%;
-	top:-23%;
-	background-image:url('../img/iphone.png');
-	transform: scale(0.5);
-	-ms-transform :scale(0.5);
-	-webkit-transform: scale(0.5);
-}
-#ipad{
-	left:-34%;
-	top: 73%;
-	background-image:url('../img/ipad.png');
-	transform: scale(0.5);
-	-ms-transform :scale(0.5);
-	-webkit-transform: scale(0.5);
-}
-#imac{
-	left:100%;
-	background-image:url('../img/imac.png');
-	transform: scale(0.5);
-	-ms-transform :scale(0.5);
-	-webkit-transform: scale(0.5);
-}
-
-
-#widget:hover #iphone {
-	opacity: 1;
-	top: -12%;
-	left: 46%;
-	transform: scale(1.0);
-	-ms-transform :scale(1);
-	-webkit-transform: scale(1);
-	
-}
-
-
-#widget:hover #ipad {
-	opacity: 1;
-	top:19%;
-	left: 5%;
-	transform: scale(1.0);
-	-ms-transform :scale(1);
-	-webkit-transform: scale(1);
-	
-}
-
-
-#widget:hover #imac {
-	opacity: 1;
-	top:19%;
-	left:88%;
-	transform: scale(1.0);
-	-ms-transform :scale(1);
-	-webkit-transform: scale(1);
-	
-}*/
 
 
 /* Hover on Reciever */
