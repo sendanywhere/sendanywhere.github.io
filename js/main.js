@@ -33,12 +33,12 @@ $(document).ready(function() {
 	});
 
 
-	
+
 
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 500) {
+    if (scroll >= 650) {
         $(".navbar-default").addClass("scrolling");
     } else {
         $(".navbar-default").removeClass("scrolling");
