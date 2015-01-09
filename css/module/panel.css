@@ -25,7 +25,7 @@
 
 
 .card-top{
-	background-color: #223544;
+	background-color: #00bedd;
 	width:200px;
 	height:150px;
 	border-radius: 0;
@@ -34,19 +34,33 @@
 
 }
 
-.card-all{
-	background-color: #223544;
-	width:200px;
-	height:300px;
-}
 
 .card-bottom{
-	background-color: #223544;
+	background-color:#fe7260;
 	width:200px;
 	height:150px;
 	border-radius: 0;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
+}
+.dotted-bottom{
+	border:2px dotted #00bedd;
+	border-top: none;
+	width:200px;
+	height:150px;
+	border-radius: 0;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.dotted-top{
+	border:2px dotted #fe7260;
+	border-bottom: none;
+	width:200px;
+	height:150px;
+	border-radius: 0;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
 #send{
 	background-color: #223544;

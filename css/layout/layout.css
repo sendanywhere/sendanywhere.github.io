@@ -58,7 +58,7 @@ text-shadow: 0px 2px 4px rgba(0,180,211,0.9);
 
 }
 #product img{width:61.7703349%;}
-
+#product .row div{margin-bottom: 40px;}
 #press{
 	/*background-color: #9ED61A;*/
 	color: #333;

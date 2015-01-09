@@ -195,13 +195,15 @@ max-width: 100%;
 
 .api-bg{
 	/*background: url('../img/apibg.jpg') no-repeat top center;*/
-	background-color: #00bedd;
-	height: 300px;
-	padding-top:22px;
+	background-color:#223544;
+	padding:50px;
+	text-align: left;
+	font-size: 16px;
+
 }
 
-
-
+.api-bg p{margin:20px 0 30px 0;}
+.api-bg li{margin:10px 0;}
 .about-branding{
 	background: url('../img/contact.jpg') no-repeat center center;
 	background-size: cover;
