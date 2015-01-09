@@ -93,7 +93,8 @@ sup{font-size: 13px;top:-1.5em;}
 	background-color: #fff;
 	color:#333;
 }
-#faq,#contact,#about,#support{color:#333;}
+#faq,#contact,#about,#support,#team{color:#333;}
+#team h4{text-align: center;}
 .carousel-control{
 position: relative;
 width:100%;
