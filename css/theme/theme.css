@@ -16,8 +16,8 @@ body{background-color: #fefefe;}
 p{
 	color: #8c9398;
 word-spacing: 1px;
-line-height: 1.6em;
-font-size: 16px;
+line-height: 1.4em;
+font-size: 15px;
 }
 
 #testimony .carousel-inner{margin-bottom: 20px;}
@@ -190,13 +190,23 @@ border-bottom-left-radius: 0;
 	font-size:40px;
 }
 
+#press-bg .icon{
+	text-align: center;
+	padding-top: 94px;
+	color: #223544;
+	margin-bottom: 80px;
+}
 
 
+#press-bg .icon{font-size:100px;}
+#press-bg div,#press-bg .icon{text-align: center;}
+#press-list{color:#333;font-size: 18px;}
 
+#press-list li{margin-bottom: 50px;list-style: none;border-bottom: 1px dotted #999;
+padding-bottom: 50px;}
+#press-list img{width: 100px;}
 
+#press-list ul{margin-top: 50px}
 
-
-
-
-
+#press-bg .ribbon {margin-top: -7px;}
 

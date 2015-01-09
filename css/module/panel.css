@@ -151,7 +151,7 @@
 	/*visibility: hidden;*/
 }
 
-#download-btn{transition: background-color 0.3s ease;}
+/*#download-btn{transition: background-color 0.3s ease;}*/
 #download-btn:hover{background-color: #fe7260;border-color: #fe7260;}
 .hero a:hover{text-decoration: none;}
 /*
