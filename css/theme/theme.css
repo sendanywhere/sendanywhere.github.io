@@ -193,7 +193,7 @@ border-bottom-left-radius: 0;
 #press-bg .icon{
 	text-align: center;
 	padding-top: 94px;
-	color: #223544;
+	color: rgba(255,255,255,0.6);
 	margin-bottom: 80px;
 }
 
