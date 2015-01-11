@@ -221,3 +221,17 @@ padding-bottom: 50px;}
 }
 
 #usercase h5{font-size: 18px;}
+#usercase p{
+	color:#333;opacity: 0;
+	-webkit-transition: opacity 0.8s;
+	transition: opacity 0.8s;
+}
+#case1:hover p{opacity: 1;}
+#case2:hover p{opacity: 1;}
+#case3:hover p{opacity: 1;}
+#case4:hover p{opacity: 1;}
+
+
+
+
+
