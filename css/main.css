@@ -87,6 +87,15 @@ Theme defines color and images in this page
 
 }
 
+
+#usercase{
+	text-align:center;
+	background: url('../img/productbg.jpg') no-repeat top center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 500px;
+}
+
 #cloud{
   background: url("../img/cloud.png") repeat-x center;
 margin: 0 auto;

@@ -216,3 +216,8 @@ padding-bottom: 50px;}
 #press-divider{border-left:1px solid #e5e5e5;padding-left: 32px;}
 #press-bg .ribbon {margin-top: -7px;}
 
+#usercase{
+	color:#333;
+}
+
+#usercase h5{font-size: 18px;}
