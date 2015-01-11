@@ -73,12 +73,12 @@ Theme defines color and images in this page
 }
 
 .hero-product{
-	background-color: #00BEDD;
+	/*background-color: #00BEDD;*/
 	/*background-color: #223544;*/
 	/*width:100%;*/
 	padding:130px 0;
 	text-align:center;
-	/*background: url('../img/productbg.jpg') no-repeat top center;*/
+	background: url('../img/productbg.jpg') no-repeat top center;
 	background-size: cover;
 	background-attachment: fixed;
 	height: 800px;

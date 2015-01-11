@@ -1,6 +1,6 @@
 
 
-.cd-img-replace {
+.img-replace {
   /* replace text with background images */
   display: inline-block;
   overflow: hidden;
@@ -8,26 +8,26 @@
   white-space: nowrap;
 }
 
-.cd-product {
+.feature-product {
   text-align: center;
 }
 
-.cd-product-wrapper {
+.feature-product-wrapper {
   display: inline-block;
   position: relative;
   margin: 0 auto;
   /*width: 100%;*/
   max-width: 450px;
 }
-.cd-product-wrapper > img {
+.feature-product-wrapper > img {
   display: block;
 }
 
-.cd-single-point {
+.single-point {
   position: absolute;
   border-radius: 50%;
 }
-.cd-single-point > a {
+.single-point > a {
   position: relative;
   z-index: 2;
   display: block;
@@ -40,7 +40,7 @@
   -moz-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
-.cd-single-point > a::after, .cd-single-point > a:before {
+.single-point > a::after, .single-point > a:before {
   /* rotating plus icon */
   content: '';
   position: absolute;
@@ -61,15 +61,15 @@
   -moz-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
-.cd-single-point > a::after {
+.single-point > a::after {
   height: 2px;
   width: 12px;
 }
-.cd-single-point > a::before {
+.single-point > a::before {
   height: 12px;
   width: 2px;
 }
-.cd-single-point::after {
+.single-point::after {
   /* this is used to create the pulse animation */
   content: '';
   position: absolute;
@@ -84,37 +84,67 @@
   -moz-animation: cd-pulse 2s infinite;
   animation: cd-pulse 2s infinite;
 }
-.cd-single-point:nth-of-type(1) {
- bottom: 53%;
-right: 84%;
+.single-point:nth-of-type(1) {
+ bottom: 66%;
+right: 81%;
 }
-.cd-single-point:nth-of-type(2) {
+.single-point:nth-of-type(2) {
   bottom: 32%;
   right: 46%;
 }
-.cd-single-point:nth-of-type(3) {
+/*.single-point:nth-of-type(3) {
   top: 27%;
   left: 20%;
 }
-.cd-single-point:nth-of-type(4) {
+.single-point:nth-of-type(4) {
   top: 27%;
 right: 36%;
+}*/
+
+/*img2*/
+#img2 .single-point:nth-of-type(1) {
+ bottom: 73%;
+ right: 37%;
 }
-.cd-single-point.is-open > a {
+#img2 .single-point:nth-of-type(2) {
+ bottom: 56%;
+ right: 43%;
+}
+#img2 .single-point:nth-of-type(3) {
+  top: 33%;
+  left: 29%;
+}
+#img2 .single-point:nth-of-type(4) {
+  top: 27%;
+  right: 36%;
+}
+
+#img2 .icon{font-size:30px;margin-right: 20px;}
+
+
+/*img3*/
+#img3 .single-point:nth-of-type(1) {
+ bottom: 66%;
+right: 29%;
+}
+
+#img1 img,#img2 img,#img3 img{width: 90%;}
+
+.single-point.is-open > a {
   background-color: #475f74;
 }
-.cd-single-point.is-open > a::after, .cd-single-point.is-open > a::before {
+.single-point.is-open > a::after, .single-point.is-open > a::before {
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(135deg);
   -moz-transform: translateX(-50%) translateY(-50%) rotate(135deg);
   -ms-transform: translateX(-50%) translateY(-50%) rotate(135deg);
   -o-transform: translateX(-50%) translateY(-50%) rotate(135deg);
   transform: translateX(-50%) translateY(-50%) rotate(135deg);
 }
-.cd-single-point.is-open::after {
+.single-point.is-open::after {
   /* remove pulse effect */
   display: none;
 }
-.cd-single-point.is-open .cd-more-info {
+.single-point.is-open .cd-more-info {
   visibility: visible;
   opacity: 1;
   -webkit-transform: scale(1);
@@ -126,24 +156,24 @@ right: 36%;
   -moz-transition: opacity 0.3s 0s, visibility 0s 0s, -moz-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
   transition: opacity 0.3s 0s, visibility 0s 0s, transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
 }
-.cd-single-point.visited > a {
+.single-point.visited > a {
   background-color: #475f74;
 }
-.cd-single-point.visited::after {
+.single-point.visited::after {
   /* pulse effect no more active on visited elements */
   display: none;
 }
 @media only screen and (min-width: 600px) {
-  .cd-single-point.is-open .cd-more-info.cd-left {
+  .single-point.is-open .cd-more-info.cd-left {
     right: 140%;
   }
-  .cd-single-point.is-open .cd-more-info.cd-right {
+  .single-point.is-open .cd-more-info.cd-right {
     left: 140%;
   }
-  .cd-single-point.is-open .cd-more-info.cd-top {
+  .single-point.is-open .cd-more-info.cd-top {
     bottom: 140%;
   }
-  .cd-single-point.is-open .cd-more-info.cd-bottom {
+  .single-point.is-open .cd-more-info.cd-bottom {
     top: 140%;
   }
 }
@@ -195,7 +225,7 @@ right: 36%;
     box-shadow: inset 0 0 1px 1px rgba(217, 83, 83, 0);
   }
 }
-.cd-single-point .cd-more-info {
+.single-point .cd-more-info {
   position: fixed;
   top: 0;
   left: 0;
@@ -219,7 +249,7 @@ right: 36%;
   -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s, -moz-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
   transition: opacity 0.3s 0s, visibility 0s 0.3s, transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
 }
-.cd-single-point .cd-more-info::before {
+.single-point .cd-more-info::before {
   /* triangle next to the interest point description - hidden on mobile */
   content: '';
   position: absolute;
@@ -228,16 +258,16 @@ right: 36%;
   display: none;
   border: 8px solid transparent;
 }
-.cd-single-point .cd-more-info h2 {
+.single-point .cd-more-info h2 {
   font-size: 22px;
   /*font-size: 1.375rem;*/
   margin-bottom: .6em;
 }
-.cd-single-point .cd-more-info p {
+.single-point .cd-more-info p {
   color: #758eb1;
 }
 @media only screen and (min-width: 600px) {
-  .cd-single-point .cd-more-info {
+  .single-point .cd-more-info {
     position: absolute;
     width: 220px;
     height: 240px;
@@ -247,10 +277,10 @@ right: 36%;
     border-radius: 0.25em;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   }
-  .cd-single-point .cd-more-info::before {
+  .single-point .cd-more-info::before {
     display: block;
   }
-  .cd-single-point .cd-more-info.cd-left, .cd-single-point .cd-more-info.cd-right {
+  .single-point .cd-more-info.cd-left, .single-point .cd-more-info.cd-right {
     top: 50%;
     bottom: auto;
     -webkit-transform: translateY(-50%);
@@ -259,7 +289,7 @@ right: 36%;
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-  .cd-single-point .cd-more-info.cd-left::before, .cd-single-point .cd-more-info.cd-right::before {
+  .single-point .cd-more-info.cd-left::before, .single-point .cd-more-info.cd-right::before {
     top: 50%;
     bottom: auto;
     -webkit-transform: translateY(-50%);
@@ -268,22 +298,22 @@ right: 36%;
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-  .cd-single-point .cd-more-info.cd-left {
+  .single-point .cd-more-info.cd-left {
     right: 160%;
     left: auto;
   }
-  .cd-single-point .cd-more-info.cd-left::before {
+  .single-point .cd-more-info.cd-left::before {
     border-left-color: rgba(255, 255, 255, 0.95);
     left: 100%;
   }
-  .cd-single-point .cd-more-info.cd-right {
+  .single-point .cd-more-info.cd-right {
     left: 160%;
   }
-  .cd-single-point .cd-more-info.cd-right::before {
+  .single-point .cd-more-info.cd-right::before {
     border-right-color: rgba(255, 255, 255, 0.95);
     right: 100%;
   }
-  .cd-single-point .cd-more-info.cd-top, .cd-single-point .cd-more-info.cd-bottom {
+  .single-point .cd-more-info.cd-top, .single-point .cd-more-info.cd-bottom {
     left: 50%;
     right: auto;
     -webkit-transform: translateX(-50%);
@@ -292,7 +322,7 @@ right: 36%;
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-  .cd-single-point .cd-more-info.cd-top::before, .cd-single-point .cd-more-info.cd-bottom::before {
+  .single-point .cd-more-info.cd-top::before, .single-point .cd-more-info.cd-bottom::before {
     left: 50%;
     right: auto;
     -webkit-transform: translateX(-50%);
@@ -301,27 +331,27 @@ right: 36%;
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-  .cd-single-point .cd-more-info.cd-top {
+  .single-point .cd-more-info.cd-top {
     bottom: 160%;
     top: auto;
   }
-  .cd-single-point .cd-more-info.cd-top::before {
+  .single-point .cd-more-info.cd-top::before {
     border-top-color: rgba(255, 255, 255, 0.95);
     top: 100%;
   }
-  .cd-single-point .cd-more-info.cd-bottom {
+  .single-point .cd-more-info.cd-bottom {
     top: 160%;
   }
-  .cd-single-point .cd-more-info.cd-bottom::before {
+  .single-point .cd-more-info.cd-bottom::before {
     border-bottom-color: rgba(255, 255, 255, 0.95);
     bottom: 100%;
   }
-  .cd-single-point .cd-more-info h2 {
+  .single-point .cd-more-info h2 {
     font-size: 20px;
     /*font-size: 1.25rem;*/
     margin-bottom: 0;
   }
-  .cd-single-point .cd-more-info p {
+  .single-point .cd-more-info p {
     font-size: 14px;
     /*font-size: 0.875rem;*/
   }
