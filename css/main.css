@@ -78,7 +78,7 @@ Theme defines color and images in this page
 	/*width:100%;*/
 	padding:130px 0;
 	text-align:center;
-	background: url('../img/productbg.jpg') no-repeat top center;
+	background: url('../img/herobg.jpg') no-repeat top center;
 	background-size: cover;
 	background-attachment: fixed;
 	height: 800px;
@@ -90,10 +90,11 @@ Theme defines color and images in this page
 
 #usercase{
 	text-align:center;
-	background: url('../img/productbg.jpg') no-repeat top center;
+	background: url('../img/herobg.jpg') no-repeat top center;
 	background-size: cover;
 	background-attachment: fixed;
-	height: 500px;
+	height: 400px;
+	padding: 40px;
 }
 
 #cloud{
