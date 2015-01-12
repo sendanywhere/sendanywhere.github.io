@@ -90,6 +90,26 @@ Theme defines color and images in this page
 }
 
 
+#download{
+	/*background-color: #355087;*/
+	padding:102px 0;
+	text-align:center;
+	background: url('../img/hero.jpg') no-repeat top center;
+	background-size: cover;
+	background-attachment: fixed;
+	/*height: 500px;*/
+	color:#333;
+	/*background-color: #9ED61A;
+	color: white;
+	list-style: none;*/
+	/*border-top: 1px solid rgba(0,0,0,0.1);
+	border-bottom: 1px solid rgba(0,0,0,0.1);*/
+	/*margin-top:120px;*/
+	border-bottom: 1px solid #e5e5e5;
+}
+
+
+
 #usercase{
 	text-align:center;
 	background: url('../img/herobg.jpg') no-repeat top center;

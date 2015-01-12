@@ -30,3 +30,9 @@ visibility: visible;
 	background-color: #fe7260;
 }
 
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  background-color: #00bedd;
+}
+
