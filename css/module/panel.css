@@ -12,6 +12,9 @@
 
 	border-radius: 10px;
 	margin: 0 10px 30px 10px;
+	-webkit-box-shadow: 0 6px 10px -6px #333;
+	   -moz-box-shadow: 0 6px 10px -6px #333;
+	        box-shadow: 0 6px 10px -6px #333;
 }
 .card{
 	height:460px;
