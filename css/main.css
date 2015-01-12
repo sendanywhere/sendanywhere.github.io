@@ -41,6 +41,8 @@ Theme defines color and images in this page
 @import url('module/offnav.css');
 @import url('module/card.css');
 @import url('module/pointcircle.css');
+@import url('module/sidetab.css');
+
 /*** State css ****/
 @import url('state/progress.css');
 @import url('state/state.css');
@@ -93,7 +95,7 @@ Theme defines color and images in this page
 	background: url('../img/herobg.jpg') no-repeat top center;
 	background-size: cover;
 	background-attachment: fixed;
-	height: 400px;
+	height: 500px;
 	padding: 40px;
 }
 
@@ -147,6 +149,8 @@ max-width: 100%;
 	/*margin: 0 auto;*/
 	padding-bottom: 86px;
 }
+
+#platform .icon{padding: 13px;color:white;}
 
 #widget:hover #music {
 	opacity: 1;
