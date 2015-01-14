@@ -129,7 +129,7 @@ right: 29%;
 }
 
 #img1 img,#img2 img,#img3 img{width: 90%;}
-
+#img1 div:nth-child(2),#img2 div:nth-child(2),#img3 div:nth-child(2){margin-top: 85px;}
 .single-point.is-open > a {
   background-color: #475f74;
 }

@@ -328,7 +328,7 @@
 
                 <div class="row">
                 <div class="col-md-2 col-md-offset-5 col-xs-6 col-xs-offset-3">
-                    <a href="down.html"><button type="button" class="btn btn-success btn-lg btn-block" id="download-btn" ><span>Download</span></button></a>
+                    <button type="button" class="btn btn-success btn-lg btn-block" id="download-btn" data-toggle="modal" data-target="#push">Push Alert</button>
 
                      <!-- <div id="st-trigger-effects" class="column">
                                 <button data-effect="st-effect-1">Slide in on top</button>
@@ -344,19 +344,26 @@
 
 
           </div><!--container-->
-         <!--  <div class="bottom-arrow blue"></div> -->
-        <!--hero-->
 
-<!-- 
-        <div class="panel-view" id="benefit">
-            <div class="container">
-                <div class="row">
-                    <section class="col-md-12 col-xs-12">
-                        <img src="img/cloud.png"/>
-                    </section>
-                </div>
-            </div>
-        </div> -->
+
+<!-- Modal -->
+<div class="modal fade" id="push" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Receive File</h4>
+      </div>
+      <div class="modal-body text-center">
+        <h3>738293</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
