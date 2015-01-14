@@ -111,7 +111,7 @@
 
 #social-btn span{margin-left:46px;}
 
-.overlay-card{
+.overlay-card,.droplist{
 	/*background-color: rgba(255,255,255,0.9);*/
 	background-color: #00bedd;
 	/*border-bottom-right-radius: 10px;*/

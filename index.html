@@ -18,6 +18,37 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <link rel="stylesheet" type="text/css" href="transition.css" />
         <script src="transition.js"></script>
+        <style>
+
+        /* Essential FileDrop zone element configuration: */
+    .fd-zone {
+      position: relative;
+      overflow: hidden;
+      /* The following are not required but create a pretty box: */
+      width: 15em;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    /* Hides <input type="file"> while simulating "Browse" button: */
+    .fd-file {
+      opacity: 0;
+      font-size: 118px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+      filter: alpha(opacity=0);
+      font-family: sans-serif;
+    }
+
+    /* Provides visible feedback when use drags a file over the drop zone: */
+    .fd-zone.over { border-color: maroon; background: #eee; }
+
+    </style>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -56,9 +87,10 @@
                                     <h3 style="font-weight:normal;font-size:21px;text-align:left;"><span style="margin-right:36px">Send your files</span>
                                         
                                     </h3>
-                                     <div id="dragzone">
+                                     <div id="dropzone">
                                         <p>Click here or Drag & Drop to send files</p>
                                     </div>
+                                    
                                     <span class="right carousel-control" href="#send" role="button" data-slide="next">
 
                                         <button type="submit" class="btn btn-primary btn-animation icon-paperplane right carousel-control" href="#send" role="button" data-slide="next"><span>Send</span></button>
@@ -107,6 +139,31 @@
                                     </div>
                                 </div> -->
                             </div>
+
+
+                               <div class="droplist hidden">
+                                        <div id="device">
+                                            <ul>
+                                                <a href="#">
+                                                    <li>
+                                                        <div class="right carousel-control" href="#send" role="button" data-slide="next"><span class="icon-laptop"></span>David's iphone</div>
+                                                    </li>
+                                                </a>
+                                                <a href="#"><li><span class="icon-laptop"></span>David's iphone2</li></a>
+                                                <a href="#"><li><span class="icon-laptop"></span>David's iphone3</li></a>
+                                                <a href="#"><li><span class="icon-laptop"></span>David's iphone4</li></a>
+                                                <a href="#"><li><span class="icon-laptop"></span>David's iphone5</li></a>
+                                                <a href="#"><li><span class="icon-laptop"></span>David's iphone6</li></a>
+                                                <a href="#"><li><span class="icon-laptop"></span>David's iphone7</li></a>
+                                                <a href="#"><li><span class="icon-laptop"></span>David's iphone8</li></a>
+                                                <a href="#"><li><span class="icon-laptop"></span>David's iphone9</li></a>
+                                                <a href="#"><li><span class="icon-laptop"></span>David's iphone10</li></a>
+                                            </ul>
+                                        </div>
+                                        <a href="#"><div class="icon-cancel-circle" id="close-btn"></div></a>
+                                    </div>
+
+
 
                             <div class="overlay-card hidden">
                                         <div id="device">
@@ -626,7 +683,8 @@
         <script src="js/carousel.js"></script>
         <script src="js/animated-text.js"></script>
         <script src="js/snap.svg-min.js"></script>
-        <script src="js/table.js"></script>
+        <script type="text/javascript" src="js/filedrop.js"></script>
+
         <script type="text/javascript">$('#receive').carousel({
             interval: 0
         });</script>
@@ -666,6 +724,62 @@
         });
 
 </script>
+
+
+<script type="text/javascript">
+      // Tell FileDrop we can deal with iframe uploads using this URL:
+      var options = {iframe: {url: 'upload.php'}};
+      // Attach FileDrop to an area ('zone' is an ID but you can also give a DOM node):
+      var zone = new FileDrop('dropzone', options);
+
+      // Do something when a user chooses or drops a file:
+      zone.event('send', function (files) {
+        // Depending on browser support files (FileList) might contain multiple items.
+        files.each(function (file) {
+          // React on successful AJAX upload:
+          file.event('done', function (xhr) {
+            // 'this' here points to fd.File instance that has triggered the event.
+            alert('Done uploading ' + this.name + ', response:\n\n' + xhr.responseText);
+          });
+
+          // Send the file:
+          file.sendTo('upload.php');
+        });
+      });
+
+      // React on successful iframe fallback upload (this is separate mechanism
+      // from proper AJAX upload hence another handler):
+      zone.event('iframeDone', function (xhr) {
+        alert('Done uploading via <iframe>, response:\n\n' + xhr.responseText);
+      });
+
+      // A bit of sugar - toggling multiple selection:
+      fd.addEvent(fd.byID('multiple'), 'change', function (e) {
+        zone.multiple(e.currentTarget || e.srcElement.checked);
+      });
+
+      zone.event('send', function (files) {
+
+                $( ".droplist" ).removeClass( "hidden" );
+                $( "#close-btn" ).click(function() {
+                $( ".droplist" ).addClass( "hidden" );
+                
+            });
+           
+
+          // alert('Dropped files: ' + files.length + '\n' +
+          //       'First file: ' + files.first().name + '\n' +
+          //       'File recently changed: ' + files.newest().name + '\n' +
+          //       'Biggest file: ' + files.largest().name + '\n' +
+          //       'Number of images: ' + files.images().length + '\n' +
+          //       'Files starting with "A": ' + files.named(/^a/i).length)
+
+          files.sortBy(function (f) { return f.size })
+          files.reverse()
+        });
+    </script>
+
+
 
      <script>
         $(window).scroll(function() {    

@@ -38,7 +38,7 @@ ID(일부페이지 특정 레이아웃에 사용된 css모듈)
 
 }
 
-#dragzone{padding:10px;border:2px dotted #446987;border-radius: 10px;margin-bottom: 20px;}
+#dropzone{padding:10px;border:2px dotted #446987;border-radius: 10px;margin-bottom: 20px;}
 #benefit,#downtab{
 	text-align: center;
 	color:#333;
