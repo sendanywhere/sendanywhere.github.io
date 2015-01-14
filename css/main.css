@@ -42,6 +42,7 @@ Theme defines color and images in this page
 @import url('module/card.css');
 @import url('module/pointcircle.css');
 @import url('module/sidetab.css');
+@import url('module/popup.css');
 
 /*** State css ****/
 @import url('state/progress.css');
