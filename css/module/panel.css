@@ -80,10 +80,49 @@
 
 #secure-code{
 	font-size: 26px;
-	padding: 0 38px;
+	/*padding: 0 38px;*/
 	margin:18px 0;
 }
-#secure-code span{float:left;margin-right: 15px;color: white;}
+#secure-code a{float:left;margin-right: 30px;color: white;}
+#secure-code p{
+	text-align: center;
+	color: white;
+	position: absolute;
+	opacity:0;
+	font-size:14px;
+	
+}
+
+#secure-code p{
+	top: 28px;
+	left: 16px;
+}
+
+
+#secure-code p{
+	top: 28px;
+	left: 13px;
+}
+
+#secure-code p{
+	top: 28px;
+	left: 6px;
+}
+
+#secure-code div:nth-child(1) div{
+	opacity:1;
+}
+
+
+#secure-code div:nth-child(2) div{
+	opacity:1;
+}
+
+#secure-code div:nth-child(3) div{
+	opacity:1;
+}
+
+
 #receive{
 	/*border-top: 1px solid white;*/
 	/*background-color: #ecf0f1;*/

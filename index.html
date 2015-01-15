@@ -124,9 +124,9 @@
                                         <h3 style="font-weight:normal;font-size:20px;line-height:26px;">Share 6 digit code</h3>
                                         <h3 style="color:#00bedd">673293</h3>
                                         <div class="col-md-12" id="secure-code"> 
-                                            <a href="#"><span class="icon-qrcode"></span></a>
-                                            <a href="#"><span class="icon-link"></span></a>
-                                            <a href="#"><span class="icon-laptop" id="nearDevice"></span></a>
+                                            <div class="col-md-4"><a href="#"><div class="icon-qrcode"></div></a><p>QR</p></div>
+                                            <div class="col-md-4"><a href="#"><div class="icon-link"></div></a><p>URL</p></div>
+                                            <div class="col-md-4"><a href="#"><div class="icon-laptop" id="nearDevice"></div></a><p>Device</p></div>
                                         </div>
                                     </div>
                                 </div>
@@ -760,19 +760,19 @@
 
       zone.event('send', function (files) {
 
-                $( ".droplist" ).removeClass( "hidden" );
+                $( ".droplist" ).removeClass( "hidden animated fadeInDown" );
                 $( "#close-btn" ).click(function() {
-                $( ".droplist" ).addClass( "hidden" );
+                $( ".droplist" ).addClass( "hidden animated fadeInDown" );
                 
             });
            
 
-          // alert('Dropped files: ' + files.length + '\n' +
-          //       'First file: ' + files.first().name + '\n' +
-          //       'File recently changed: ' + files.newest().name + '\n' +
-          //       'Biggest file: ' + files.largest().name + '\n' +
-          //       'Number of images: ' + files.images().length + '\n' +
-          //       'Files starting with "A": ' + files.named(/^a/i).length)
+          alert('Dropped files: ' + files.length + '\n' +
+                'First file: ' + files.first().name + '\n' +
+                'File recently changed: ' + files.newest().name + '\n' +
+                'Biggest file: ' + files.largest().name + '\n' +
+                'Number of images: ' + files.images().length + '\n' +
+                'Files starting with "A": ' + files.named(/^a/i).length)
 
           files.sortBy(function (f) { return f.size })
           files.reverse()
