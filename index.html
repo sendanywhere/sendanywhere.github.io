@@ -78,8 +78,14 @@
                                 <div class="row">
                                     <h3 style="font-weight:normal;font-size:18px;text-align:left;">
                                         <span style="margin-right:76px;">Send your files</span>
-                                        <span class="badge">14</span>
+                                        <span class="badge" id="alert-trigger">14</span>
+
                                     </h3>
+                                    <div class="alert alert-warning alert-dismissible hidden" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                        </button>
+                                        Web widget max. file size 200MB. Try our desktop version. It's unlimited and FREE! 
+                                    </div>
 
                                      <div id="dropzone">
                                         <p>Click here or Drag & Drop to send files</p>
@@ -115,7 +121,7 @@
                             <div class="item">
                                 <div class="row">
                                     <div class="col-md-12 text-center" style="margin-bottom:10px;">
-                                        <h3 style="font-weight:normal;font-size:20px;line-height:26px;">Share 6 digit code</h3>
+                                        <h3 style="font-weight:normal;font-size:18px;line-height:26px;">Share 6 digit code</h3>
                                         <h3 style="color:#00bedd">673293</h3>
                                         <div class="col-md-12" id="secure-code"> 
                                             <div class="col-md-4"><a href="#"><div class="icon-qrcode"></div></a><p>QR</p></div>
@@ -185,7 +191,7 @@
                             <!-- item 4 -->
                              <div class="item">
                                 <div class="row">
-                                    <h3 style="font-weight:100;text-align:left;">Sending...</h3>
+                                    <h3 style="font-weight:100;text-align:left;font-size:18px;">Sending...</h3>
                                     <div class="progress">
 
                                       <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
@@ -237,7 +243,10 @@
                                     <form role="form">
                                         <div class="form-group">
                                             <div id="devicetag">
-                                                <span id="editable"><span class="icon-laptop"></span> Cepheus</span><span class="icon-pencil" role="button" style="margin-left:20px" id="edit-btn"></span>
+                                                <span id="editable">
+                                                    <span class="icon-laptop"></span>Cepheus
+                                                    <span class="icon-pencil" role="button" style="margin-left:20px" id="edit-btn"></span>
+                                                </span>
                                             </div>
 
                                             <input type="email" class="form-control" id="deviceName" placeholder="6 Digit code">
@@ -722,6 +731,11 @@
                     $( "#editable" ).attr("contenteditable","true");
                     
                 });
+            $( "#alert-trigger" ).click(function() {
+                $( ".alert" ).toggleClass( "hidden" );
+                
+            });
+
         });
 
 </script>
