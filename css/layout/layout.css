@@ -1,48 +1,37 @@
-/*********** Layout ************/
-/* 이 파일은 전반적인 웹페이지의 레이아웃을 담당하는 css 모듈입니다. 
+/*********** Layout ************
 
-
+이 파일은 전반적인 웹페이지의 레이아웃을 담당하는 css 모듈입니다. 
 클래스(모든 페이지에 두루 사용된 css모듈)
 
-Home 랜딩페이
-.hero : 모든 웹페이지의 가장 윗쪽에 해당되며 페이지를 오픈했을때 처음으로 사용자들이 대면하는 곳입니다.
 
 
+/******** 브랜딩 색깔 ********
 
+#00bedd
+#223544 navy
+#3550877 sea blue
+#fe7260 orange
+#9ED61A green
+#4F87FF blue
+#e5e5e5 light white gray
+#5c5c5c dark gray
 
-
-ID(일부페이지 특정 레이아웃에 사용된 css모듈)
-
-
-
-
-
-
-
-
-
-*/
+************************************/
 
 .hero h2{
-	/*margin-bottom:100px;*/
 	color:#ffffff; 
-	/*font-weight: 100;*/
 	font-size: 29px;
 	letter-spacing: 3px;
-	/*text-transform: uppercase;*/
 	line-height: 1.5em; 
-	/*text-shadow: 0px 1px 7px #028CA3;*/
 	color: #FFFFFF;
 	line-height: 50px;
 	text-shadow: 0px 2px 4px rgba(0,180,211,0.9);
-
 }
 
 #dropzone{padding:10px;border:2px dotted #446987;border-radius: 10px;margin-bottom: 20px;}
 #benefit,#downtab{
 	text-align: center;
 	color:#333;
-	/*border-bottom:1px solid #e5e5e5;*/
 }
 
 #downtab span{font-size: 30px;}
@@ -54,83 +43,48 @@ ID(일부페이지 특정 레이아웃에 사용된 css모듈)
 	margin:0 auto;
 }
 
-/*#benefit p{
-	text-align: left;
-}*/
 
-#product img,#multi-device img{
-	width: 80%;
-	/*margin: 0 auto;*/
-}
 
-#howitworks{
-	/*border-top: 1px solid rgba(0,0,0,0.1);*/
-	border-bottom: 1px solid rgba(0,0,0,0.1);
-}
 
+#product{text-align: center;color: #333;}
+#product img{width:61.7703349%;}
+#product .row div{margin-bottom: 40px;}
+#product img,#multi-device img{width: 80%;}
+
+
+#howitworks{border-bottom: 1px solid rgba(0,0,0,0.1);}
 #howitworks img{width:60%;}
 
 
-#product{
-	text-align: center;
-	color: #333;
-
-}
-#product img{width:61.7703349%;}
-#product .row div{margin-bottom: 40px;}
 #press{
-	/*background-color: #9ED61A;*/
 	color: #333;
 	list-style: none;
 	border-top:1px solid #e5e5e5;
 }
-#press img{지
-	width:60px;
-}
+
+#press img{width:60px;}
 
 
-.about-img h3{
-	margin-top:123px;
-}
-
-.section-spacing{
-	margin-bottom:50px;
-}
+.about-img h3{margin-top:123px;}
 
 
-#platform{
-	font-size: 23px ;
-	margin-top: 40px;
-/*
-	 -moz-box-shadow:    inset 0 0 2px #028CA3;
-   -webkit-box-shadow: inset 0 0 2px #028CA3;
-   box-shadow:         inset 0 0 2px #028CA3;*/
-}
+
+
+#platform{font-size:23px;}
 
 
 #api{
-	/*background-color: #355087;*/
 	padding:82px 0;
 	text-align:center;
-	/*background: url('../img/hero.jpg') no-repeat top center;*/
 	background-size: cover;
 	background-attachment: fixed;
-	/*height: 600px;*/
-color:#333;
-	/*background-color: #9ED61A;
-	color: white;
-	list-style: none;*/
-	/*border-top: 1px solid rgba(0,0,0,0.1);
-	border-bottom: 1px solid rgba(0,0,0,0.1);*/
+	color:#333;
 }
 
-/*#user div:first-child{margin-bottom: 30px;}*/
 #testimony{
-	/*background-color: #222;*/
-	/*border: 4px dotted #333;*/
-border-radius: 10px;
-padding:20px;
-color:#333;
+	border-radius: 10px;
+	padding:20px;
+	color:#333;
 }
 #testimony p{
 	font-size:20px;
@@ -140,76 +94,44 @@ color:#333;
 	color:#5c5c5c;
 }
 #user{background-color: #fff;color:#333;}
-#uer h4{color: #333;}
+#user h4{color: #333;}
 
-/*#company-info li{float: left; margin-right: 10px;}*/
 
-footer ul{margin-bottom:50px;}
 
-footer {
-  /*position: absolute;*/
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height:400px;
-  background-color: #2c3e50;
-}
-
-footer a { color: #fff;}
-footer li{margin-bottom: 5px;}
-footer a:hover{color:rgb(0,190,221);text-decoration: none;}
-footer { background-color: #242830; padding: 40px 0 30px; }
-footer p { color: #fff; }
 ul.legals { list-style: none; color: #fff; line-height: 25px; }
 ul.legals li { display: inline-block; }
 ul.legals li::after { content: " |"; }
 ul.legals li:last-child::after { content: ""; }
-.legals { text-align: left; }
-.credit { text-align: right; }
-
-figure{
-	webkit-background-size: 47px 47px;
--moz-background-size: 47px 47px;
-width: 47px;
-height: 47px;
-text-indent: -1000px;
-overflow: hidden;
-background-repeat: no-repeat;
-position: absolute;
-top: 20%;
-left: 43%;
-z-index: 100;
--webkit-transition: top .7s,left .7s;
--moz-transition: top .7s,left .7s;
--o-transition: top .7s,left .7s;
--ms-transition: top .7s,left .7s;
-transition: top .7s,left .7s;
-transition-timing-function: ease;
-opacity: 0.2;
--ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-filter: alpha(opacity=0);
-}
+.legals {text-align: left;}
+.credit {text-align: right;}
 
 
-	
 .item{padding:10px 50px;height:250px;}
-
-.space-top20{
-	margin-top: 20px;
-}
-.space-bot40{
-	margin-bottom: 40px;
-}
-
-.space-bot30{
-	margin-bottom: 30px;
-}
-
 .item img{margin: 0 auto;}
 
 
-/*#send .item:first-child,#receive .item:first-child{padding-top: 82px;}*/
-/*#receive .item:nth-child(2){padding-top: 52px;}*/
 
 #menu-1{position: fixed;}
+
+
+
+
+footer {
+  bottom: 0;
+  width: 100%;
+  height:400px;
+}
+footer ul{margin-bottom:50px;}
+
+footer li{margin-bottom: 5px;}
+footer a:hover{color:rgb(0,190,221);text-decoration: none;}
+footer { background-color: #242830; padding: 40px 0 30px; }
+footer p { color: #fff; }
+	
+
+/**** Spacing *****/
+.space-top20{margin-top:20px;}
+.space-bot40{margin-bottom:40px;}
+.space-bot30{margin-bottom:30px;}
+.section-spacing{margin-bottom:50px;}
 

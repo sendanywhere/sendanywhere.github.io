@@ -26,7 +26,6 @@ Theme defines color and images in this page
 /*** Layout css ****/
 @import url('layout/layout.css');
 @import url('layout/media.css');
-@import url('layout/parallax.css');
 
 
 
@@ -36,20 +35,14 @@ Theme defines color and images in this page
 @import url('module/shape.css');
 @import url('module/carousel.css');
 @import url('module/table.css');
-@import url('module/user.css');
-@import url('module/tabbed.css');
 @import url('module/offnav.css');
 @import url('module/card.css');
-@import url('module/pointcircle.css');
-@import url('module/sidetab.css');
+@import url('module/category-box.css');
 @import url('module/popup.css');
 
 /*** State css ****/
-@import url('state/progress.css');
 @import url('state/state.css');
 @import url('state/animated.css');
-@import url('state/animated-text.css');
-@import url('state/transition.css');
 /*** theme css ****/
 @import url('theme/nav_theme.css');
 @import url('theme/theme.css');
@@ -57,55 +50,35 @@ Theme defines color and images in this page
 
 
 
-/*body{font-family: 'ff-netto' Sans-serif;}
-*/
+
 
 .hero{
 	background-color: #00BEDD;
-	/*background-color: #223544;*/
-	/*width:100%;*/
 	padding:192px 0;
 	text-align:center;
 	background: url('../img/heroplane.jpg') no-repeat top center;
 	background-size: cover;
 	background-attachment: fixed;
 	height: 700px;
-	/*padding-top: 242px;*/
-
-
 }
 
 .hero-product{
-	/*background-color: #00BEDD;*/
-	/*background-color: #223544;*/
-	/*width:100%;*/
 	padding:130px 0;
 	text-align:center;
 	background: url('../img/productbg.jpg') no-repeat top center;
 	background-size: cover;
 	background-attachment: fixed;
 	height: 800px;
-	/*padding-top: 242px;*/
-
-
 }
 
 
 #download{
-	/*background-color: #355087;*/
 	padding:102px 0;
 	text-align:center;
 	background: url('../img/hero.jpg') no-repeat top center;
 	background-size: cover;
 	background-attachment: fixed;
-	/*height: 500px;*/
 	color:#333;
-	/*background-color: #9ED61A;
-	color: white;
-	list-style: none;*/
-	/*border-top: 1px solid rgba(0,0,0,0.1);
-	border-bottom: 1px solid rgba(0,0,0,0.1);*/
-	/*margin-top:120px;*/
 	border-bottom: 1px solid #e5e5e5;
 }
 
@@ -134,87 +107,15 @@ max-width: 100%;
 
 
 
-/* Hover on Reciever */
-
-#music{
-	top:125%;
-	top:-23%;
-	background-image:url('../img/music.png');
-	transform: scale(0.2);
-	-ms-transform :scale(0.2);
-	-webkit-transform: scale(0.2);
-
-}
-#play{
-	left:-54%;
-	top: 33%;
-	background-image:url('../img/play.png');
-	transform: scale(0.2);
-	-ms-transform :scale(0.2);
-	-webkit-transform: scale(0.2);
-
-}
-#video{
-	left:100%;
-	top:50%;
-	background-image:url('../img/video.png');
-	transform: scale(0.2);
-	-ms-transform :scale(0.2);
-	-webkit-transform: scale(0.2);
-
-}
-
 
 #platform{
-	/*width: 900px;*/
-	/*margin: 0 auto;*/
 	padding-bottom: 86px;
 }
 
 #platform .icon{padding: 13px;color:white;}
 
-#widget:hover #music {
-	opacity: 1;
-	top:19%;
-	left:118%;
-	transform: scale(0.7);
-	-ms-transform :scale(0.7);
-	-webkit-transform: scale(0.7);
-	
-}
 
-
-#widget:hover #video {
-	opacity: 1;
-	top:19%;
-	left:98%;
-	transform: scale(0.7);
-	-ms-transform :scale(0.7);
-	-webkit-transform: scale(0.7);
-	
-}
-/**/
-
-#widget:hover #play {
-	opacity: 1;
-	top:19%;
-	left:108%;
-	transform: scale(0.7);
-	-ms-transform :scale(0.7);
-	-webkit-transform: scale(0.7);
-	
-}
-
-#receive-hover h4{
-	opacity:0.1;
-	/*position: absolute;
-	top: 10%;
-	left: 67%;
-	width: 100%;*/
-}
-#widget:hover #receive-hover h4{opacity: 1; color:white;}
 .product-img{
-	/*background: url('../img/hero2.jpg') no-repeat center center;*/
 	background-color: #00bedd;
 	background-size: cover;
 	height: 600px;
@@ -229,7 +130,6 @@ max-width: 100%;
 
 
 .api-bg{
-	/*background: url('../img/apibg.jpg') no-repeat top center;*/
 	background-color:#223544;
 	padding:50px;
 	text-align: left;
@@ -275,69 +175,6 @@ max-width: 100%;
 	margin-top: 20px; 
 	letter-spacing: 4px;
 }
-
-@import url('layout/media.css');
-
-
-@font-face {
-  font-family: 'NettoOT';
-  src: url('NettoOT.otf'); /* IE9 Compat Modes */
-  
-}
-
-
-@font-face {
-    font-family: 'NettoOT';
-    src: url('font/NettoOT.otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* 320px (iPhone) */
-@media screen and (max-width:320px) {
-	footer{height: 1000px;}
-
-}
-/* 480px (WVGA - Low End Windows Phone) */
-@media screen and (max-width:480px) {
-	footer{height: 900px;}
-	/*.wrapper { background: #f3f5f8; height: 640px; }
-	.iphone { display: none; }
-	.fluid-white { display: none; }
-	.wp2, .wp4, .wp5, .light-box { margin-bottom: 30px; }
-	.legals { text-align: center; margin: 0; padding: 0; }
-	.credit { text-align: center; }*/
-}
-/* xGA iPad */
-@media screen and (max-width:1024px) {
-	/*.wp3 { background-position: 50px 0; }*/
-	/*.swag { background-attachment: scroll; }*/
-	.branding { background-attachment: scroll;line-height: 1.23em; }
-	.container-sm{width:600px;}
-	
-}
-/* 1200px (Small Desktop, Netbook) */
-@media screen and (max-width:1280px) {
-	/*.wp3 { background-position: 50px 0; }*/
-	#cloud{
-  background: url("../img/cloudmid.png") no-repeat center;
-}
-}
-/* Bootstrap 990px Breakpoint to 480px */
-@media screen and (min-width:480px) and (max-width:991px) {
-
-	/*.iphone { display: none; }
-	.fluid-white { display: none; }
-	.wrapper { background: #f3f5f8; height: 540px; }
-	.wp2, .wp4, .wp5, .light-box { margin-bottom: 30px; }
-	.legals { text-align: center; margin: 0; padding: 0; }
-	.credit { text-align: center; }*/
-}
-
-@media screen and (min-width: 768px){
-	.carousel-indicators {bottom: -49px;}
-}
-
 
 
 

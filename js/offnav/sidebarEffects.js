@@ -23,15 +23,15 @@
 
 	function init() {
 
-		var container = document.getElementById( 'st-container' ),
+		var container = document.getElementById( 'offnav-container' ),
 			buttons = Array.prototype.slice.call( document.querySelectorAll( '#st-trigger-effects > div' ) ),
 			// event type (if mobile use touch events)
 			eventtype = mobilecheck() ? 'touchstart' : 'click',
 			resetMenu = function() {
-				classie.remove( container, 'st-menu-open' );
+				classie.remove( container, 'offnav-menu-open' );
 			},
 			bodyClickFn = function(evt) {
-				if( !hasParentClass( evt.target, 'st-menu' ) ) {
+				if( !hasParentClass( evt.target, 'offnav-menu' ) ) {
 					resetMenu();
 					document.removeEventListener( eventtype, bodyClickFn );
 				}
@@ -43,10 +43,10 @@
 			el.addEventListener( eventtype, function( ev ) {
 				ev.stopPropagation();
 				ev.preventDefault();
-				container.className = 'st-container'; // clear
+				container.className = 'offnav-container'; // clear
 				classie.add( container, effect );
 				setTimeout( function() {
-					classie.add( container, 'st-menu-open' );
+					classie.add( container, 'offnav-menu-open' );
 				}, 25 );
 				document.addEventListener( eventtype, bodyClickFn );
 			});

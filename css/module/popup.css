@@ -1,5 +1,4 @@
-------------------------------- */
-header {
+/*header {
   height: 200px;
   line-height: 200px;
   text-align: center;
@@ -9,9 +8,9 @@ header {
 header h1 {
   font-size: 20px;
   font-size: 1.25rem;
-}
+}*/
 
-.cd-popup-trigger {
+.popup-trigger {
   display: block;
   width: 170px;
   height: 50px;
@@ -28,7 +27,7 @@ header h1 {
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.07);
 }
 @media only screen and (min-width: 1170px) {
-  .cd-popup-trigger {
+  .popup-trigger {
     margin: 6em auto;
   }
 }
@@ -38,7 +37,7 @@ header h1 {
 xpopup 
 
 -------------------------------- */
-.cd-popup {
+.popup {
   position: fixed;
   left: 0;
   top: 0;
@@ -51,7 +50,7 @@ xpopup
   -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
   transition: opacity 0.3s 0s, visibility 0s 0.3s;
 }
-.cd-popup.is-visible {
+.popup.is-visible {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
@@ -59,7 +58,7 @@ xpopup
   transition: opacity 0.3s 0s, visibility 0s 0s;
 }
 
-.cd-popup-container {
+.popup-container {
   padding: 20px;
   position: relative;
   width: 90%;
@@ -83,21 +82,21 @@ xpopup
   -moz-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-.cd-popup-container p {
+.popup-container p {
   padding: 2em .8em;
 }
 
-.cd-buttons{padding: 0 20px 20px 20px;}
-.cd-popup-container .cd-buttons:after {
+.buttons{padding: 0 20px 20px 20px;}
+.popup-container .buttons:after {
   content: "";
   display: table;
   clear: both;
 }
-.cd-popup-container .cd-buttons li {
+.popup-container .buttons li {
   float: left;
   width: 50%;
 }
-.cd-popup-container .cd-buttons a {
+.popup-container .buttons a {
   display: block;
   height: 40px;
   line-height: 40px;
@@ -107,28 +106,28 @@ xpopup
   -moz-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
-.cd-popup-container .cd-buttons li:first-child a {
+.popup-container .buttons li:first-child a {
   background: #00bedd;
   border-radius: 8px 0 0 8px;
 }
-.no-touch .cd-popup-container .cd-buttons li:first-child a:hover {
+.no-touch .popup-container .buttons li:first-child a:hover {
   background-color: #fc8982;
 }
-.cd-popup-container .cd-buttons li:last-child a {
+.popup-container .buttons li:last-child a {
   background: #fe7260;
   border-radius: 0 8px 8px 0;
 }
-.no-touch .cd-popup-container .cd-buttons li:last-child a:hover {
+.no-touch .popup-container .buttons li:last-child a:hover {
   background-color: #c5ccd8;
 }
-.cd-popup-container .cd-popup-close {
+.popup-container .popup-close {
   position: absolute;
   top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;
 }
-.cd-popup-container .cd-popup-close::before, .cd-popup-container .cd-popup-close::after {
+.popup-container .popup-close::before, .popup-container .popup-close::after {
   content: '';
   position: absolute;
   top: 12px;
@@ -136,7 +135,7 @@ xpopup
   height: 3px;
   background-color: #8f9cb5;
 }
-.cd-popup-container .cd-popup-close::before {
+.popup-container .popup-close::before {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -144,7 +143,7 @@ xpopup
   transform: rotate(45deg);
   left: 8px;
 }
-.cd-popup-container .cd-popup-close::after {
+.popup-container .popup-close::after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
@@ -152,7 +151,7 @@ xpopup
   transform: rotate(-45deg);
   right: 8px;
 }
-.is-visible .cd-popup-container {
+.is-visible .popup-container {
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
@@ -160,7 +159,7 @@ xpopup
   transform: translateY(0);
 }
 @media only screen and (min-width: 1170px) {
-  .cd-popup-container {
+  .popup-container {
     margin: 8em auto;
   }
 }

@@ -26,14 +26,14 @@
 
 
 <!-- st container -->
-<div id="st-container" class="st-container">
+<div id="offnav-container" class="offnav-container">
             <!--    
                 example menus 
                 these menus will be on top of the push wrapper
             -->
-            <nav class="st-menu st-effect-1" id="menu-1">
+            <nav class="offnav-menu drawer-effect" id="menu-1">
                  <div class="widget-btn" id="st-trigger-effects">
-                    <div data-effect="st-effect-1">
+                    <div data-effect="drawer-effect">
                         <img style="width:40px"src="img/brand/logo.png"/>
                         <h5>Widget</h5>
                     </div>
@@ -241,9 +241,9 @@
 
             </nav>
 
-            <div class="st-pusher row">
-                <div class="st-content">
-                    <div class="st-content-inner">
+            <div class="offnav-pusher row">
+                <div class="offnav-content">
+                    <div class="offnav-content-inner">
 
         <!-- Fixed navbar -->
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -336,20 +336,20 @@
 
           </div><!--container-->
 
-<a href="#0" class="cd-popup-trigger">push notification sample</a>
+<a href="#0" class="popup-trigger">push notification sample</a>
 
-<div class="cd-popup" role="alert">
-    <div class="cd-popup-container">
+<div class="popup" role="alert">
+    <div class="popup-container">
         <h3>829030</h3>
         <p>'#profile name or Device name' wants to send the 1 file(s) xxx.kb
             Do you want to receive files?</p>
-        <ul class="cd-buttons">
+        <ul class="buttons">
             <li><a href="#0">Yes</a></li>
             <li><a href="#0">No</a></li>
         </ul>
-        <a href="#0" class="cd-popup-close img-replace">Close</a>
-    </div> <!-- cd-popup-container -->
-</div> <!-- cd-popup -->
+        <a href="#0" class="popup-close img-replace"></a>
+    </div> <!-- popup-container -->
+</div> <!-- popup -->
 
 
 
@@ -442,10 +442,10 @@
 
 
 
-                    </div> <!-- st-content-inner -->
-                </div> <!-- st-content -->
-            </div><!--st-pusher-->
-    </div><!-- st-container -->
+                    </div> <!-- offnav-content-inner -->
+                </div> <!-- offnav-content -->
+            </div><!--offnav-pusher-->
+    </div><!-- offnav-container -->
 
 
 
@@ -487,14 +487,14 @@
        <script>
         $(document).ready(function(){
     //open popup
-    $('.cd-popup-trigger').on('click', function(event){
+    $('.popup-trigger').on('click', function(event){
         event.preventDefault();
-        $('.cd-popup').addClass('is-visible');
+        $('.popup').addClass('is-visible');
     });
     
     //close popup
-    $('.cd-popup').on('click', function(event){
-        if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
+    $('.popup').on('click', function(event){
+        if( $(event.target).is('.popup-close') || $(event.target).is('.popup') ) {
             event.preventDefault();
             $(this).removeClass('is-visible');
         }
@@ -502,7 +502,7 @@
     //close popup when clicking the esc keyboard button
     $(document).keyup(function(event){
         if(event.which=='27'){
-            $('.cd-popup').removeClass('is-visible');
+            $('.popup').removeClass('is-visible');
         }
     });
 });

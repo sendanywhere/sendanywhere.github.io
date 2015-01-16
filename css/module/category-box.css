@@ -24,26 +24,26 @@ header h1 {
   }
 }
 
-.cd-faq {
+.category-box {
   width: 90%;
   max-width: 1024px;
   margin: 2em auto;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
-.cd-faq:after {
+.category-box:after {
   content: "";
   display: table;
   clear: both;
 }
 @media only screen and (min-width: 768px) {
-  .cd-faq {
+  .category-box {
     position: relative;
     margin: 4em auto;
     box-shadow: none;
   }
 }
 
-.cd-faq-categories a {
+.categories a {
   position: relative;
   display: block;
   overflow: hidden;
@@ -58,7 +58,7 @@ header h1 {
   border-bottom: 1px solid #555b61;
   text-overflow: ellipsis;
 }
-.cd-faq-categories a::before, .cd-faq-categories a::after {
+.categories a::before, .categories a::after {
   /* plus icon on the right */
   position: absolute;
   top: 50%;
@@ -68,23 +68,23 @@ header h1 {
   width: 10px;
   background-color: #7f868e;
 }
-.cd-faq-categories a::after {
+.categories a::after {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-.cd-faq-categories li:last-child a {
+.categories li:last-child a {
   border-bottom: none;
 }
 @media only screen and (min-width: 768px) {
-  .cd-faq-categories {
+  .categories {
     width: 20%;
     float: left;
     /*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);*/
   }
-  .cd-faq-categories a {
+  .categories a {
     font-size: 13px;
     /*font-size: 0.8125rem;*/
     font-weight: 600;
@@ -94,26 +94,26 @@ header h1 {
     -moz-transition: background 0.2s, padding 0.2s;
     transition: background 0.2s, padding 0.2s;
   }
-  .cd-faq-categories a::before, .cd-faq-categories a::after {
+  .categories a::before, .categories a::after {
     display: none;
   }
-  .no-touch .cd-faq-categories a:hover {
+  .no-touch .categories a:hover {
     background: #555b61;
   }
-  .no-js .cd-faq-categories {
+  .no-js .categories {
     /*width: 100%;*/
     margin-bottom: 2em;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .cd-faq-categories {
+  .categories {
     position: absolute;
     top: 0;
     left: 0;
     width: 200px;
     z-index: 2;
   }
-  .cd-faq-categories a::before {
+  .categories a::before {
     /* decorative rectangle on the left visible for the selected item */
     display: block;
     top: 0;
@@ -127,22 +127,22 @@ header h1 {
     -moz-transition: opacity 0.2s;
     transition: opacity 0.2s;
   }
-  .cd-faq-categories .selected {
+  .categories .selected {
     background: #42464b !important;
   }
-  .cd-faq-categories .selected::before {
+  .categories .selected::before {
     opacity: 1;
   }
-  .cd-faq-categories.is-fixed {
+  .categories.is-fixed {
     /* top and left value assigned in jQuery */
     position: fixed;
   }
-  .no-js .cd-faq-categories {
+  .no-js .categories {
     position: relative;
   }
 }
 
-.cd-faq-items {
+.category-box-items {
   position: fixed;
   height: 100%;
   /*width: 90%;*/
@@ -164,14 +164,14 @@ header h1 {
   -moz-transition: -moz-transform .3s;
   transition: transform .3s;
 }
-.cd-faq-items.slide-in {
+.category-box-items.slide-in {
   -webkit-transform: translateZ(0) translateX(0%);
   -moz-transform: translateZ(0) translateX(0%);
   -ms-transform: translateZ(0) translateX(0%);
   -o-transform: translateZ(0) translateX(0%);
   transform: translateZ(0) translateX(0%);
 }
-.no-js .cd-faq-items {
+.no-js .category-box-items {
   /*position: static;*/
   height: auto;
   /*width: 100%;*/
@@ -182,7 +182,7 @@ header h1 {
   transform: translateX(0);
 }
 @media only screen and (min-width: 768px) {
-  .cd-faq-items {
+  .category-box-items {
     position: static;
     height: auto;
     /*width: 78%;*/
@@ -198,17 +198,17 @@ header h1 {
   }
 }
 @media only screen and (min-width: 1024px) {
-  .cd-faq-items {
+  .category-box-items {
     /*float: none;*/
     /*width: 100%;*/
     padding-left: 220px;
   }
-  .no-js .cd-faq-items {
+  .no-js .category-box-items {
     padding-left: 0;
   }
 }
 
-.cd-close-panel {
+.close-panel {
   position: fixed;
   top: 5px;
   right: -100%;
@@ -231,7 +231,7 @@ header h1 {
   -moz-transition: right 0.4s;
   transition: right 0.4s;
 }
-.cd-close-panel::before, .cd-close-panel::after {
+.close-panel::before, .close-panel::after {
   /* close icon in CSS */
   position: absolute;
   top: 16px;
@@ -241,60 +241,60 @@ header h1 {
   width: 18px;
   background: #6c7d8e;
 }
-.cd-close-panel::before {
+.close-panel::before {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.cd-close-panel::after {
+.close-panel::after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-.cd-close-panel.move-left {
+.close-panel.move-left {
   right: 2%;
 }
 @media only screen and (min-width: 768px) {
-  .cd-close-panel {
+  .close-panel {
     display: none;
   }
 }
 
-.cd-faq-group {
+.category-box-group {
   /* hide group not selected */
   display: none;
 }
-.cd-faq-group.selected {
+.category-box-group.selected {
   display: block;
 }
-.cd-faq-group .cd-faq-title {
+.category-box-group .category-box-title {
   background: transparent;
   box-shadow: none;
   margin: 1em 0;
 }
-.no-touch .cd-faq-group .cd-faq-title:hover {
+.no-touch .category-box-group .category-box-title:hover {
   box-shadow: none;
 }
-.cd-faq-group .cd-faq-title h2 {
+.category-box-group .category-box-title h2 {
   text-transform: uppercase;
   font-size: 12px;
   /*font-size: 0.75rem;*/
   font-weight: 700;
   color: #bbbbc7;
 }
-.no-js .cd-faq-group {
+.no-js .category-box-group {
   display: block;
 }
 @media only screen and (min-width: 768px) {
-  .cd-faq-group {
+  .category-box-group {
     /* all groups visible */
     display: block;
   }
-  .cd-faq-group > li {
+  .category-box-group > li {
     background: #ffffff;
     margin-bottom: 6px;
     /*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);*/
@@ -302,32 +302,32 @@ header h1 {
     -moz-transition: box-shadow 0.2s;
     transition: box-shadow 0.2s;
   }
-  .no-touch .cd-faq-group > li:hover {
+  .no-touch .category-box-group > li:hover {
     box-shadow: 0 1px 10px rgba(108, 125, 142, 0.3);
   }
-  .cd-faq-group .cd-faq-title {
+  .category-box-group .category-box-title {
     margin: 2em 0 1em;
   }
-  .cd-faq-group:first-child .cd-faq-title {
+  .category-box-group:first-child .category-box-title {
     margin-top: 0;
   }
 }
 
-.cd-faq-trigger {
+.category-box-trigger {
   position: relative;
   display: block;
   margin: 1.6em 0 .4em;
   line-height: 1.2;
 }
 @media only screen and (min-width: 768px) {
-  .cd-faq-trigger {
+  .category-box-trigger {
     font-size: 24px;
     /*font-size: 1.5rem;*/
     font-weight: 300;
     margin: 0;
     padding: 24px 72px 24px 24px;
   }
-  .cd-faq-trigger::before, .cd-faq-trigger::after {
+  .category-box-trigger::before, .category-box-trigger::after {
     /* arrow icon on the right */
     position: absolute;
     right: 24px;
@@ -344,7 +344,7 @@ header h1 {
     -moz-transition-duration: 0.2s;
     transition-duration: 0.2s;
   }
-  .cd-faq-trigger::before {
+  .category-box-trigger::before {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -352,21 +352,21 @@ header h1 {
     transform: rotate(45deg);
     right: 32px;
   }
-  .cd-faq-trigger::after {
+  .category-box-trigger::after {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
-  .content-visible .cd-faq-trigger::before {
+  .content-visible .category-box-trigger::before {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
-  .content-visible .cd-faq-trigger::after {
+  .content-visible .category-box-trigger::after {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -375,21 +375,21 @@ header h1 {
   }
 }
 
-.cd-faq-content p {
+.category-box-content p {
   font-size: 14px;
   /*font-size: 0.875rem;*/
   line-height: 1.4;
   color: #6c7d8e;
 }
 @media only screen and (min-width: 768px) {
-  .cd-faq-content {
+  .category-box-content {
     display: none;
     padding: 0 24px 30px;
   }
-  .cd-faq-content p {
+  .category-box-content p {
     line-height: 1.6;
   }
-  .no-js .cd-faq-content {
+  .no-js .category-box-content {
     display: block;
   }
 }
