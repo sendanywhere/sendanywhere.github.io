@@ -1,24 +1,17 @@
 
-
+/******* NAVBAR *******/
 .navbar-default{
-	/*background:#00bedd;*/
-	/*background:rgba(0,190,221,1);*/
 	background: none;
-	/*background:#223544;*/
-	/*background: rgba(255,255,255,1);*/
 	border: none;
 	-webkit-box-shadow: 0 3px 6px -6px #333;
 	   -moz-box-shadow: 0 3px 6px -6px #333;
 	        box-shadow: 0 3px 6px -6px #333;
 	        padding:5px;
-	        /*z-index: 1000;*/
 }
 
  .scrolling {
-    /*background:rgba(0,190,221,0.6);*/
     background: rgba(255,255,255,1);
 }
-/*.nav-padding{padding:15px;}*/
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a{color:#333;}
 
 .navbar-default .navbar-toggle{border: none;}
@@ -31,4 +24,3 @@
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
 	background-color:white;
 }
-

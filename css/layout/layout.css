@@ -18,59 +18,105 @@
 
 ************************************/
 
-.hero h2{
-	color:#ffffff; 
-	font-size: 29px;
-	letter-spacing: 3px;
-	line-height: 1.5em; 
-	color: #FFFFFF;
-	line-height: 50px;
-	text-shadow: 0px 2px 4px rgba(0,180,211,0.9);
+
+.hero{
+	background-color: #00BEDD;
+	padding:192px 0;
+	text-align:center;
+	background: url('../../img/heroplane.jpg') no-repeat top center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 700px;
 }
 
-#dropzone{padding:10px;border:2px dotted #446987;border-radius: 10px;margin-bottom: 20px;}
+
+.hero-product{
+	padding:130px 0;
+	text-align:center;
+	background: url('../../img/productbg.jpg') no-repeat top center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 800px;
+}
+
+
+#download{
+	padding:102px 0;
+	text-align:center;
+	background: url('../../img/hero.jpg') no-repeat top center;
+	background-size: cover;
+	background-attachment: fixed;
+	color:#333;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+
+
+#usercase{
+	text-align:center;
+	background: url('../../img/herobg.jpg') no-repeat top center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 500px;
+	padding: 40px;
+}
+/*
+#cloud{
+  background: url("../../img/cloud.png") repeat-x center;
+margin: 0 auto;
+padding: 0px;
+overflow: visible;
+position: relative;
+width: 100%;
+height: 300px;
+z-index: 1;
+max-width: 100%;
+}*/
+
+
+
+
+.api-bg{
+	background-color:#223544;
+	padding:50px;
+	text-align: left;
+	font-size: 16px;
+
+}
+
+#press-bg{margin-bottom: 100px;text-align: left;}
+#contact-bg{text-align: center;padding-top: 100px;}
+
+#press-bg,#contact-bg{
+	background: url('../img/pressbg.jpg') no-repeat center center;
+	
+	background-size: cover;
+	height: 300px;
+	
+}
+
+
+
+
+
+.branding { 
+	background: url('../img/hero.jpg') no-repeat center center; 
+	-webkit-background-size: cover; 
+	-moz-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover; 
+	background-attachment: fixed; 
+	padding: 150px 0; 
+
+}
+
+
 #benefit,#downtab{
 	text-align: center;
 	color:#333;
 }
 
-#downtab span{font-size: 30px;}
 
-#benefit .icon{
-	font-size: 50px;
-	color:white;
-	padding: 22px;
-	margin:0 auto;
-}
-
-
-
-
-#product{text-align: center;color: #333;}
-#product img{width:61.7703349%;}
-#product .row div{margin-bottom: 40px;}
-#product img,#multi-device img{width: 80%;}
-
-
-#howitworks{border-bottom: 1px solid rgba(0,0,0,0.1);}
-#howitworks img{width:60%;}
-
-
-#press{
-	color: #333;
-	list-style: none;
-	border-top:1px solid #e5e5e5;
-}
-
-#press img{width:60px;}
-
-
-.about-img h3{margin-top:123px;}
-
-
-
-
-#platform{font-size:23px;}
 
 
 #api{
@@ -86,48 +132,30 @@
 	padding:20px;
 	color:#333;
 }
-#testimony p{
-	font-size:20px;
-	line-height: 1.6em;
-	font-family: 'Arvo', serif;
-	font-weight: 400;
-	color:#5c5c5c;
+
+#press{
+	color: #333;
+	list-style: none;
+	border-top:1px solid #e5e5e5;
 }
-#user{background-color: #fff;color:#333;}
-#user h4{color: #333;}
-
-
-
-ul.legals { list-style: none; color: #fff; line-height: 25px; }
-ul.legals li { display: inline-block; }
-ul.legals li::after { content: " |"; }
-ul.legals li:last-child::after { content: ""; }
-.legals {text-align: left;}
-.credit {text-align: right;}
-
-
-.item{padding:10px 50px;height:250px;}
-.item img{margin: 0 auto;}
-
-
-
-#menu-1{position: fixed;}
-
-
+#menu{position: fixed;}
 
 
 footer {
   bottom: 0;
   width: 100%;
   height:400px;
+  padding: 40px 0 30px;
 }
-footer ul{margin-bottom:50px;}
 
-footer li{margin-bottom: 5px;}
-footer a:hover{color:rgb(0,190,221);text-decoration: none;}
-footer { background-color: #242830; padding: 40px 0 30px; }
-footer p { color: #fff; }
-	
+.about-bg{
+	background: url('../img/contact.jpg') no-repeat center center;
+	background-size: cover;
+	height: 300px;
+}
+
+
+.item{padding:10px 50px;height:250px;}
 
 /**** Spacing *****/
 .space-top20{margin-top:20px;}
