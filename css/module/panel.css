@@ -86,40 +86,27 @@
 #secure-code a{float:left;margin-right: 30px;color: white;}
 #secure-code p{
 	text-align: center;
-	color: white;
+	color: #e5e5e5;
 	position: absolute;
-	opacity:0;
-	font-size:14px;
+	opacity:1;
+	font-size:13px;
 	
 }
 
-#secure-code p{
+#secure-code div:first-child p{
 	top: 28px;
-	left: 16px;
+	left: 17px;
 }
 
 
-#secure-code p{
+#secure-code div:nth-child(2) p{
 	top: 28px;
 	left: 13px;
 }
 
-#secure-code p{
+#secure-code div:nth-child(3) p{
 	top: 28px;
 	left: 6px;
-}
-
-#secure-code div:nth-child(1) div{
-	opacity:1;
-}
-
-
-#secure-code div:nth-child(2) div{
-	opacity:1;
-}
-
-#secure-code div:nth-child(3) div{
-	opacity:1;
 }
 
 
