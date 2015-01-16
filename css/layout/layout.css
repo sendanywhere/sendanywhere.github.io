@@ -88,7 +88,7 @@ max-width: 100%;
 #contact-bg{text-align: center;padding-top: 100px;}
 
 #press-bg,#contact-bg{
-	background: url('../img/pressbg.jpg') no-repeat center center;
+	background: url('../../img/pressbg.jpg') no-repeat center center;
 	
 	background-size: cover;
 	height: 300px;
@@ -100,7 +100,7 @@ max-width: 100%;
 
 
 .branding { 
-	background: url('../img/hero.jpg') no-repeat center center; 
+	background: url('../../img/hero.jpg') no-repeat center center; 
 	-webkit-background-size: cover; 
 	-moz-background-size: cover; 
 	-o-background-size: cover; 
@@ -149,7 +149,7 @@ footer {
 }
 
 .about-bg{
-	background: url('../img/contact.jpg') no-repeat center center;
+	background: url('../../img/contact.jpg') no-repeat center center;
 	background-size: cover;
 	height: 300px;
 }
