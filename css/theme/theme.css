@@ -251,3 +251,7 @@ border-color: #333;
 }
 
 .progressbar{margin:20px 0 40px 0;}
+
+
+.tooltip-inner{background-color: white;color:#333;}
+.tooltip .left .tooltip-arrow{border-bottom-color:white;}
