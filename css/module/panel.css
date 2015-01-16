@@ -118,12 +118,12 @@
 	/*border-bottom-right-radius: 10px;*/
 	border-top:1px solid #00bedd;
 }
-#receive .item{padding-top: 45px;}
+#receive .item{padding-top: 30px;}
 #receive,#social-btn{
 	background-color: #223544;
 	
 }
-
+#receive .form-group{margin-bottom: 30px;}
 
 #social-btn{
 	background-color: #ecf0f1;
