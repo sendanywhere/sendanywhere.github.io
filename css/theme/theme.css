@@ -89,11 +89,14 @@ footer li{color:white;list-style: none;}
 
 
 sup{font-size: 13px;top:-1.5em;}
-
+.badge{
+	background-color: #00bedd;
+	color:#fff;
+}
 
 /*#widget	{margin: 0 30px 50px 30px;}*/
 #widget .badge{
-	background-color: #fff;
+	background-color: #00bedd;
 	color:#333;
 }
 #faq,#contact,#about,#support,#team{color:#333;}
