@@ -105,7 +105,12 @@ ol, ul {
 
 
 
-
+p{
+    color: #6D6F71;
+word-spacing: 1px;
+line-height: 1.4em;
+font-size: 15px;
+}
 
 
 

@@ -1,5 +1,17 @@
 body{background-color: #fefefe;}
 
+
+.hero{
+	background-color: #00BEDD;
+	padding:192px 0;
+	text-align:center;
+	background: url('../img/heroplane.jpg') no-repeat top center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 700px;
+}
+
+
 .hero .icon{
 	font-size: 23px ;
 	color:white;
@@ -9,15 +21,17 @@ body{background-color: #fefefe;}
    box-shadow:         inset 0 0 2px #028CA3;
    padding:12px;
 }
+
+.hero h2{
+	font-weight: 100;
+	font-size: 3em;
+	letter-spacing: 2px;
+	color: #fefefe;
+}
 .icon-white{font-size: 40px;color:white;}
 
 #about-hero p{font-size:18px;color:white;}
-p{
-	color: #6D6F71;
-word-spacing: 1px;
-line-height: 1.4em;
-font-size: 15px;
-}
+
 
 #testimony .carousel-inner{margin-bottom: 20px;}
 #testimony .icon{margin-right:20px;font-size:30px;}
