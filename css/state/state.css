@@ -61,10 +61,8 @@ footer a { color: #fff;}
 footer li{color:white;list-style: none;}
 #product ul{list-style: none;}
 #product li{padding:11px;margin:20px;float: left;color:white;font-size:16px;}
-#product h2{font-weight: 300;
-font-size: 2em;
-letter-spacing: 3px;}
-
+#product h2{font-weight: 300;font-size: 2em;letter-spacing: 3px;}
+#product h4{font-weight: 400;}
 #support ul{padding:0;}
 #support li{list-style: none;float: left;text-align: center;margin:30px 30px 30px -5px;}
 #support a{color: #333;}
