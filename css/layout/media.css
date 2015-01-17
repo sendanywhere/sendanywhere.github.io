@@ -6,7 +6,7 @@
 		background-attachment:local;
 	}
 	.hero h2{font-size: 1.5em;line-height: 1.4em;font-weight: 100;}
-	#platform{padding-bottom: 50px;}
+	#platform{padding-bottom: 50px;margin-left: 9.0909091%;}
 	#platform section div{margin-right: 20px;}
 	#platform .icon{padding: 8px;}
 	.hero .icon{font-size: 22px;}
@@ -51,7 +51,7 @@
 		background-attachment:local;
 	}
 	.hero h2{font-size: 1.5em;line-height: 1.4em;}
-	#platform{padding-bottom: 50px;}
+	#platform{padding-bottom: 50px;margin-left: 9.0909091%;}
 	#platform section div{margin-right: 20px;}
 	#platform .icon{padding: 8px;}
 	.hero .icon{font-size: 22px;}
