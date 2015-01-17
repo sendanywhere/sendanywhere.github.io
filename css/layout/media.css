@@ -34,7 +34,7 @@
 
 
 /* 480px (WVGA - Low End Windows Phone) */
-@media screen and (max-width:480px) {
+@media (min-width:322px) and (max-width:480px) {
 	footer{height: 950px;}/*
 	.hero{background-attachment: scroll;}
 	.drawer-effect.offnav-menu {visibility: hidden;}
@@ -61,7 +61,7 @@
 	.item{padding: 0;height:290px;}
 	#user{border-top: 1px solid #e5e5e5;}
 	#testimony p{font-size:14px;}
-	#press div{padding: 0 38px;}
+	#press div{padding: 0 45px;}
 	.circlebg{width: 70px;height: 70px;border-radius: 70px;margin-bottom: 30px;}
 	.circlebg img{margin:18px -19px;}
 
