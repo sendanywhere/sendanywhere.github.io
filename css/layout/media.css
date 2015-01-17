@@ -32,13 +32,11 @@
 	#press #bbc{width: 40px; padding:12px 0;}
 
 	.hero-product{padding:77px 0;height: 500px;}
-	#product h2{font-weight: 300;
-font-size: 2em;line-height: 1.4em;
-letter-spacing: 3px;}
-}
+	#product h2{font-weight: 300;font-size: 2em;line-height: 1.4em;}
 #product h4{line-height: 1.5em;font-size: 1.2em;}
 #usercase{height: 1000px;}
 #feature img{width: 100%;}
+}
 
 /* 480px (WVGA - Low End Windows Phone) */
 @media (min-width:322px) and (max-width:480px) {
@@ -78,11 +76,8 @@ letter-spacing: 3px;}
 	#press #bbc{width: 40px; padding:12px 0;}
 
 	.hero-product{padding:77px 0;height: 500px;}
-	#product h2{font-weight: 300;
-font-size: 2em;line-height: 1.4em;
-letter-spacing: 3px;}
-}
-#product h4{line-height: 1.5em;font-size: 1.2em;}
+	#product h2{font-weight: 300;font-size: 2em;line-height: 1.4em;}
+	#product h4{line-height: 1.5em;font-size: 1.2em;}
 }
 /* xGA iPad */
 @media screen and (max-width:1024px) {
