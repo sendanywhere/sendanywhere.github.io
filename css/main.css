@@ -25,7 +25,7 @@ Theme defines color and images in this page
 
 /*** Layout css ****/
 @import url('layout/layout.css');
-@import url('layout/media.css');
+
 
 
 
@@ -46,7 +46,7 @@ Theme defines color and images in this page
 @import url('state/animated.css');
 @import url('state/button.css');
 @import url('state/animated.css');
-
+@import url('layout/media.css');
 
 
 
