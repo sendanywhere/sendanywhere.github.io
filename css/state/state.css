@@ -110,7 +110,9 @@ footer li{color:white;list-style: none;}
 }
 
 
-
+#img1 div:nth-child(2),
+#img2 div:nth-child(2),
+#img3 div:nth-child(2){margin-top: 130px;}
 
 sup{font-size: 13px;top:-1.5em;}
 .badge{
