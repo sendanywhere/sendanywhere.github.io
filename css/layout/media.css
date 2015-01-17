@@ -30,8 +30,12 @@
 	#press #tc{width: 40px; padding: 7px 0;}
 	#press #tnw{width: 40px; padding:10px 0;}
 	#press #bbc{width: 40px; padding:12px 0;}
-}
 
+	#product h2{font-weight: 300;
+font-size: 2em;line-height: 1.3em;
+letter-spacing: 3px;}
+}
+#product h4{line-height: 1.5em;font-size: 1.2em;}
 
 /* 480px (WVGA - Low End Windows Phone) */
 @media (min-width:322px) and (max-width:480px) {
