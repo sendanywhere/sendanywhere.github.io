@@ -83,6 +83,7 @@ sup{font-size: 10px;}
 	#usercase{height: 1100px;}
 	#feature img{width: 100%;}
 	#download h4{line-height: 1.5em;}
+	sup{font-size: 10px;}
 }
 /* xGA iPad */
 @media screen and (max-width:1024px) {
