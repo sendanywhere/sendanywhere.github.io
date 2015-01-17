@@ -20,8 +20,9 @@
 	.offnav-content{overflow-y:visible;}
 	.panel-view{padding: 20px;}
 	.circle{width: 70px;height: 70px;}
-	.item{padding: 0;}
+	.item{padding: 0;height:290px;}
 	#user{border-top: 1px solid #e5e5e5;}
+	#testimony p{font-size:12px;}
 
 }
 /* 480px (WVGA - Low End Windows Phone) */
