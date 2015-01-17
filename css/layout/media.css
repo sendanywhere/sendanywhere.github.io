@@ -23,8 +23,17 @@
 	.item{padding: 0;height:290px;}
 	#user{border-top: 1px solid #e5e5e5;}
 	#testimony p{font-size:12px;}
+	#press div{padding: 0 38px;}
+	#press .circlebg img{width: 40px;}
+	.circlebg{width: 70px;height: 70px;border-radius: 100%;margin-bottom: 30px;}
+	.circlebg img{margin:18px -19px;}
 
+	#tc{padding: 7px 0;}
+	#tnw{padding:10px 0;}
+	#bbc{padding:12px 0;}
 }
+
+
 /* 480px (WVGA - Low End Windows Phone) */
 @media screen and (max-width:480px) {
 	footer{height: 900px;}
