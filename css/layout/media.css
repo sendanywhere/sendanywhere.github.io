@@ -45,6 +45,7 @@ sup{font-size: 10px;}
 	#img1 h3,
 	#img2 h3,
 	#img3 h3{text-align: center;font-size: 1.5em;}
+	#download-btn button{margin-left: 29.8507463%;}
 }
 
 /* 480px (WVGA - Low End Windows Phone) */
@@ -97,6 +98,7 @@ sup{font-size: 10px;}
 	#img1 h3,
 	#img2 h3,
 	#img3 h3{text-align: center;font-size: 1.5em;}
+	#download-btn button{margin-left: 29.8507463%;}
 }
 
 
