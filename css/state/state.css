@@ -95,9 +95,9 @@ footer li{color:white;list-style: none;}
 #user .icon{font-size: 30px;}
 #press .icon{color:#00bedd;}
 #user .icon{color:#00bedd;}
-#tc{width:83px}
-#tnw{width:105px}
-#bbc{width:108px}
+#press #tc{width:83px;padding:19px 0;}
+#press #tnw{width:105px;padding:19px 0;}
+#press #bbc{width:108px;padding:19px 0;}
 
 .carousel-indicators .active{
 	background-color: #333;
