@@ -18,6 +18,9 @@
 	#benefit .icon{font-size: 45px;padding: 13px;}
 	#benefit section{margin-bottom: 50px;}
 	.offnav-content{overflow-y:visible;}
+	.panel-view{padding: 20px;}
+	.circle{width: 70px;height: 70px;}
+	.item{padding: 0;}
 
 }
 /* 480px (WVGA - Low End Windows Phone) */
@@ -25,6 +28,7 @@
 	footer{height: 900px;}
 	.hero{background-attachment: scroll;}
 	.drawer-effect.offnav-menu {visibility: hidden;}
+	.offnav-content{overflow-y:visible;}
 }
 /* xGA iPad */
 @media screen and (max-width:1024px) {
@@ -49,4 +53,5 @@
 @media screen and (min-width: 768px){
 	.carousel-indicators {bottom: -49px;}
 	.hero{background-attachment: scroll;}
+	.offnav-content{overflow-y:visible;}
 }
