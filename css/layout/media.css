@@ -24,13 +24,12 @@
 	#user{border-top: 1px solid #e5e5e5;}
 	#testimony p{font-size:12px;}
 	#press div{padding: 0 38px;}
-	#press .circlebg img{width: 40px;}
 	.circlebg{width: 70px;height: 70px;border-radius: 70px;margin-bottom: 30px;}
 	.circlebg img{margin:18px -19px;}
 
-	#tc{padding: 7px 0;}
-	#tnw{padding:10px 0;}
-	#bbc{padding:12px 0;}
+	#press #tc{width: 40px; padding: 7px 0;}
+	#press #tnw{width: 40px; padding:10px 0;}
+	#press #bbc{width: 40px; padding:12px 0;}
 }
 
 
