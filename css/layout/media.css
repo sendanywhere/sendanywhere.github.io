@@ -4,17 +4,18 @@
 	#cloud-svg{visibility:hidden;}
 	.drawer-effect.offnav-menu {visibility: hidden;}
 	.hero{padding:68px 0;}
-	.hero h2{font-size: 1.5em;line-height: 1.4em;color:#333;}
+	.hero h2{font-size: 1.5em;line-height: 1.4em;;}
 	#platform section div{margin-right: 20px;}
 	#platform .icon{padding: 8px;}
 	.hero .icon{font-size: 22px;}
 	.circle-50{width:40px;height: 40px;}
 	.btn-lg, .btn-group-lg > .btn{padding:5px;font-size: 14px;}
+	.hero{background-attachment: scroll;}
 }
 /* 480px (WVGA - Low End Windows Phone) */
 @media screen and (max-width:480px) {
 	footer{height: 900px;}
-	
+	.hero{background-attachment: scroll;}
 	.drawer-effect.offnav-menu {visibility: hidden;}
 }
 /* xGA iPad */
@@ -34,10 +35,10 @@
 /* Bootstrap 990px Breakpoint to 480px */
 @media screen and (min-width:480px) and (max-width:991px) {
 	.drawer-effect.offnav-menu {visibility: hidden;}
-
+.hero{background-attachment: scroll;}
 }
 
 @media screen and (min-width: 768px){
 	.carousel-indicators {bottom: -49px;}
-	
+	.hero{background-attachment: scroll;}
 }
