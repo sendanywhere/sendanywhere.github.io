@@ -3,7 +3,7 @@
 	/*footer{height: 1000px;}*/
 	#cloud-svg{visibility:hidden;}
 	.drawer-effect.offnav-menu {visibility: hidden;}
-	.hero{padding:68px 0;height: 550px;}
+	.hero{padding:68px 0;height: 550px;margin-bottom: -135px;}
 	.hero h2{font-size: 1.5em;line-height: 1.4em;color: #223544;}
 	#platform{padding-bottom: 50px;}
 	#platform section div{margin-right: 20px;}
@@ -13,6 +13,10 @@
 	.btn-lg, .btn-group-lg > .btn{padding:5px;font-size: 14px;}
 	.hero{background-attachment: scroll;}
 	.navbar-brand > img{width: 75%}
+	.circle-icon{width:70px;height: 70px;}
+	#benefit .icon{font-size: 45px;padding: 13px;}
+	#benefit section{margin-bottom: 50px;}
+
 }
 /* 480px (WVGA - Low End Windows Phone) */
 @media screen and (max-width:480px) {
