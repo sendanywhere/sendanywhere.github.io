@@ -3,8 +3,9 @@
 	/*footer{height: 1000px;}*/
 	#cloud-svg{visibility:hidden;}
 	.drawer-effect.offnav-menu {visibility: hidden;}
-	.hero{padding:68px 0;}
-	.hero h2{font-size: 1.5em;line-height: 1.4em;;}
+	.hero{padding:68px 0;height: 550px;}
+	.hero h2{font-size: 1.5em;line-height: 1.4em;color: #223544;}
+	#platform{padding-bottom: 50px;}
 	#platform section div{margin-right: 20px;}
 	#platform .icon{padding: 8px;}
 	.hero .icon{font-size: 22px;}
