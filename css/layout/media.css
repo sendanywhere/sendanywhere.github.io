@@ -81,6 +81,7 @@
 	#product h4{line-height: 1.5em;font-size: 1.2em;}
 	#usercase{height: 1100px;}
 	#feature img{width: 100%;}
+	#download h4{line-height: 1.5em;}
 }
 /* xGA iPad */
 @media screen and (max-width:1024px) {
