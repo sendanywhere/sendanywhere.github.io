@@ -3,12 +3,13 @@
 	/*footer{height: 1000px;}*/
 	#cloud-svg{visibility:hidden;}
 	.drawer-effect.offnav-menu {visibility: hidden;}
-	.hero{padding:48px 0;}
-	.hero h2{font-size: 1.5em;line-height: 1.4em;}
+	.hero{padding:68px 0;}
+	.hero h2{font-size: 1.5em;line-height: 1.4em;color:#333;}
 	#platform section div{margin-right: 20px;}
 	#platform .icon{padding: 8px;}
 	.hero .icon{font-size: 22px;}
 	.circle-50{width:40px;height: 40px;}
+	.btn-lg, .btn-group-lg > .btn{padding:5px;font-size: 14px;}
 }
 /* 480px (WVGA - Low End Windows Phone) */
 @media screen and (max-width:480px) {
