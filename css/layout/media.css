@@ -90,7 +90,7 @@
 }
 
 @media screen and (min-width: 768px){
-	/*.carousel-indicators {bottom: -49px;}
+	.carousel-indicators {bottom: -49px;}
 	.hero{background-attachment: scroll;}
-	.offnav-content{overflow-y:visible;}*/
+	.offnav-content{overflow-y:visible;}
 }
