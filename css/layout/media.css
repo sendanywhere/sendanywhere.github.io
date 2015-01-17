@@ -38,6 +38,13 @@
 #feature img{width: 100%;}
 #download h4{line-height: 1.3em;font-size:1em;}
 sup{font-size: 10px;}
+#img1 div:nth-child(2),
+	#img2 div:nth-child(2),
+	#img3 div:nth-child(2){margin: 30px 0;}
+
+	#img1 h3,
+	#img2 h3,
+	#img3 h3{text-align: center;font-size: 1.5em;}
 }
 
 /* 480px (WVGA - Low End Windows Phone) */
@@ -82,6 +89,14 @@ sup{font-size: 10px;}
 	#feature img{width: 100%;}
 	#download h4{line-height: 1.5em;}
 	sup{font-size: 10px;}
+
+	#img1 div:nth-child(2),
+	#img2 div:nth-child(2),
+	#img3 div:nth-child(2){margin: 30px 0;}
+
+	#img1 h3,
+	#img2 h3,
+	#img3 h3{text-align: center;font-size: 1.5em;}
 }
 
 
@@ -104,8 +119,10 @@ sup{font-size: 10px;}
 	
 }
 
-@media screen and (min-width: 768px){
-	.carousel-indicators {bottom: -49px;}
+@media screen and (max-width: 768px){
+	/*.carousel-indicators {bottom: -49px;}
 	.hero{background-attachment: scroll;}
-	.offnav-content{overflow-y:visible;}
+	.offnav-content{overflow-y:visible;}*/
+
+
 }
