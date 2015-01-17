@@ -31,8 +31,9 @@
 	#press #tnw{width: 40px; padding:10px 0;}
 	#press #bbc{width: 40px; padding:12px 0;}
 
+	.hero-product{height: 400px;}
 	#product h2{font-weight: 300;
-font-size: 2em;line-height: 1.9em;
+font-size: 2em;line-height: 1.4em;
 letter-spacing: 3px;}
 }
 #product h4{line-height: 1.5em;font-size: 1.2em;}
@@ -75,7 +76,7 @@ letter-spacing: 3px;}
 	#press #bbc{width: 40px; padding:12px 0;}
 
 	#product h2{font-weight: 300;
-font-size: 2em;line-height: 1.9em;
+font-size: 2em;line-height: 1.4em;
 letter-spacing: 3px;}
 }
 #product h4{line-height: 1.5em;font-size: 1.2em;}
