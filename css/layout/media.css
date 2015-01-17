@@ -1,7 +1,6 @@
 /* 320px (iPhone) */
 @media screen and (max-width:320px) {
 	/*footer{height: 1000px;}*/
-	#cloud-svg{visibility:hidden;}
 	.drawer-effect.offnav-menu {visibility: hidden;}
 	.hero{padding:68px 0;height: 550px;margin-bottom: -105px;
 		background: url('../../img/heroplane.jpg') no-repeat top center;
@@ -13,11 +12,12 @@
 	.hero .icon{font-size: 22px;}
 	.circle-50{width:40px;height: 40px;}
 	.btn-lg, .btn-group-lg > .btn{padding:5px;font-size: 14px;}
-	.hero{background-attachment: scroll;}
+	.hero{background-attachment:local;}
 	.navbar-brand > img{width: 75%}
 	.circle-icon{width:70px;height: 70px;}
 	#benefit .icon{font-size: 45px;padding: 13px;}
 	#benefit section{margin-bottom: 50px;}
+	.offnav-content{overflow-y:visible;}
 
 }
 /* 480px (WVGA - Low End Windows Phone) */
