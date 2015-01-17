@@ -34,7 +34,7 @@
 
 
 /* 480px (WVGA - Low End Windows Phone) */
-@media screen and (max-width:480px) {
+@media screen and (min-width:321px) and (max-width:480px) {
 	footer{height: 950px;}/*
 	.hero{background-attachment: scroll;}
 	.drawer-effect.offnav-menu {visibility: hidden;}
