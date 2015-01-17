@@ -38,6 +38,8 @@ letter-spacing: 3px;}
 }
 #product h4{line-height: 1.5em;font-size: 1.2em;}
 
+#feature img{width: 100%;}
+
 /* 480px (WVGA - Low End Windows Phone) */
 @media (min-width:322px) and (max-width:480px) {
 	footer{height: 950px;}/*
