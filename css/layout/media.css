@@ -5,7 +5,7 @@
 	.hero{padding:68px 0;height: 550px;margin-bottom: -125px;
 		background-attachment:local;
 	}
-	.hero h2{font-size: 1.5em;line-height: 1.4em;color: #223544;}
+	.hero h2{font-size: 1.5em;line-height: 1.4em;font-weight: 100;}
 	#platform{padding-bottom: 50px;}
 	#platform section div{margin-right: 20px;}
 	#platform .icon{padding: 8px;}
@@ -44,7 +44,7 @@
 	.hero{padding:68px 0;height: 550px;margin-bottom: -125px;
 		background-attachment:local;
 	}
-	.hero h2{font-size: 1.5em;line-height: 1.4em;color: #223544;}
+	.hero h2{font-size: 1.5em;line-height: 1.4em;}
 	#platform{padding-bottom: 50px;}
 	#platform section div{margin-right: 20px;}
 	#platform .icon{padding: 8px;}
