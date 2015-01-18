@@ -84,7 +84,9 @@ max-width: 100%;
 	text-align: left;
 	font-size: 16px;
 
+
 }
+.api-bg p{color: white;}
 
 #press-bg{margin-bottom: 100px;text-align: left;}
 .short-bg{text-align: center;}
@@ -122,12 +124,14 @@ max-width: 100%;
 
 
 #api{
-	padding:82px 0;
+	padding-top: 86px;
 	text-align:center;
 	background-size: cover;
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
 	color:#333;
+	border-bottom: 1px solid #e5e5e5;
 }
+#api h4{margin-top: 30px;}
 
 #testimony{
 	border-radius: 10px;
