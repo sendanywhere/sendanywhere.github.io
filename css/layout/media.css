@@ -104,13 +104,13 @@ sup{font-size: 10px;}
 
 /* xGA iPad */
 @media (min-width:768px) and (max-width:990px) {
-	
+	#user{border-top: 1px solid #e5e5e5;}
 	#platform{margin-left: 15.669039%;}
 }
 /* 1200px (Small Desktop, Netbook) */
 @media (min-width:990px) and (max-width:1180px) {
 	#platform{margin-left: -0.330961%;}
-	
+	#user{border-top: 1px solid #e5e5e5;}
 }
 @media screen and (min-width:1190px) {
 	#platform{margin-left: 1.5831135%;}
@@ -128,6 +128,7 @@ sup{font-size: 10px;}
 	
 	.offnav-content{overflow-y:visible;}*/
 	footer{height: 950px;}
+	#user{border-top: 1px solid #e5e5e5;}
 	.hero{padding:141px 0;height: 750px;margin-bottom: -125px;background-attachment:local;}
 	.hero h2{width: 563px;margin: 0 auto;}
 	#platform{margin:20px 0 0 16.6666667%;}
