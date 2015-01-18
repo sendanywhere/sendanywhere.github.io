@@ -109,55 +109,12 @@
 
 /* 480px (WVGA - Low End Windows Phone) */
 @media (min-width:322px) and (max-width:480px) {
-	footer{height: 1050px;}/*
-	.hero{background-attachment: scroll;}
-	.drawer-effect.offnav-menu {visibility: hidden;}
-	.offnav-content{overflow-y:visible;}*/
+	footer{height: 1050px;}
+	
 
 	.drawer-effect.offnav-menu {visibility: hidden;}
 	.hero{padding:68px 0;height: 550px;margin-bottom: -125px;background-attachment:local;}
-	/*.hero h2{font-size: 1.5em;line-height: 1.4em;}*/
-	/*#platform{padding-bottom: 50px;margin-left: 9.0909091%;}
-	#platform section div{margin-right: 20px;}
-	#platform .icon{padding: 8px;}*/
-	/*.hero .icon{font-size: 22px;}*/
-	/*.circle-50{width:40px;height: 40px;border-radius: 100%;}*/
-	/*.btn-lg, .btn-group-lg > .btn{padding:11px;font-size: 14px;}*/
-	/*.navbar-brand > img{width: 75%}*/
 	
-
-	/*.circle-icon{width:70px;height: 70px;border-radius: 100%;}
-	#benefit .icon{font-size: 45px;padding: 13px;}
-	#benefit section{margin-bottom: 50px;}
-	.offnav-content{overflow-y:visible;}
-	.panel-view{padding: 20px;}
-	.circle{width: 70px;height: 70px;}
-	.item{padding: 0;height:290px;}
-	#user{border-top: 1px solid #e5e5e5;}
-	#testimony p{font-size:14px;}*/
-	/*.circlebg{width: 70px;height: 70px;border-radius: 70px;margin-bottom: 30px;}
-	.circlebg img{margin:18px -19px;}*/
-
-
-	/*#press div{padding: 0 22.25%;}*/
-	
-
-	/*#press #cnet{width: 40px;}
-	#press #tc{width: 40px; padding: 7px 0;}
-	#press #tnw{width: 40px; padding:10px 0;}
-	#press #bbc{width: 40px; padding:12px 0;}*/
-
-	./*hero-product{padding:77px 0;height: 500px;}
-	#product h2,#download h2{font-weight: 300;font-size: 2em;line-height: 1.4em;}
-	#product h4{line-height: 1.5em;font-size: 1.2em;}
-	#usercase{height: 1100px;}*/
-	/*#feature img{width: 100%;}
-	#download h4{line-height: 1.5em;}
-	sup{font-size: 10px;}*/
-
-	/*#img1 div:nth-child(2),
-	#img2 div:nth-child(2),
-	#img3 div:nth-child(2){margin: 30px 0;}*/
 
 	#img1 h3,
 	#img2 h3,
@@ -180,6 +137,7 @@
 }
 #sns-responsive{margin:0 0 48px 44px;}
 #sns-responsive .icon{font-size: 22px;}
+.navbar-default{background-color: white;}
 }
 
 
