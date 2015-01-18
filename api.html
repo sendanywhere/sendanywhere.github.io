@@ -55,7 +55,7 @@
     <div class="panel-view text-center short-bg" id="api">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-xs-12 wp1 delay-03s">
+                <div class="col-md-12 col-xs-12">
                     <h2>Add Send Anywhere to your Website or App</h2>
                     <h3>Nerds Only!</h3>
                     
@@ -66,11 +66,13 @@
      <div class="panel-view text-center" id="widget-api">
         <div class="container">
             <div class="row">
-                <h3>Widget: Embed one of your site</h3>
-                <p>The REST APIs provides programmatic access to read and write twitter data. Author a new tweet, read author profile and follower data and more. The REST APIs identifies twitter applications and users using OAuth: responses are availalbe.
-               </p>
-
-                <div class="col-md-4 col-xs-12 wp1 delay-03s">
+                <div class="col-md-6 col-md-offset-3">
+                    <h3>Widget: Embed one of your site</h3>
+                    <p>The REST APIs provides programmatic access to read and write twitter data. Author a new tweet, read author profile and follower data and more. The REST APIs identifies twitter applications and users using OAuth: responses are availalbe.
+                   </p>
+                </div>
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
                     <h4>Send</h4>
                     <div class="card card-top"></div>
                     <div class="card dotted-bottom"></div>
@@ -82,7 +84,7 @@
                         </code>
                     </pre>
                 </div>
-                <div class="col-md-4 col-xs-12 wp1 delay-03s" id="api-all">
+                <div class="col-md-4 col-xs-12" id="api-all">
                     <h4>Send + Receive</h4>
                     <div class="card card-top"></div>
                     <div class="card card-bottom"></div>
@@ -94,7 +96,7 @@
                         </code>
                     </pre>
                 </div>
-                <div class="col-md-4 col-xs-12 wp1 delay-03s">
+                <div class="col-md-4 col-xs-12">
                     <h4>Receive</h4>
                     <div class="card dotted-top"></div>
                     <div class="card card-bottom"></div>
@@ -112,7 +114,7 @@
         </div><!-- container end -->
     </div>
     
-
+</div>
 
 
     <!-- api restrict -->
@@ -121,18 +123,20 @@
             <div class="row" >
                <h3>API: Restrict API Request</h3>
                <h4>REST APIs</h4>
-               <p>The REST APIs provides programmatic access to read and write twitter data. Author a new tweet, read author profile and follower data and more. The REST APIs identifies twitter applications and users using OAuth: responses are availalbe.
-               </p>
+               <div class="col-md-6 col-md-offset-3">
+                    <p>The REST APIs provides programmatic access to read and write twitter data. Author a new tweet, read author profile and follower data and more. The REST APIs identifies twitter applications and users using OAuth: responses are availalbe.
+                    </p>
 
-               <ul>
-                    <li>API Rate Limiting</li>
-                    <li>API Rate Limits</li>
-                    <li>Working with Timelines</li>
-                    <li>Using the twitter Search API</li>
-                    <li>Uploading Media</li>
-                    <li>Multiple Media Entities in Status</li>
-                    <li>Finding Tweets about places</li>
-                </ul>
+                    <ul>
+                        <li>API Rate Limiting</li>
+                        <li>API Rate Limits</li>
+                        <li>Working with Timelines</li>
+                        <li>Using the twitter Search API</li>
+                        <li>Uploading Media</li>
+                        <li>Multiple Media Entities in Status</li>
+                        <li>Finding Tweets about places</li>
+                    </ul>
+              </div>
             </div>
         </div>
     </div>
@@ -227,48 +231,10 @@
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="js/waypoints.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
-
         <script src="js/main.js"></script>
-        <script src="js/flexslider.js"></script>
-        <script src="js/tab.js"></script>
         <script src="js/modernizr.js"></script>
-        <script src="js/plugin.js"></script>
-        <!--<script src="js/vendor/jquery.ui.widget.js"></script>
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>-->
-        <script src="js/carousel.js"></script>
-        <script src="js/animated-text.js"></script>
-        <script src="js/snap.svg-min.js"></script>
-        <script src="js/table.js"></script>
-          <script>
-            (function() {
-    
-                function init() {
-                    var speed = 250,
-                        easing = mina.easeinout;
-
-                    [].slice.call ( document.querySelectorAll( '.cardclip > a' ) ).forEach( function( el ) {
-                        var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
-                            pathConfig = {
-                                from : path.attr( 'd' ),
-                                to : el.getAttribute( 'data-path-hover' )
-                            };
-
-                        el.addEventListener( 'mouseenter', function() {
-                            path.animate( { 'path' : pathConfig.to }, speed, easing );
-                        } );
-
-                        el.addEventListener( 'mouseleave', function() {
-                            path.animate( { 'path' : pathConfig.from }, speed, easing );
-                        } );
-                    } );
-                }
-
-                init();
-
-            })();
-        </script>
+        
 
          <script>
         $(window).scroll(function() {    

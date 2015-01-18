@@ -295,40 +295,9 @@
 
         <script src="js/vendor/bootstrap.min.js"></script>
 
-        <script src="js/flexslider.js"></script>
-        <script src="js/plugin.js"></script>
-        <script src="js/jquery.fileupload.js"></script>
-        <script src="js/jquery.iframe-transport.js"></script>
-        <script src="js/vendor/jquery.ui.widget.js"></script>
+        
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script>
-        $(function () {
-            $('#fileupload').fileupload({
-                dataType: 'json',
-                done: function (e, data) {
-                    $.each(data.result.files, function (index, file) {
-                        $('<p/>').text(file.name).appendTo(document.body);
-                    });
-                }
-            });
-        });
-        </script>
-
-        <script type="text/javascript">
-          $('#fileupload').fileupload({
-    /* ... */
-    progressall: function (e, data) {
-        var progress = parseInt(data.loaded / data.total * 100, 10);
-        $('#progress .bar').css(
-            'width',
-            progress + '%'
-        );
-    }
-});
-
-
-
-        </script>
+        
          <script>
         $(window).scroll(function() {    
             var scroll = $(window).scrollTop();
