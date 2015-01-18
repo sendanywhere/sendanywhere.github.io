@@ -1,6 +1,6 @@
 /* 320px (iPhone) */
 @media screen and (max-width:320px) {
-	footer{height: 1000px;}
+	footer{height: 1100px;}
 	.drawer-effect.offnav-menu {visibility: hidden;}
 	.hero{padding:68px 0;height: 550px;margin-bottom: -125px;
 		background-attachment:local;
@@ -46,11 +46,22 @@ sup{font-size: 10px;}
 	#img2 h3,
 	#img3 h3{text-align: center;font-size: 1.5em;}
 	#download-btn button{margin-left: 29.8507463%;}
+
 }
+
+@media screen and (max-width:900px) {
+#company-info{
+	border-top: 1px solid #fefefe;
+	padding-top: 20px;
+}
+#sns-responsive{margin:0 0 48px 44px;}
+#sns-responsive .icon{font-size: 22px;}
+}
+
 
 /* 480px (WVGA - Low End Windows Phone) */
 @media (min-width:322px) and (max-width:480px) {
-	footer{height: 950px;}/*
+	footer{height: 1050px;}/*
 	.hero{background-attachment: scroll;}
 	.drawer-effect.offnav-menu {visibility: hidden;}
 	.offnav-content{overflow-y:visible;}*/
