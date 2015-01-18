@@ -51,7 +51,7 @@ sup{font-size: 10px;}
 
 @media screen and (max-width:900px) {
 #company-info{
-	border-top: 1px solid #6b6b6b;
+	border-top: 1px solid #3f3f3f;
 	padding-top: 20px;
 }
 #sns-responsive{margin:0 0 48px 44px;}
