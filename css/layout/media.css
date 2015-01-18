@@ -126,9 +126,10 @@ sup{font-size: 10px;}
 	#platform{margin-left: -0.330961%;}
 	#user{border-top: 1px solid #e5e5e5;}
 }
-@media screen and (min-width:1190px) {
+@media screen and (max-width:1190px) {
 	#platform{margin-left: 1.5831135%;}
 	#feature h3{line-height: 2em;}
+	#tab-content p{font-size: 13px;line-height: 21px;}
 }
 
 
