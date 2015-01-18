@@ -200,7 +200,7 @@
 }
 @media screen and (max-width:1190px) {
 	
-	#feature h3{line-height: 1.4em;}
+	#feature h3{line-height: 1.4em;text-align: center;}
 	#tab-content p{font-size: 13px;line-height: 21px;}
 }
 
