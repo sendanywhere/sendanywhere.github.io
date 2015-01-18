@@ -35,7 +35,7 @@
 	#product h2,#download h2{font-weight: 300;font-size: 2em;line-height: 1.4em;}
 #product h4{line-height: 1.5em;font-size: 1.2em;}
 #usercase{height: 1200px;}
-#feature img{width: 100%;}
+
 #download h4{line-height: 1.3em;font-size:1em;}
 sup{font-size: 10px;}
 #img1 div:nth-child(2),
@@ -128,7 +128,7 @@ sup{font-size: 10px;}
 }
 @media screen and (min-width:1190px) {
 	#platform{margin-left: 1.5831135%;}
-	
+	#feature h3{line-height: 2em;}
 }
 
 
@@ -138,9 +138,13 @@ sup{font-size: 10px;}
 	#secure-code div:nth-child(2) p{top: 28px;left: 62px;}
 	#secure-code div:nth-child(3) p{top: 28px;left: 100px;}
 	#secure-code a{margin-right: 20px;}
+	#img1 div:nth-child(2), #img2 div:nth-child(2), #img3 div:nth-child(2){
+		margin-top:50px;
+	}
+	#feature h3{line-height: 1.5em;}
 }
 
-@media (min-width: 500px) and (max-width: 768px){
+@media screen and (min-width: 500px) and (max-width: 768px){
 	/*.carousel-indicators {bottom: -49px;}
 	
 	.offnav-content{overflow-y:visible;}*/
@@ -153,4 +157,8 @@ sup{font-size: 10px;}
 
 	#press-icon div{float: left;margin-right: 146px;}
 	#product h2, #download h2, .short-bg h2{font-size: 23px;}
+
+	#feature img{width: 100%;}
+	
+
 }
