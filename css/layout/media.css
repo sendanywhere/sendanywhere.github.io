@@ -126,6 +126,7 @@ sup{font-size: 10px;}
 	.hero{background-attachment: scroll;}
 	.offnav-content{overflow-y:visible;}*/
 	footer{height: 950px;}
+	.hero{padding:68px 0;height: 550px;margin-bottom: -125px;background-attachment:local;}
 	.hero h2{width: 563px;margin: 0 auto;}
 	#platform{margin:20px 0 0 16.6666667%;}
 	#benefit section{margin-bottom: 50px;}
