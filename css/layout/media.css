@@ -115,13 +115,13 @@ sup{font-size: 10px;}
 	
 }
 /* Bootstrap 990px Breakpoint to 480px */
-@media screen and (min-width:480px) and (max-width:991px) {
+@media (min-width:768px) and (max-width:991px) {
 	
 }
 
 @media (min-width: 500px) and (max-width: 768px){
 	/*.carousel-indicators {bottom: -49px;}
-	.hero{background-attachment: scroll;}
+	
 	.offnav-content{overflow-y:visible;}*/
 	footer{height: 950px;}
 	.hero{padding:141px 0;height: 750px;margin-bottom: -125px;background-attachment:local;}
@@ -130,5 +130,5 @@ sup{font-size: 10px;}
 	#benefit section{margin-bottom: 50px;}
 
 	#press-icon div{float: left;margin-right: 146px;}
-
+	#product h2, #download h2, .short-bg h2{font-size: 23px;}
 }
