@@ -62,7 +62,7 @@
 @media screen and (max-width:480px) {
 	.drawer-effect.offnav-menu {visibility: hidden;}
 	.hero h2{font-size: 1.5em;line-height: 1.4em;font-weight: 100;}
-	#platform{padding-bottom: 50px;margin-left: 9.0909091%;}
+	#platform{padding-bottom: 50px;margin-left: 7.090909%;}
 	#platform section div{margin-right: 20px;}
 	#platform .icon{padding: 8px;}
 	.hero .icon{font-size: 22px;}
@@ -195,11 +195,11 @@
 }
 /* 1200px (Small Desktop, Netbook) */
 @media (min-width:990px) and (max-width:1180px) {
-	#platform{margin-left: -0.330961%;}
+	/*#platform{margin-left: -0.330961%;}*/
 	#user{border-top: 1px solid #e5e5e5;}
 }
 @media screen and (max-width:1190px) {
-	#platform{margin-left: 1.5831135%;}
+	
 	#feature h3{line-height: 1.4em;}
 	#tab-content p{font-size: 13px;line-height: 21px;}
 }
