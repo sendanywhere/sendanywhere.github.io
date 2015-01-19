@@ -72,18 +72,31 @@ footer li{color:white;list-style: none;}
 
 #device span{font-size:1.5em;margin-right: 20px;}
 #device li{list-style: none;float: left;font-size:15px;margin-bottom:13px;}
-#device{
-	margin-top: 7px;
-	color:#333;
-}
+#device{margin-top: 7px;/*color:#333;*/}
+#device p{color:white;}
 
 #device a{color:white;}
 #devicetag{margin-bottom:20px;font-size:20px;text-align: center;color:white;}
 .overlay-card #close-btn{
 	font-size: 18px;
-	color: #333;
+	color: #223544;
 	position: absolute;
-	right: 29px;
+	right: 16px;
+	top: 13px;
+}
+
+#device-list-header h5{
+	font-size: 20px;
+	border-bottom: 1px solid #04869B;
+	padding-bottom: 10px;
+}
+#device-list-header .icon{
+	font-size: 1.5em;
+	float: right;
+	position: absolute;
+	right: 48px;
+	top: 12px;
+	color: #223544;
 }
 #press .icon{
 	font-size:60px;
@@ -372,6 +385,12 @@ progress-bar 클래스 대신 교체하면 됩니다.
 
 button span{font-weight: 300;}
 #sending div,#receiving div,#succeed div {margin-bottom: 10px;}
+#sending h3, #sending p{
+	text-align:left;
+	color:white;
+}
+#sending h3{font-size:18px;margin-bottom: 26px;}
+#sending p{font-size:15px;margin-bottom:12px;}
 
 .hidden{
 	  display: none;
