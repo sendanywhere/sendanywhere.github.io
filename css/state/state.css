@@ -139,31 +139,7 @@ font-size: 1em;
 
 #team li{text-align: left;list-style: none;}
 
-.line-drawing,
-.illustration {
-	-webkit-transition: opacity 0.5s;
-	transition: opacity 0.5s;
-}
 
-.line-drawing path {
-	fill: none;
-	stroke: white;
-	stroke-width: 3;
-}
-
-path.line-round {
-	stroke-linecap: round;
-}
-
-path.stroke-medium {
-	stroke-width: 2;
-}
-
-path.stroke-thin {
-	stroke-width: 1;
-}
-
-.cardclip span{font-size:30px;}
 #usecase section, #feature section{padding: 0 39px;}
 
 #feature,#usecase{color:#333;border-bottom: 1px solid #e5e5e5;border-top: 1px solid #e5e5e5;}
@@ -384,6 +360,17 @@ top: -5px;
 right: 0px;
 }
 
+
+/***** progress bar state ****/
+/*
+서버에러나 상대편에서 받기나 보내기를 취소한경우 Progressbar 회색으로 바뀜 클래스 이름 progress-bar-error를
+progress-bar 클래스 대신 교체하면 됩니다.
+*/
+.progress-bar-error{background-color: #a8a8a8;}
+
+
+
+button span{font-weight: 300;}
 #sending div,#receiving div,#succeed div {margin-bottom: 10px;}
 
 .hidden{

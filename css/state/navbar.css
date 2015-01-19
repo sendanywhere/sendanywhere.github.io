@@ -9,6 +9,7 @@
 	        padding:5px;
 }
 
+ /* 스크롤 할때 하얀색 배경으로 바꾸는 클래스*/
  .scrolling {
     background: rgba(255,255,255,1);
 }
