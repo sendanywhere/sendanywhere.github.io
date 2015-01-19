@@ -82,7 +82,7 @@
 
                                     </h3>
                                     <div class="alert send-alert alert-warning alert-dismissible hidden" role="alert">
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="false">&times;</span>
                                         </button>
                                         <div style="margin-bottom:20px">Web widget max. file size 200MB. Try our desktop version. It's unlimited and FREE!</div>
                                         <button type="button" class="btn btn-warning btn-sm btn-block" id="download-btn"><span>Download</span></button> 
@@ -104,10 +104,10 @@
                             <div class="item" id="send2">
                                 <div class="row">
                                     <!-- qr code alert -->
-                                    <div class="alert qr-alert alert-warning alert-dismissible hidden" role="alert">
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
-                                        </button>
-                                       <div class="icon-qrcode" id="qrcode"></div>
+                                    <div class="message hidden">
+                                        <div class="icon icon-cancel-circle"></div>
+                                        
+                                       <div class="icon-qrcode" id="qrcode"><p>User QRcode Scanner to Download</p></div>
                                        <!-- <div class="icon-qrcode" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</div> -->
                                     </div>
 
@@ -728,19 +728,24 @@
                     $( "#editable" ).attr("contenteditable","true");
                     
                 });
-            $( "#alert-trigger" ).click(function() {
-                $( ".send-alert" ).toggleClass( "hidden" );
+            // $( "#alert-trigger" ).click(function() {
+            //     $( ".send-alert" ).toggleClass( "hidden" );
+                
+            // });
+
+            // $( "#alert-trigger-push" ).click(function() {
+            //     $( ".receive-alert" ).toggleClass( "hidden" );
+                
+            // });
+
+            $( ".icon-cancel-circle" ).click(function() {
+                $( ".message" ).addClass( "hidden" );
                 
             });
 
-            $( "#alert-trigger-push" ).click(function() {
-                $( ".receive-alert" ).toggleClass( "hidden" );
-                
-            });
-
-            $( "#alert-trigger-qr" ).click(function() {
-                $( ".qr-alert" ).toggleClass( "hidden" );
-                
+             $( ".icon-qrcode" ).click(function() {
+                $(".message" ).removeClass( "hidden" );
+                $( ".message" ).addClass("animated fadeInDown");
             });
 
             $(function () {
