@@ -377,8 +377,14 @@ footer p { color: #fff; }
 
 .nav-tabs{border: none;}
 
+.alert-dismissable, .alert-dismissible{padding-right: 10px;}
 
+.alert-dismissable .close, .alert-dismissible .close {
+top: -5px;
+right: 0px;
+}
 
+#sending div,#receiving div,#succeed div {margin-bottom: 10px;}
 
 .hidden{
 	  display: none;
