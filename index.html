@@ -76,7 +76,7 @@
                             <!-- 2. Sending and Drag and drop-->
                              <div class="item active">
                                 <div class="row">
-                                     <div class="message hidden" id="filesize-push">
+                                     <div class="hidden" id="filesize-push">
                                         <div class="icon icon-cancel-circle"></div>
                                         <div style="margin-bottom:20px">Web widget max. file size 200MB. Try our desktop version. It's unlimited and FREE!</div>
                                         <button type="button" class="btn btn-warning btn-sm btn-block" id="download-btn"><span>Download</span></button> 
@@ -104,7 +104,7 @@
                             <div class="item" id="send2">
                                 <div class="row">
                                     <!-- qr code alert -->
-                                    <div class="message hidden">
+                                    <div class="hidden" id="message-qr">
                                         <div class="icon icon-cancel-circle"></div>
                                         
                                        <div class="icon-qrcode" id="qrcode"><p>User QRcode Scanner to Download</p></div>
@@ -246,7 +246,7 @@
                             <!-- item 1 -->
                             <div class="item active">
                                 <div class="row">
-                                    <div class="message hidden" id="receive-push">
+                                    <div class="hidden" id="receive-push">
                                         <div class="icon icon-cancel-circle"></div>
                                         <div style="margin-bottom:20px">'#profile name or Device name' wants to send the 1 file(s) xxx.kb Do you want to receive files?</div>
                                         <button type="button" class="btn btn-warning btn-sm btn-block" id="download-btn"><span>OK</span></button> 
@@ -750,13 +750,13 @@
 
 
              $( ".icon-qrcode" ).click(function() {
-                $(".message" ).removeClass( "hidden" );
-                $( ".message" ).addClass("animated fadeInDown");
+                $("#message-qr" ).removeClass( "hidden" );
+                $( "#message-qr" ).addClass("animated fadeInDown");
             });
 
 
             $( ".icon-cancel-circle" ).click(function() {
-                $( ".message" ).addClass( "hidden" );
+                $( "#message-qr" ).addClass( "hidden" );
                 
             });
 
