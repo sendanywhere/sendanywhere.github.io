@@ -77,7 +77,8 @@ footer li{color:white;list-style: none;}
 
 #device a{color:white;}
 #devicetag{margin-bottom:20px;font-size:20px;text-align: center;color:white;}
-.overlay-card #close-btn{
+.overlay-card #close-device-btn,
+.droplist #close-drop-btn{
 	font-size: 18px;
 	color: #223544;
 	position: absolute;

@@ -141,24 +141,29 @@
                             <!-- drag & drop list -->
                                <div class="droplist hidden">
                                         <div id="device">
+                                            <div id="device-list-header">
+                                                <h5>File List</h5>
+                                                
+                                            </div>
+
                                             <ul>
                                                 <a href="#">
                                                     <li>
-                                                        <div class="right carousel-control" href="#send" role="button" data-slide="next"><span class="icon-laptop"></span>David's iphone</div>
+                                                        <div class="right carousel-control" href="#send" role="button" data-slide="next"><span class="icon-laptop"></span>File list 1</div>
                                                     </li>
                                                 </a>
-                                                <a href="#"><li><span class="icon-laptop"></span>David's iphone2</li></a>
-                                                <a href="#"><li><span class="icon-laptop"></span>David's iphone3</li></a>
-                                                <a href="#"><li><span class="icon-laptop"></span>David's iphone4</li></a>
-                                                <a href="#"><li><span class="icon-laptop"></span>David's iphone5</li></a>
-                                                <a href="#"><li><span class="icon-laptop"></span>David's iphone6</li></a>
-                                                <a href="#"><li><span class="icon-laptop"></span>David's iphone7</li></a>
-                                                <a href="#"><li><span class="icon-laptop"></span>David's iphone8</li></a>
-                                                <a href="#"><li><span class="icon-laptop"></span>David's iphone9</li></a>
-                                                <a href="#"><li><span class="icon-laptop"></span>David's iphone10</li></a>
+                                                <a href="#"><li><span class="icon-laptop"></span>File list 2</li></a>
+                                                <a href="#"><li><span class="icon-laptop"></span>File list 3</li></a>
+                                                <a href="#"><li><span class="icon-laptop"></span>File list 4</li></a>
+                                                <a href="#"><li><span class="icon-laptop"></span>File list 5</li></a>
+                                                <a href="#"><li><span class="icon-laptop"></span>File list 6</li></a>
+                                                <a href="#"><li><span class="icon-laptop"></span>File list 7</li></a>
+                                                <a href="#"><li><span class="icon-laptop"></span>File list 8</li></a>
+                                                <a href="#"><li><span class="icon-laptop"></span>File list 9</li></a>
+                                                <a href="#"><li><span class="icon-laptop"></span>File list 10</li></a>
                                             </ul>
                                         </div>
-                                        <a href="#"><div class="icon-cancel-circle" id="close-btn"></div></a>
+                                        <a href="#"><div class="icon-cancel-circle" id="close-drop-btn"></div></a>
                                     </div>
 
 
@@ -186,7 +191,7 @@
                                                 <a href="#"><li><span class="icon-laptop"></span>David's iphone10</li></a>
                                             </ul>
                                         </div>
-                                        <a href="#"><div class="icon-cancel-circle" id="close-btn"></div></a>
+                                        <a href="#"><div class="icon-cancel-circle" id="close-device-btn"></div></a>
                                     </div>
 
 
@@ -709,7 +714,12 @@
                 $( ".overlay-card" ).addClass( "hidden" );
             });
 
-            $("#close-btn").click(function() {
+            $("#close-device-btn").click(function() {
+                $( ".overlay-card" ).addClass( "hidden" );
+                
+            });
+
+             $("#close-drop-btn").click(function() {
                 $( ".overlay-card" ).addClass( "hidden" );
                 
             });
