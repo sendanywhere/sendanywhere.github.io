@@ -392,6 +392,7 @@ button span{font-weight: 300;}
 	text-align:left;
 	color:white;
 }
+#succeed{margin-top: 9px;}
 #sending h3,#receiving h3,#succeed h3{font-size:18px;margin:15px 0 26px 0;}
 #sending p,#receiving p,#succeed p{font-size:15px;margin-bottom:12px;}
 #receiving h3,#succeed h3{margin-top:5px;}
