@@ -385,13 +385,15 @@ progress-bar 클래스 대신 교체하면 됩니다.
 
 button span{font-weight: 300;}
 #sending div,#receiving div,#succeed div {margin-bottom: 10px;}
-#sending h3, #sending p{
+#sending h3, #sending p,
+#receiving h3, #receiving p,
+#succeed h3, #succeed p{
 	text-align:left;
 	color:white;
 }
-#sending h3{font-size:18px;margin-bottom: 26px;}
-#sending p{font-size:15px;margin-bottom:12px;}
-
+#sending h3,#receiving h3,#succeed h3{font-size:18px;margin:15px 0 26px 0;}
+#sending p,#receiving p,#succeed p{font-size:15px;margin-bottom:12px;}
+#receiving h3,#succeed h3{margin-top:5px;}
 .hidden{
 	  display: none;
     visibility: hidden;
