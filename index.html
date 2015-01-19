@@ -76,17 +76,17 @@
                             <!-- 2. Sending and Drag and drop-->
                              <div class="item active">
                                 <div class="row">
+                                     <div class="message hidden" id="filesize-push">
+                                        <div class="icon icon-cancel-circle"></div>
+                                        <div style="margin-bottom:20px">Web widget max. file size 200MB. Try our desktop version. It's unlimited and FREE!</div>
+                                        <button type="button" class="btn btn-warning btn-sm btn-block" id="download-btn"><span>Download</span></button> 
+                                    </div>
+
                                     <h3 style="font-weight:normal;font-size:18px;text-align:left;">
                                         <span style="margin-right:72px;">Send your files</span>
                                         <span class="badge" id="alert-trigger">14</span>
 
                                     </h3>
-                                    <div class="alert send-alert alert-warning alert-dismissible hidden" role="alert">
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="false">&times;</span>
-                                        </button>
-                                        <div style="margin-bottom:20px">Web widget max. file size 200MB. Try our desktop version. It's unlimited and FREE!</div>
-                                        <button type="button" class="btn btn-warning btn-sm btn-block" id="download-btn"><span>Download</span></button> 
-                                    </div>
 
                                      <div id="dropzone">
                                         <p>Click here or Drag & Drop to send files</p>
@@ -235,14 +235,7 @@
                             </div>
 
                         </div>
-                        <!-- Controls -->
-                      <a class="left carousel-control" href="#send" role="button" data-slide="prev">
-                        <span aria-hidden="true"></span>
-                      </a>
-                      <a class="right carousel-control" href="#send" role="button" data-slide="next">
-                        <span aria-hidden="true"></span>
-                      </a>
-
+                       
                     </div> <!-- send end -->
 
                     <!--<div class="circle-btn"> <img src="img/brand/logo.png"/> </div>-->
@@ -253,10 +246,8 @@
                             <!-- item 1 -->
                             <div class="item active">
                                 <div class="row">
-                                     <!-- <span class="badge" id="alert-trigger-push">14</span> -->
-                                    <div class="alert receive-alert alert-warning alert-dismissible hidden" role="alert">
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
-                                        </button>
+                                    <div class="message hidden" id="receive-push">
+                                        <div class="icon icon-cancel-circle"></div>
                                         <div style="margin-bottom:20px">'#profile name or Device name' wants to send the 1 file(s) xxx.kb Do you want to receive files?</div>
                                         <button type="button" class="btn btn-warning btn-sm btn-block" id="download-btn"><span>OK</span></button> 
                                     </div>
@@ -276,7 +267,7 @@
                                         </div>
                                     </form>
                                     <button type="submit" class="btn btn-warning btn-animation icon-box right carousel-control" href="#receive" role="button" data-slide="next"><span>Receive</span></button>
-                                    
+                                    <span class="icon-cycle"></span>
                                 </div>
                             </div>
 
@@ -728,25 +719,48 @@
                     $( "#editable" ).attr("contenteditable","true");
                     
                 });
-            // $( "#alert-trigger" ).click(function() {
-            //     $( ".send-alert" ).toggleClass( "hidden" );
-                
-            // });
+            
 
-            // $( "#alert-trigger-push" ).click(function() {
-            //     $( ".receive-alert" ).toggleClass( "hidden" );
-                
-            // });
+            //200mb 넘을
+            $( ".badge" ).click(function() {
+                 $("#filesize-push" ).removeClass( "hidden" );
+                $( "#filesize-push" ).addClass("animated fadeInDown");
+
+            });
+
+             $( ".icon-cancel-circle" ).click(function() {
+               $( "" ).addClass( "hidden" );
+            });
+
+            //receive push
+            $( ".icon-cycle" ).click(function() {
+                 $("#receive-push" ).removeClass( "hidden" );
+                $( "#receive-push" ).addClass("animated fadeInDown");
+
+                            
+            });
+
+             $( ".icon-cancel-circle" ).click(function() {
+               $( "" ).addClass( "hidden" );
+            });
+
+
+
+
+
+
+             $( ".icon-qrcode" ).click(function() {
+                $(".message" ).removeClass( "hidden" );
+                $( ".message" ).addClass("animated fadeInDown");
+            });
+
 
             $( ".icon-cancel-circle" ).click(function() {
                 $( ".message" ).addClass( "hidden" );
                 
             });
 
-             $( ".icon-qrcode" ).click(function() {
-                $(".message" ).removeClass( "hidden" );
-                $( ".message" ).addClass("animated fadeInDown");
-            });
+
 
             $(function () {
                 $('[data-toggle="tooltip"]').tooltip()

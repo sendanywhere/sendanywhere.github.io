@@ -402,6 +402,18 @@ button span{font-weight: 300;}
 #code-generate h3{font-size:18px;margin-top:5px;}
 #code-generate h3:first-child{color:white;}
 #code-generate h3:nth-child(2){color:#00bedd;}
+
+
+#filesize-push, #receive-push{
+	margin-bottom: 45px;
+	background-color: #e5e5e5;
+	border-radius: 5px;
+	padding:20px;
+	color: #333;
+}
+
+#filesize-push{margin-top: 24px;}
+
 .hidden{
 	  display: none;
     visibility: hidden;
