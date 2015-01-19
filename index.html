@@ -107,9 +107,27 @@
                                     <div class="hidden" id="message-qr">
                                         <div class="icon icon-cancel-circle"></div>
                                         
-                                       <div class="icon-qrcode" id="qrcode"><p>User QRcode Scanner to Download</p></div>
+                                       <div class="icon-qrcode" id="qrcode"><p>Use QRcode Scanner to Download</p></div>
                                        <!-- <div class="icon-qrcode" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</div> -->
                                     </div>
+
+
+                                    <!-- url alert -->
+                                    <div class="hidden" id="message-url">
+                                        <div class="icon icon-cancel-circle"></div>
+                                        
+                                       <div class="icon-link" id="url-link"><p>https://sendanywhere</p></div>
+                                      
+                                    </div>
+
+                                    <!-- device alert -->
+                                    <div class="hidden" id="message-url">
+                                        <div class="icon icon-cancel-circle"></div>
+                                        
+                                       
+                                      
+                                    </div>
+
 
 
                                     <div class="col-md-12 text-center" id="code-generate">
@@ -679,7 +697,9 @@
 
 
         
-        <script type="text/javascript" src="js/filedrop.js"></script>
+        <script src="js/filedrop.js"></script>
+        <script src="js/ZeroClipboard.js"></script>
+
 
         <script type="text/javascript">$('#receive').carousel({
             interval: 0
@@ -742,6 +762,19 @@
 
              $( ".icon-cancel-circle" ).click(function() {
                $( "#receive-push" ).addClass( "hidden" );
+            });
+
+
+             //url push
+            $( ".icon-link" ).click(function() {
+                 $("#message-url" ).removeClass( "hidden" );
+                $( "#message-url" ).addClass("animated fadeInDown");
+
+                            
+            });
+
+             $( ".icon-cancel-circle" ).click(function() {
+               $( "#message-url" ).addClass( "hidden" );
             });
 
 
@@ -838,7 +871,23 @@
 
        </script>
 
+<script type="text/javascript">
+var client = new ZeroClipboard( document.getElementById("url-copy") );
 
+client.on( "ready", function( readyEvent ) {
+  // alert( "ZeroClipboard SWF is ready!" );
+
+  client.on( "aftercopy", function( event ) {
+    // `this` === `client`
+    // `event.target` === the element that was clicked
+    event.target.style.display = "none";
+    alert("Copied text to clipboard: " + event.data["text/plain"] );
+  } );
+} );
+
+
+
+</script>
 
     
         
