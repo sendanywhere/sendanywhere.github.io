@@ -24,7 +24,7 @@
 	function init() {
 
 		var container = document.getElementById( 'offnav-container' ),
-			buttons = Array.prototype.slice.call( document.querySelectorAll( '#st-trigger-effects > div' ) ),
+			buttons = Array.prototype.slice.call( document.querySelectorAll( '#offnav-trigger-effects > div' ) ),
 			// event type (if mobile use touch events)
 			eventtype = mobilecheck() ? 'touchstart' : 'click',
 			resetMenu = function() {

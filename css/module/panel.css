@@ -74,6 +74,11 @@ widget 의 Send 부분을 .card-top이  Receive 부분이 .card-bottom이 맡아
 	color:white;
 }
 
+#send #qrcode{
+	font-size: 60px;
+	text-align: center;
+	padding: 50px;
+}
 
 
 #receive{

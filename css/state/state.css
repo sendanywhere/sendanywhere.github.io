@@ -394,6 +394,13 @@ button span{font-weight: 300;}
 #sending h3,#receiving h3,#succeed h3{font-size:18px;margin:15px 0 26px 0;}
 #sending p,#receiving p,#succeed p{font-size:15px;margin-bottom:12px;}
 #receiving h3,#succeed h3{margin-top:5px;}
+
+
+#send2{overflow:hidden;}
+#code-generate{margin:12px 0 10px 0;}
+#code-generate h3{font-size:18px;margin-top:5px;}
+#code-generate h3:first-child{color:white;}
+#code-generate h3:nth-child(2){color:#00bedd;}
 .hidden{
 	  display: none;
     visibility: hidden;
