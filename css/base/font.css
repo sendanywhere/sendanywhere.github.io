@@ -10,4 +10,9 @@ font-weight: 400;
 
 body{font-family: 'Open Sans', sans-serif;}
 
-.hero h2{font-family: 'ff-netto-web', sans-serif;}
+.hero h2,
+.panel-view h3
+
+
+
+{font-family: 'ff-netto-web', sans-serif;}
