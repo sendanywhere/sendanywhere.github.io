@@ -52,7 +52,7 @@
 	z-index: 100;
 	visibility: hidden;
 	width: 300px;
-	height: 400px;
+	height: 300px;
 	background: #223544 ;
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
@@ -138,5 +138,23 @@
 }
 
 .drawer-effect.offnav-menu::after {
+	display: none;
+}
+
+
+/* Effect 1: Slide in on top */
+.drawer-effect2.offnav-menu {
+	visibility: visible;
+	-webkit-transform: translate3d(100%, 0, 0);
+	transform: translate3d(100%, 0, 0);
+}
+
+.drawer-effect2.offnav-menu-open .drawer-effect2.offnav-menu {
+	visibility: visible;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.drawer-effect2.offnav-menu::after {
 	display: none;
 }

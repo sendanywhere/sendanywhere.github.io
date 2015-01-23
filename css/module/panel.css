@@ -181,6 +181,8 @@ widget 의 Send 부분을 .card-top이  Receive 부분이 .card-bottom이 맡아
 	-webkit-box-shadow: 0 8px 6px -6px #333;
 	   -moz-box-shadow: 0 8px 6px -6px #333;
 	        box-shadow: 0 8px 6px -6px #333;
+	position: absolute;
+	top: 292px;
 }
 
 #social-btn span{margin-left:46px;}
@@ -214,7 +216,7 @@ widget 의 Send 부분을 .card-top이  Receive 부분이 .card-bottom이 맡아
 	        box-shadow: 0 8px 6px -6px #333;
 	transition: background-color 0.8s ease;
 }
-.widget-btn:hover{background-color: #223544;}
+/*.widget-btn:hover{background-color: #223544;}*/
 .widget{
 	background-color: #223544;
 	border-bottom-left-radius: 10px;

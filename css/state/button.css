@@ -53,11 +53,12 @@
 }
 
 
-.btn{
+.btn,.btn-animation{
 -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
+
 
 .btn:after {
   content: '';
@@ -69,8 +70,8 @@
 }
 
 .btn-animation{
-  height: 45px;
-  line-height: 24px;
+  height: 35px;
+  line-height: 20px;
   font-size: 18px;
   overflow: hidden;
   -webkit-backface-visibility: hidden;
@@ -83,7 +84,7 @@
   background: #9053a9;
   top: 2px;
 }
-
+/*.btn-hidden-text {opac}*/
 .btn-animation span {
   display: inline-block;
   width: 100%;

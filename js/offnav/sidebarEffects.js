@@ -37,6 +37,8 @@
 				}
 			};
 
+
+
 		buttons.forEach( function( el, i ) {
 			var effect = el.getAttribute( 'data-effect' );
 
@@ -51,8 +53,14 @@
 				document.addEventListener( eventtype, bodyClickFn );
 			});
 		} );
-
 	}
+
+
+		
+
+
+
+
 
 	init();
 
