@@ -77,26 +77,15 @@ widget 의 Send 부분을 .card-top이  Receive 부분이 .card-bottom이 맡아
 #send #qrcode,#send #url-link{
 	font-size: 60px;
 	text-align: center;
-	padding: 55px 20px;
+	padding: 8px 20px;
 }
 
 #qrcode p,#url-link p{margin-top: 30px;}
 
 #message-qr .icon,#message-url .icon{font-size: 16px;float: right;margin-top: 10px;}
-#message-qr p,#message-url p{color: white;}
+/*#message-qr p,#message-url p{color: white;}*/
 
-#receive{
-	border-top:1px solid #00bedd;
-}
 
-#receive .item{padding-top: 30px;}
-#receive,#social-btn{
-	background-color: #223544;
-	
-}
-#receive .form-group{margin-bottom: 30px;}
-
-#receiving h3{font-size:18px;margin-bottom:20px;}
 /************* Widget panel end *************/
 
 
@@ -144,6 +133,9 @@ widget 의 Send 부분을 .card-top이  Receive 부분이 .card-bottom이 맡아
 
 #secure-code{
 	font-size: 20px;
+	background-color: rgba(255,255,255,0.3);
+padding: 9px;
+border-radius: 13px;
 }
 #secure-code a{float:left;margin-right: 30px;color: white;}
 #secure-code p{
@@ -205,8 +197,8 @@ widget 의 Send 부분을 .card-top이  Receive 부분이 .card-bottom이 맡아
 	right: 100%;
 	top: 0%;
 	background-color:#fe7260;
-	border-top-left-radius: 8px;
-	border-bottom-left-radius: 8px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
 	color:white;
 	padding:15px;
 	z-index: 100;
@@ -214,8 +206,15 @@ widget 의 Send 부분을 .card-top이  Receive 부분이 .card-bottom이 맡아
 	   -moz-box-shadow: 0 8px 6px -6px #333;
 	        box-shadow: 0 8px 6px -6px #333;
 	transition: background-color 0.8s ease;
+	cursor: pointer;
 }
+.widget-btn h5{text-align: center;}
+.widget-btn img{margin-left: 5px;width: 40px;}
 /*.widget-btn:hover{background-color: #223544;}*/
+
+#widget-img{/*margin-bottom: 30px;*/border-bottom: 1px solid #FC6653;}
+#send-widget-btn {margin-bottom: 20px;border-top: 1px solid #ffaba0;padding-top: 20px;}
+#send-widget-btn:hover,#receive-widget-btn:hover {color:#223544;}
 .widget{
 	background-color: #223544;
 	border-bottom-left-radius: 10px;

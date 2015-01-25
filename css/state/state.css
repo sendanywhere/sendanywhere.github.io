@@ -132,6 +132,9 @@ sup{font-size: 13px;top:-1.5em;}
 .badge{
 	background-color: #00bedd;
 	color:#fff;
+	position: absolute;
+	right: 20px;
+	top: 42px;
 }
 
 #widget .badge{
@@ -347,7 +350,13 @@ ul.legals li:last-child::after { content: ""; }
 
 
 .item img{margin: 0 auto;}
-
+.item h3{
+	font-weight:normal;
+	font-size:18px;
+	text-align:left;
+	/*border-bottom: 1px solid #5984A6;*/
+	padding-bottom: 10px;
+}
 .short-bg .icon{font-size:50px;}
 
 
@@ -355,7 +364,12 @@ ul.legals li:last-child::after { content: ""; }
 
 
 
-#dropzone{padding:10px;border:2px dotted #446987;border-radius: 10px;margin-bottom: 20px;}
+#dropzone{
+	padding: 20px;
+	border: 2px dotted #446987;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
 
 /************* FOOTER *******************/
 footer ul{margin-bottom:50px;}
@@ -381,7 +395,7 @@ right: 0px;
 progress-bar 클래스 대신 교체하면 됩니다.
 */
 .progress-bar-error{background-color: #a8a8a8;}
-
+.progress{height: 30px;}
 
 
 button span{font-weight: 300;}
@@ -392,21 +406,45 @@ button span{font-weight: 300;}
 	text-align:left;
 	color:white;
 }
-#succeed{margin-top: 9px;}
-#sending h3,#receiving h3,#succeed h3{font-size:18px;margin:15px 0 26px 0;}
+#sending h3,#receiving h3,#succeed h3{font-size:18px;/*margin:15px 0 26px 0;*/}
 #sending p,#receiving p,#succeed p{font-size:15px;margin-bottom:12px;}
-#receiving h3,#succeed h3{margin-top:5px;}
+#receiving h3,#succeed h3{margin-top:10px;}
 
 
+#receive{
+	border-top:1px solid #00bedd;
+}
+#receive h3{margin-top: 10px;}
+#receive .item{padding-top: 30px;}
+/*#receive,#social-btn{
+	background-color: #223544;
+	
+}*/
+/*#receive .form-group{margin-bottom: 30px;}*/
+
+#receiving h3{font-size:18px;margin-bottom:20px;}
+#receive-form input{margin-bottom: 20px;}
+#editable{
+	border: 1px solid #00bedd;
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	margin: 0 auto;
+	padding: 5px 11px;
+}
+#editable span{margin-left: 22px;font-size: 30px;}
+#editable h3{font-size: 18px;}
 #send2{overflow:hidden;}
 #code-generate{margin:12px 0 10px 0;}
-#code-generate h3{font-size:18px;margin-top:5px;}
-#code-generate h3:first-child{color:white;}
-#code-generate h3:nth-child(2){color:#00bedd;}
+#code-generate h3{margin-top:5px;}
 
+#code-generate h3:first-child{color:white;margin-bottom: 12px;}
+#code-generate h3:nth-child(2){color:#00bedd;font-size: 24px;
+	text-align: center;}
+#code-generate span,#sending span, #receiving span,#succeed span,#send span,#receive span{margin-right: 15px;}
 
-#filesize-push, #receive-push{
-	margin-bottom: 45px;
+#filesize-push, #receive-push,#message-qr,#message-url{
+	margin-bottom: 127px;
 	background-color: #e5e5e5;
 	border-radius: 5px;
 	padding:20px;
@@ -427,10 +465,11 @@ button span{font-weight: 300;}
     visibility: visible;
 }
 
-
+#progress-bar{margin-top:36px;padding:0;}
 .progress-bar {
   background-color: #fe7260;
-
+  padding: 5px;
+  margin-right: 34px;
 }
 
 .wp1, .wp2, .wp3, .wp4, .wp5, .wp6 {

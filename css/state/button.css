@@ -1,3 +1,5 @@
+.btn{border-radius: 5px;}
+
 .btn-primary {
   color: #fff;
   background-color: rgb(0,190,221);
@@ -18,8 +20,8 @@
 
 .btn-warning{
 	color: #fff;
-  background-color: #ff7360;
-  border-color: #ff7360;
+  background-color: #fe7260;
+  border-color: #fe7260;
 
 }
 
@@ -35,23 +37,28 @@
   border-color: #FA8171;
 }
 
-.btn-success {
+/*.btn-success {
   color: #fff;
   background-color:#223544;
   border-color:#223544;
 }
+*/
 
-.btn-success:hover,
-.btn-success:focus,
-.btn-success.focus,
-.btn-success:active,
-.btn-success.active,
+.btn-line{font-weight: bold;border: 2px solid #fe7260;
+background: none;}
+
+/*
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning.focus,
+.btn-warning:active,
+.btn-warning.active,
 .open > .dropdown-toggle.btn-primary {
   color: #fff;
   background-color: #305069;
   border-color: #305069;
 }
-
+*/
 
 .btn,.btn-animation{
 -webkit-transition: all 0.5s;

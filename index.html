@@ -65,8 +65,8 @@
             <nav class="offnav-menu drawer-effect" id="menu">
                  <div class="widget-btn" id="offnav-trigger-effects">
                     <div data-effect="drawer-effect">
-                        <div>
-                            <img style="width:40px"src="img/brand/logo.png"/>
+                        <div id="widget-img">
+                            <img src="img/brand/logo.png"/>
                             <h5>Widget</h5>
                         </div>
                         <div id="send-widget-btn">
@@ -97,11 +97,11 @@
                                         <button type="button" class="btn btn-warning btn-sm btn-block" id="download-btn"><span>Download</span></button> 
                                     </div>
 
-                                    <h3 style="font-weight:normal;font-size:18px;text-align:left;">
-                                        <span style="margin-right:72px;">Send your files</span>
-                                        <span class="badge" id="alert-trigger">14</span>
+                                    <h3>
+                                        <span class="icon-paperplane"></span>Send your files
+                                        
 
-                                    </h3>
+                                    </h3><span class="badge" id="alert-trigger">14</span>
 
                                      <div id="dropzone">
                                         <p>Click here or Drag & Drop to send files</p>
@@ -139,8 +139,9 @@
 
 
                                     <div class="col-md-12 text-center" id="code-generate">
-                                        <h3>Share 6 digit code</h3>
+                                         <h3><span class="icon-share"></span>Share code</h3>
                                         <h3>673293</h3>
+
                                         <div class="col-md-12" id="secure-code"> 
                                             <div class="col-md-4"><a href="#"><div class="icon-qrcode"id="alert-trigger-qr"></div></a><p>QR</p></div>
                                             <div class="col-md-4"><a href="#"><div class="icon-link"></div></a><p>URL</p></div>
@@ -150,12 +151,12 @@
 
                                     
 
-                                    <div class="col-md-12" style="margin-top:33px;">
+                                    <div class="col-md-12" id="progress-bar">
                                         <div class="progress">
                                             <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
                                                     Time Left
                                             </div>
-                                            <span style="color:#333">5:01</span>
+                                            <div style="color:#333;padding:6px;">5:01</div>
                                         </div>
                                     </div>
 
@@ -223,10 +224,9 @@
                             <!-- item 4 -->
                              <div class="item" id="sending">
                                 <div class="row">
-                                    <h3>Sending...</h3>
-                                    <p>File Name</p>
-                                    <p>File Size / Total File Size</p>
-                                    <div class="progress">
+                                    <h3><span class="icon-busy"></span>Sending...</h3>
+                                   <p>sendanywhere.jpg | 20kb</p>
+                                    <div class="progress" id="progress-bar">
 
                                       <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                                         file size
@@ -243,17 +243,16 @@
                             <!-- item 5 -->
                              <div class="item" id="succeed">
                                 <div class="row">
-                                    <h3 style="color:#fff;font-size:18px">Succeed</h3>
-                                    <p>File Name</p>
-                                    <p>Transferred File name | File size</p>
-                                    <div class="progress">
+                                    <h3><span class="icon-wand"></span>Succeed</h3>
+                                    <p>sendanywhere.jpg | 20kb</p>
+                                    <div class="progress" id="progress-bar">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%;">
                                                 100%
                                         </div>
                                        
                                     </div>
 
-                                    <button type="submit" class="btn btn-primary right carousel-control" href="#send" role="button" data-slide="next">Back to Main</button>
+                                    <button type="submit" class="btn btn-primary right carousel-control" href="#send" role="button" data-slide-to="0">Back to Main</button>
                                 </div>
                             </div>
 
@@ -275,21 +274,25 @@
                                         <button type="button" class="btn btn-warning btn-sm btn-block" id="download-btn"><span>OK</span></button> 
                                     </div>
 
-
-                                    <form role="form">
+                                    <h3><span class="icon-paperplane"></span>Receive files</h3>
+                                    <form role="form" id="receive-form">
                                         <div class="form-group">
                                             <div id="devicetag">
-                                                <span class="icon-laptop" style="font-size:36px;" data-toggle="tooltip" data-placement="left" title="Tooltip on Tooltip on Tooltip on Tooltip on left"></span>
+                                              
                                                 <div id="editable">
-                                                    Cepheus
-                                                    <span class="icon-pencil" role="button" style="margin-left:20px" id="edit-btn"></span>
+                                                    
+                                                    <h3><span class="icon-laptop" data-toggle="tooltip" data-placement="left" title="Tooltip on Tooltip on Tooltip on Tooltip on left"></span>
+                                                        Cepheus
+                                                   <!--  <span class="icon-pencil" role="button" style="margin-left:20px" id="edit-btn"></span> --></h3>
                                                 </div>
                                             </div>
 
                                             <input type="email" class="form-control" id="deviceName" placeholder="6 Digit code">
+
+                                            <button type="submit" class="btn btn-warning btn-animation icon-box right carousel-control" href="#receive" role="button" data-slide="next"><span>Receive</span></button>
                                         </div>
                                     </form>
-                                    <button type="submit" class="btn btn-warning btn-animation icon-box right carousel-control" href="#receive" role="button" data-slide="next"><span>Receive</span></button>
+                                    
                                     <span class="icon-cycle"></span>
                                 </div>
                             </div>
@@ -297,15 +300,16 @@
                             <!-- item 3 -->
                              <div class="item" id="receiving">
                                 <div class="row">
-                                    <h3>Receiving...</h3>
-                                    <p>File Name</p>
-                                    <p>Transferred File name | File size</p>
-                                     <div class="progress">
+                                    <h3><span class="icon-busy"></span>Receiving...</h3>
+                                    <p>sendanywhere.jpg | 20kb</p>
+                                     <div class="progress" id="progress-bar">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
                                                 90%
                                         </div>
                                         <span style="color:#333">1:01</span>
                                     </div>
+                                    <button type="submit" class="btn btn-primary right carousel-control" href="#receive" role="button" data-slide="prev">Cancel</button>
+
                                     <div class="icon-cycle right carousel-control" href="#receive" role="button" data-slide="next"></div>
                                 </div>
                             </div>
@@ -313,29 +317,22 @@
                             <div class="item" id="succeed">
                                 <div class="row">
                                     <!-- <img src="img/brand/logo_blk.png"/></span> -->
-                                    <h3>Succeed</h3>
-                                    <p>File Name</p>
-                                    <p>Transferred File name | File size</p>
-                                    <div class="progress">
+                                    <h3><span class="icon-wand"></span>Succeed</h3>
+                                    <p>sendanywhere.jpg | 20kb</p>
+                                    <div class="progress" id="progress-bar">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%;">
                                                 100%
                                         </div>
                                        
                                     </div>
 
-                                    <button type="submit" class="btn btn-primary right carousel-control" href="#receive" role="button" data-slide="next">Back to Main</button>
+
+                                    <button type="submit" class="btn btn-primary right carousel-control" href="#receive" role="button" data-slide-to="0">Back to Main</button>
                                 </div>
                             </div>
 
                         </div>
-                        <!-- Controls -->
-                      <a class="left carousel-control" href="#receive" role="button" data-slide="prev">
-                        <span aria-hidden="true"></span>
-                      </a>
-                      <a class="right carousel-control" href="#receive" role="button" data-slide="next">
-                        <span aria-hidden="true"></span>
-                      </a>
-
+                      
                     </div> <!-- receive end -->
 
                  
@@ -433,7 +430,7 @@
 
                 <div class="row">
                 <div class="col-md-2 col-md-offset-5 col-xs-6 col-xs-offset-3">
-                    <a href="down.html"><button type="button" class="btn btn-success btn-lg" id="download-btn" ><span>Download</span></button></a>
+                    <a href="down.html"><button type="button" class="btn btn-warning btn-lg btn-block" id="download-btn"><span>Download</span></button></a>
 
                 </div>
             </div>
@@ -730,39 +727,39 @@
             
 
             //200mb 넘을
-            $( ".badge" ).click(function() {
+            $(".badge").click(function() {
                  $("#filesize-push" ).removeClass( "hidden" );
-                $( "#filesize-push" ).addClass("animated fadeInDown");
+                $( "#filesize-push" ).addClass("animated bounceInUp");
 
             });
 
-             $( ".icon-cancel-circle" ).click(function() {
-               $( "#filesize-push" ).addClass( "hidden" );
+             $(".icon-cancel-circle").click(function() {
+               $("#filesize-push").addClass( "hidden" );
             });
 
             //receive push
-            $( "#receive span" ).click(function() {
+            $("#receive span").click(function() {
                  $("#receive-push" ).removeClass( "hidden" );
-                $( "#receive-push" ).addClass("animated fadeInDown");
+                $( "#receive-push" ).addClass("animated bounceInUp");
 
                             
             });
 
-             $( ".icon-cancel-circle" ).click(function() {
-               $( "#receive-push" ).addClass( "hidden" );
+             $(".icon-cancel-circle").click(function() {
+               $("#receive-push").addClass( "hidden" );
             });
 
 
              //url push
-            $( ".icon-link" ).click(function() {
-                 $("#message-url" ).removeClass( "hidden" );
-                $( "#message-url" ).addClass("animated fadeInDown");
+            $(".icon-link").click(function() {
+                 $("#message-url").removeClass( "hidden" );
+                $("#message-url").addClass("animated bounceInUp");
 
                             
             });
 
-             $( ".icon-cancel-circle" ).click(function() {
-               $( "#message-url" ).addClass( "hidden" );
+             $(".icon-cancel-circle").click(function() {
+               $("#message-url").addClass( "hidden" );
             });
 
 
@@ -772,7 +769,7 @@
 
              $( ".icon-qrcode" ).click(function() {
                 $("#message-qr" ).removeClass( "hidden" );
-                $( "#message-qr" ).addClass("animated fadeInDown");
+                $( "#message-qr" ).addClass("animated bounceInUp");
             });
 
 
