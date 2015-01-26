@@ -482,8 +482,10 @@ background: none;
 	        box-shadow: 0 3px 6px -6px #333;
 }
 
-
-
+.kor{top:10px;left: 80px;padding:17px 10px}
+.eng{top: 35px;
+left: 141px;
+padding: 15px 10px;}
 
 
 .wp1, .wp2, .wp3, .wp4, .wp5, .wp6 {

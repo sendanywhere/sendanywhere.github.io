@@ -48,13 +48,23 @@
   border-color: #FA8171;
 }
 
-/*.btn-success {
+.btn-success {
   color: #fff;
   background-color:#223544;
   border-color:#223544;
 }
-*/
 
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success .focus,
+.btn-success:active,
+.btn-success .active,
+.open > .dropdown-toggle.btn-warning {
+  color: #fff;
+  background-color: #223544;
+  border-color: #223544;
+}
 
 /*
 .btn-warning:hover,
