@@ -222,11 +222,11 @@ border-bottom-left-radius: 0;
 
 #press-bg .icon{
 	text-align: center;
-	padding-top: 94px;
+	/*padding-top: 94px;*/
 	color:white;
-	margin-bottom: 80px;
+	/*margin-bottom: 80px;*/
 }
-
+#press-bg h4{font-size: 20px;}
 
 #press-bg .icon{font-size:100px;}
 #press-bg div,#press-bg .icon{text-align: center;}
