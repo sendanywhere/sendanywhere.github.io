@@ -377,8 +377,9 @@ header h1 {
 }
 @media only screen and (min-width: 768px) {
   .faq-content {
-    display: none;
-    padding: 0 24px 30px;
+    /*display: none;*/
+    padding: 30px;
+    /*padding: 0 24px 30px;*/
   }
   .faq-content p {
     line-height: 1.6;
