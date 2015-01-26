@@ -132,9 +132,11 @@ max-width: 100%;
 
 
 #api{
+	background: url('../../img/downbg.jpg') no-repeat center center;
 	padding-top: 86px;
 	text-align:center;
 	background-size: cover;
+
 	/*background-attachment: fixed;*/
 	border-bottom: 1px solid #e5e5e5;
 }
