@@ -357,7 +357,7 @@ ul.legals li:last-child::after { content: ""; }
 	/*border-bottom: 1px solid #5984A6;*/
 	padding-bottom: 10px;
 }
-.short-bg .icon{font-size:50px;}
+.short-bg .icon{font-size:50px;padding-top: 50px;}
 
 
 #platform{padding-bottom: 86px;font-size:23px;}
