@@ -22,26 +22,26 @@ header h1 {
   }
 }
 
-.category-box {
+.faq {
   width: 90%;
   max-width: 1024px;
   margin: 2em auto;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
-.category-box:after {
+.faq:after {
   content: "";
   display: table;
   clear: both;
 }
 @media only screen and (min-width: 768px) {
-  .category-box {
+  .faq {
     position: relative;
     margin: 4em auto;
     box-shadow: none;
   }
 }
 
-.categories a {
+.category-box a {
   position: relative;
   display: block;
   overflow: hidden;
@@ -56,7 +56,7 @@ header h1 {
   border-bottom: 1px solid #555b61;
   text-overflow: ellipsis;
 }
-.categories a::before, .categories a::after {
+.category-box a::before, .category-box a::after {
   /* plus icon on the right */
   position: absolute;
   top: 50%;
@@ -66,22 +66,23 @@ header h1 {
   width: 10px;
   background-color: #7f868e;
 }
-.categories a::after {
+.category-box a::after {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-.categories li:last-child a {
+.category-box li:last-child a {
   border-bottom: none;
 }
 @media only screen and (min-width: 768px) {
-  .categories {
+  .category-box {
     width: 20%;
     float: left;
+    /*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);*/
   }
-  .categories a {
+  .category-box a {
     font-size: 13px;
     font-weight: 600;
     padding-left: 24px;
@@ -90,25 +91,26 @@ header h1 {
     -moz-transition: background 0.2s, padding 0.2s;
     transition: background 0.2s, padding 0.2s;
   }
-  .categories a::before, .categories a::after {
+  .category-box a::before, .category-box a::after {
     display: none;
   }
-  .no-touch .categories a:hover {
+  .no-touch .category-box a:hover {
     background: #555b61;
   }
-  .no-js .categories {
+  .no-js .category-box {
+    width: 100%;
     margin-bottom: 2em;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .categories {
+  .category-box {
     position: absolute;
     top: 0;
     left: 0;
     width: 200px;
     z-index: 2;
   }
-  .categories a::before {
+  .category-box a::before {
     /* decorative rectangle on the left visible for the selected item */
     display: block;
     top: 0;
@@ -122,25 +124,25 @@ header h1 {
     -moz-transition: opacity 0.2s;
     transition: opacity 0.2s;
   }
-  .categories .selected {
+  .category-box .selected {
     background: #42464b !important;
   }
-  .categories .selected::before {
+  .category-box .selected::before {
     opacity: 1;
   }
-  .categories.is-fixed {
+  .category-box.is-fixed {
     /* top and left value assigned in jQuery */
     position: fixed;
   }
-  .no-js .categories {
+  .no-js .category-box {
     position: relative;
   }
 }
 
-.category-box-items {
+.category-item {
   position: fixed;
   height: 100%;
-  /*width: 90%;*/
+  width: 90%;
   top: 0;
   right: 0;
   background: #ffffff;
@@ -159,17 +161,17 @@ header h1 {
   -moz-transition: -moz-transform .3s;
   transition: transform .3s;
 }
-.category-box-items.slide-in {
+.category-item.slide-in {
   -webkit-transform: translateZ(0) translateX(0%);
   -moz-transform: translateZ(0) translateX(0%);
   -ms-transform: translateZ(0) translateX(0%);
   -o-transform: translateZ(0) translateX(0%);
   transform: translateZ(0) translateX(0%);
 }
-.no-js .category-box-items {
-  /*position: static;*/
+.no-js .category-item {
+  position: static;
   height: auto;
-  /*width: 100%;*/
+  width: 100%;
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -177,10 +179,10 @@ header h1 {
   transform: translateX(0);
 }
 @media only screen and (min-width: 768px) {
-  .category-box-items {
+  .category-item {
     position: static;
     height: auto;
-    /*width: 78%;*/
+    width: 78%;
     float: right;
     overflow: visible;
     -webkit-transform: translateZ(0) translateX(0);
@@ -193,15 +195,17 @@ header h1 {
   }
 }
 @media only screen and (min-width: 1024px) {
-  .category-box-items {
+  .category-item {
+    float: none;
+    width: 100%;
     padding-left: 220px;
   }
-  .no-js .category-box-items {
+  .no-js .category-item {
     padding-left: 0;
   }
 }
 
-.close-panel {
+.category-close {
   position: fixed;
   top: 5px;
   right: -100%;
@@ -224,7 +228,7 @@ header h1 {
   -moz-transition: right 0.4s;
   transition: right 0.4s;
 }
-.close-panel::before, .close-panel::after {
+.category-close::before, .category-close::after {
   /* close icon in CSS */
   position: absolute;
   top: 16px;
@@ -234,89 +238,91 @@ header h1 {
   width: 18px;
   background: #6c7d8e;
 }
-.close-panel::before {
+.category-close::before {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-.close-panel::after {
+.category-close::after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-.close-panel.move-left {
+.category-close.move-left {
   right: 2%;
 }
 @media only screen and (min-width: 768px) {
-  .close-panel {
+  .category-close {
     display: none;
   }
 }
 
-.category-box-group {
+.category-group {
+  /* hide group not selected */
   display: none;
 }
-.category-box-group.selected {
+.category-group.selected {
   display: block;
 }
-.category-box-group .category-box-title {
+.category-group .faq-title {
   background: transparent;
   box-shadow: none;
   margin: 1em 0;
 }
-.no-touch .category-box-group .category-box-title:hover {
+.no-touch .category-group .faq-title:hover {
   box-shadow: none;
 }
-.category-box-group .category-box-title h2 {
+.category-group .faq-title h2 {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 700;
   color: #bbbbc7;
 }
-.no-js .category-box-group {
+.no-js .category-group {
   display: block;
 }
 @media only screen and (min-width: 768px) {
-  .category-box-group {
+  .category-group {
     /* all groups visible */
     display: block;
   }
-  .category-box-group > li {
+  .category-group > li {
     background: #ffffff;
     margin-bottom: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
     -webkit-transition: box-shadow 0.2s;
     -moz-transition: box-shadow 0.2s;
     transition: box-shadow 0.2s;
   }
-  .no-touch .category-box-group > li:hover {
+  .no-touch .category-group > li:hover {
     box-shadow: 0 1px 10px rgba(108, 125, 142, 0.3);
   }
-  .category-box-group .category-box-title {
+  .category-group .faq-title {
     margin: 2em 0 1em;
   }
-  .category-box-group:first-child .category-box-title {
+  .category-group:first-child .faq-title {
     margin-top: 0;
   }
 }
 
-.category-box-trigger {
+.faq-trigger {
   position: relative;
   display: block;
   margin: 1.6em 0 .4em;
   line-height: 1.2;
 }
 @media only screen and (min-width: 768px) {
-  .category-box-trigger {
+  .faq-trigger {
     font-size: 24px;
     font-weight: 300;
     margin: 0;
     padding: 24px 72px 24px 24px;
   }
-  .category-box-trigger::before, .category-box-trigger::after {
+  .faq-trigger::before, .faq-trigger::after {
     /* arrow icon on the right */
     position: absolute;
     right: 24px;
@@ -333,7 +339,7 @@ header h1 {
     -moz-transition-duration: 0.2s;
     transition-duration: 0.2s;
   }
-  .category-box-trigger::before {
+  .faq-trigger::before {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -341,21 +347,21 @@ header h1 {
     transform: rotate(45deg);
     right: 32px;
   }
-  .category-box-trigger::after {
+  .faq-trigger::after {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
-  .content-visible .category-box-trigger::before {
+  .content-visible .faq-trigger::before {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
-  .content-visible .category-box-trigger::after {
+  .content-visible .faq-trigger::after {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -364,20 +370,20 @@ header h1 {
   }
 }
 
-.category-box-content p {
+.faq-content p {
   font-size: 14px;
   line-height: 1.4;
   color: #6c7d8e;
 }
 @media only screen and (min-width: 768px) {
-  .category-box-content {
+  .faq-content {
     display: none;
     padding: 0 24px 30px;
   }
-  .category-box-content p {
+  .faq-content p {
     line-height: 1.6;
   }
-  .no-js .category-box-content {
+  .no-js .faq-content {
     display: block;
   }
 }
