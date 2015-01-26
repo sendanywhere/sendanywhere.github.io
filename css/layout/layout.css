@@ -98,6 +98,15 @@ max-width: 100%;
 	
 }
 
+#down-bg{
+	background: url('../../img/downbg.jpg') no-repeat center center;
+	
+	background-size: cover;
+	height: 300px;
+	
+}
+
+
 
 
 
