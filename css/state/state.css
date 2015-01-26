@@ -408,7 +408,7 @@ button span{font-weight: 300;}
 }
 #sending h3,#receiving h3,#succeed h3{font-size:18px;/*margin:15px 0 26px 0;*/}
 #sending p,#receiving p,#succeed p{font-size:15px;margin-bottom:12px;}
-#receiving h3,#succeed h3{margin-top:10px;}
+/*#receiving h3,#succeed h3{margin-top:10px;}*/
 
 
 #receive{
@@ -471,6 +471,20 @@ button span{font-weight: 300;}
   padding: 5px;
   margin-right: 34px;
 }
+
+
+#download-alert{
+	margin-bottom: 0;
+border: none;
+background: none;
+	-webkit-box-shadow: 0 3px 6px -6px #333;
+	   -moz-box-shadow: 0 3px 6px -6px #333;
+	        box-shadow: 0 3px 6px -6px #333;
+}
+
+
+
+
 
 .wp1, .wp2, .wp3, .wp4, .wp5, .wp6 {
 visibility: hidden;
