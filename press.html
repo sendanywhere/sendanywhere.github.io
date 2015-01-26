@@ -76,7 +76,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3">
-                    <a href="#"><button type="button" class="btn btn-warning btn-lg">Download Presskit</button></a>
+                    <a href="#"><button type="button" class="btn btn-warning btn-sm">Download Presskit</button></a>
 
                 </div>
             </div>
@@ -95,7 +95,7 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <!-- <h4>Press Release List</h4> -->
-                    <ul>
+                    <ul id="page1">
                          <li>
                             <div class="row">
                             <div class="col-md-3">
@@ -159,7 +159,9 @@
                             <div class="col-md-9"><p>Amazingly fast and file transfer with Send Anywhere</p></div>
                            </div>
                         </li>
+                    </ul>
 
+                    <ul class="hidden" id="page2">
 
                          <li>
                             <div class="row">
@@ -214,13 +216,12 @@
                         </li>
 
 
-                        
                     </ul>
 
                     <nav>
                       <ul class="pager">
-                        <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
-                        <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                        <li class="previous"><a href="#"><span class="icon-arrow-left2"></span></a></li>
+                        <li class="next"><a href="#"><span class="icon-arrow-right2"></span></a></li>
                       </ul>
                     </nav>
                 </div>
@@ -267,10 +268,6 @@
                     <li><a href="faq.html">FAQ</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="http://blog.send-anywhere.com/">Blog</a></li>
-                    
-                    <!-- <li><a href="mailto:suhyuk@estmob.com">Business Inquiries</a></li>
-                    <li><a href="mailto:suhyuk@estmob.com">Press Inquiries (ENG)</a></li>
-                    <li><a href="mailto:alex@estmob.com">Press Inquiries (KOR, ENG)</a></li> -->
                 </ul>
               </div>
 
@@ -333,18 +330,21 @@
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/main.js"></script>
-        <script src="js/flexslider.js"></script>
-        <script src="js/tab.js"></script>
         <script src="js/modernizr.js"></script>
-        <script src="js/plugin.js"></script>
-        <!--<script src="js/vendor/jquery.ui.widget.js"></script>
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>-->
-        <script src="js/carousel.js"></script>
-        <script src="js/animated-text.js"></script>
-        <script src="js/snap.svg-min.js"></script>
-        <script src="js/table.js"></script>
          
+        <script>
+         $(function() {
+                $('nav .next').click(function() {
+                   $('#page2').removeClass('hidden');
+                   $('#page1').addClass('hidden');
+                });
 
+                 $('nav .previous').click(function() {
+                   $('#page1').removeClass('hidden');
+                   $('#page2').addClass('hidden');
+                });
+             });
+        </script>
          <script>
         $(window).scroll(function() {    
             var scroll = $(window).scrollTop();
