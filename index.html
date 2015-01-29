@@ -779,7 +779,8 @@
             $( "#send-widget-btn" ).click(function() {
                  $("#send" ).removeClass( "hidden" );
                 $( "#receive" ).addClass("hidden");
-
+                $( this ).addClass("widget-active");
+                $("#receive-widget-btn").removeClass("widget-active");
                             
             });
 
@@ -787,7 +788,8 @@
             $( "#receive-widget-btn" ).click(function() {
                  $("#receive" ).removeClass( "hidden" );
                 $( "#send" ).addClass("hidden");
-
+                $( this ).addClass("widget-active");
+                $("#send-widget-btn").removeClass("widget-active");
                             
             });
 
