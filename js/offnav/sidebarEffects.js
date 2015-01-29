@@ -7,7 +7,7 @@
  */
 
  /* some of part of Javascript is modified for specification of widget app*/
- 
+
  var SidebarMenuEffects = (function() {
 
  	function hasParentClass( e, classname ) {
@@ -27,15 +27,15 @@
 	function init() {
 
 		var container = document.getElementById( 'offnav-container' ),
-			sendwidget = document.getElementById( 'send-widget-btn' ),
-			receivewidget = document.getElementById( 'receive-widget-btn' ),
+			send = document.getElementById( 'send-widget-btn' ),
+			receive = document.getElementById( 'receive-widget-btn' ),
 			buttons = Array.prototype.slice.call( document.querySelectorAll( '#offnav-trigger-effects > div' ) ),
 			// event type (if mobile use touch events)
 			eventtype = mobilecheck() ? 'touchstart' : 'click',
 			resetMenu = function() {
 				classie.remove( container, 'offnav-menu-open' );
-				classie.remove( sendwidget, 'widget-active' );
-				classie.remove( receivewidget, 'widget-active' );
+				classie.remove( send, 'widget-active' );
+				classie.remove( receive, 'widget-active' );
 			},
 			bodyClickFn = function(evt) {
 				if( !hasParentClass( evt.target, 'offnav-menu' ) ) {
