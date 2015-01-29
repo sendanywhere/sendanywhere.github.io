@@ -107,6 +107,7 @@ footer li{color:white;list-style: none;}
 #press div{padding: 0 34px;}
 
 #user .icon{font-size: 30px;}
+#user .item{height: 250px;}
 #press .icon{color:#00bedd;}
 #user .icon{color:#00bedd;}
 #press #tc{width:83px;padding:19px 0;}
@@ -330,8 +331,8 @@ border-color: #333;
 
 
 #testimony p{
-	font-size:20px;
-	line-height: 1.6em;
+	font-size:18px;
+	line-height: 1.8em;
 	font-family: 'Arvo', serif;
 	font-weight: 400;
 	color:#5c5c5c;
