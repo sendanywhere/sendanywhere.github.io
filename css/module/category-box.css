@@ -11,13 +11,6 @@ header h1 {
   -moz-osx-font-smoothing: grayscale;
   font-size: 20px;
 }
-
-@media only screen and (min-width: 320px) {
-  .category-box {
-   margin: 30px;
-  }
-
-  }
 @media only screen and (min-width: 1024px) {
   header {
     height: 240px;
@@ -216,12 +209,12 @@ header h1 {
 .category-close {
   position: fixed;
   top: 5px;
-  right: -100%;
+  /*right: -100%;*/
   display: block;
-  height: 40px;
-  width: 40px;
+  /*height: 40px;*/
+  /*width: 40px;*/
   overflow: hidden;
-  text-indent: 100%;
+  /*text-indent: 100%;*/
   /*white-space: nowrap;*/
   z-index: 200000;
   /* Force Hardware Acceleration in WebKit */
