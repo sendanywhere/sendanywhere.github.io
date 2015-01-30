@@ -16,17 +16,18 @@
   border-color: rgb(0,190,221);
 }
 
-
 .btn-default:hover,
 .btn-default:focus,
-.btn-default .focus,
+.btn-default.focus,
 .btn-default:active,
-.btn-default .active,
-.open > .dropdown-toggle.btn-primary {
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
   color: #333;
-  background-color: rgba(0,190,221);
-  border-color: rgb(0,190,221);
+  background-color: #e5e5e5;
+   outline: none;
 }
+
+
 
 
 .btn-warning{
@@ -65,6 +66,7 @@
   background-color: #223544;
   border-color: #223544;
 }
+.btn-group .active span{color: #00bedd;}
 
 /*
 .btn-warning:hover,
