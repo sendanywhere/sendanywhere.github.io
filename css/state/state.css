@@ -247,13 +247,13 @@ padding-bottom: 50px;}
 
 #usercase h5{font-size: 18px;}
 #usercase p{
-	color:#fff;opacity: 0.6;
+	/*color:#fff;*/opacity: 0;
 	-webkit-transition: all 1.8s;
 	transition: all 1.8s;
 }
 
 /** user case 1,2,3,4 **/
-#case1:hover p,
+#case1 p,
 #case2:hover p,
 #case3:hover p,
 #case4:hover p{opacity: 1;color: #333;}
