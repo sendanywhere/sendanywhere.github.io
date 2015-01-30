@@ -425,16 +425,21 @@ button span{font-weight: 300;}
 
 #receiving h3{font-size:18px;margin-bottom:20px;}
 #receive-form input{margin-bottom: 20px;}
-#editable{
+/*#editable{
 	border: 1px solid #00bedd;
-	width: 100px;
-	height: 100px;
-	border-radius: 100%;
+	
 	margin: 0 auto;
 	padding: 5px 11px;
+	border-radius: 6px;
+}*/
+#editable .icon{/*margin-left: 22px;*/margin-bottom:20px;font-size: 38px;}
+#profile-name{
+	font-size: 16px;/*padding-left: 6px;*/
+	border: 1px solid #00bedd;
+	margin: 0 auto;
+	padding: 5px 11px;
+	border-radius: 6px;
 }
-#editable .icon{margin-left: 22px;font-size: 30px;}
-#profile-name{font-size: 16px;padding-left: 6px;}
 #editable h3{font-size: 18px;}
 #send2{overflow:hidden;}
 #code-generate{margin:12px 0 10px 0;}
