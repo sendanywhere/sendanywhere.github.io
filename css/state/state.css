@@ -516,11 +516,6 @@ visibility: visible;
 	color: #223544;
 }
 
-.btn-default:active,
-.btn-default.active,
-.open > .dropdown-toggle.btn-default {
-  background-color: #00bedd;
-}
-
+.btn-group .active span{color: #00bedd;}
 
 
