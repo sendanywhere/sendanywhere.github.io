@@ -24,7 +24,7 @@
 .btn-default .active,
 .open > .dropdown-toggle.btn-primary {
   color: #333;
-  background-color: rgba(0,190,221,0.4);
+  background-color: rgba(0,190,221);
   border-color: rgb(0,190,221);
 }
 
