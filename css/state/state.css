@@ -197,6 +197,8 @@ border-bottom-left-radius: 0;
 
 #widget-api,#rest-api{color: #333;}
 #rest-api{border-top: 1px solid #e5e5e5;}
+#widget-api .icon{font-size: 30px;color: white;}
+#widget-api .card{padding: 58px;}
 #widget-api p{padding:0 85px;}
 #rest-api p{padding:0 43px;}
 #widget-api p, #rest-api p{text-align: left;margin-bottom: 50px;}
