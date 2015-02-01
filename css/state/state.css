@@ -258,6 +258,8 @@ padding-bottom: 50px;}
 
 #desktop .icon-apple p{text-align: center;}
 #mobile,#desktop,#web div{font-size:30px; color:#333;}
+
+#tab-content{margin-bottom:40px;}
 #tab-content p{margin-top:20px;text-align: left;font-size: 14px;line-height: 22px;}
 
 
