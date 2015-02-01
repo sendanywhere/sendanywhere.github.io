@@ -220,16 +220,13 @@ border-bottom-left-radius: 0;
 #extra-page .icon-warning{
 	font-size:40px;
 }
-
+/*
 #press-bg .icon{
 	text-align: center;
-	/*padding-top: 94px;*/
 	color:white;
-	/*margin-bottom: 80px;*/
-}
+}*/
 #press-bg h4{font-size: 20px;}
 
-#press-bg .icon{font-size:100px;}
 #press-bg div,#press-bg .icon{text-align: center;}
 #press-list{color:#333;font-size: 18px;}
 #press-list span{float: left;margin-right: 20px;}
