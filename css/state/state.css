@@ -45,7 +45,7 @@ body{background-color: #fff;}
 
 #about-hero{padding:252px 0}
 #about-hero p{font-size:18px;color:white;}
-#down-bg button{margin-top:20px;}
+#down-bg button,#press-bg button{margin-top:20px;}
 
 #testimony .carousel-inner{margin-bottom: 20px;}
 #testimony .icon{margin-right:20px;font-size:30px;}
