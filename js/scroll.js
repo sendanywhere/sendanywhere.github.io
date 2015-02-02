@@ -20,7 +20,7 @@ $(document).ready(function($){
             closeFaqsContainer.addClass('move-left');
             $('body').addClass('category-overlay');
         } else {
-            $('body,html').animate({ 'scrollTop': target.offset().top - 19}, 200); 
+            $('body,html').animate({ 'scrollTop': target.offset().top - 20}, 200); 
         }
     });
 
