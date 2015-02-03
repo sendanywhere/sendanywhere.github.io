@@ -19,32 +19,9 @@
 ************************************/
 
 
-.hero{
-	background-color: #00BEDD;
-	padding:200px 0;
-	text-align:center;
-	background: url('../../img/heroplane.jpg') no-repeat top center;
-	background-size: cover;
-	background-attachment: fixed;
-	height: 700px;
-
-}
-
-
-.hero-product{
-	padding:130px 0;
-	text-align:center;
-	background: url('../../img/productbg.jpg') no-repeat top center;
-	background-size: cover;
-	background-attachment: fixed;
-	height: 800px;
-}
-
-
 #download{
 	padding:102px 0;
 	text-align:center;
-	/*background: url('../../img/hero.jpg') no-repeat top center;*/
 	background-size: cover;
 	color:#333;
 	border-bottom: 1px solid #e5e5e5;
@@ -52,27 +29,6 @@
 }
 
 
-
-#usercase{
-	text-align:center;
-	background: url('../../img/herobg.jpg') no-repeat top center;
-	background-size: cover;
-	background-attachment: fixed;
-	height: 500px;
-	padding: 40px;
-}
-/*
-#cloud{
-  background: url("../../img/cloud.png") repeat-x center;
-margin: 0 auto;
-padding: 0px;
-overflow: visible;
-position: relative;
-width: 100%;
-height: 300px;
-z-index: 1;
-max-width: 100%;
-}*/
 
 
 
@@ -90,37 +46,9 @@ max-width: 100%;
 /*#press-bg{margin-bottom: 100px;text-align: left;}*/
 .short-bg{text-align: center;}
 /*.short-bg .row{padding-top: 32px;}*/
-#press-bg,.short-bg{
-	background: url('../../img/pressbg.jpg') no-repeat center center;
-	
-	background-size: cover;
-	height: 300px;
-	
-}
-
-#down-bg{
-	background: url('../../img/downbg.jpg') no-repeat center center;
-	
-	background-size: cover;
-	height: 300px;
-	
-}
 
 
 
-
-
-
-.branding { 
-	background: url('../../img/hero.jpg') no-repeat center center; 
-	-webkit-background-size: cover; 
-	-moz-background-size: cover; 
-	-o-background-size: cover; 
-	background-size: cover; 
-	background-attachment: fixed; 
-	padding: 150px 0; 
-
-}
 
 
 #benefit,#downtab{
@@ -130,16 +58,6 @@ max-width: 100%;
 
 
 
-
-#api{
-	background: url('../../img/downbg.jpg') no-repeat center center;
-	padding-top: 86px;
-	text-align:center;
-	background-size: cover;
-
-	/*background-attachment: fixed;*/
-	border-bottom: 1px solid #e5e5e5;
-}
 #api h4{margin-top: 20px;}
 
 #testimony{
@@ -163,11 +81,6 @@ footer {
   padding: 40px 0 30px;
 }
 
-.about-bg{
-	background: url('../../img/contact.jpg') no-repeat center center;
-	background-size: cover;
-	height: 300px;
-}
 
 
 .item{padding:20px 50px;height:320px;}
