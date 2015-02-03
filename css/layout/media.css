@@ -27,7 +27,7 @@
 
 /* 480px 이하 고옹 */
 @media screen and (max-width:480px) {
-	.drawer-effect.offnav-menu {visibility: hidden;}
+	
 	.hero h2{font-size: 1.5em;line-height: 1.4em;font-weight: 100;}
 	#platform{padding-bottom: 50px;margin-left: 7.090909%;}
 	#platform section div{margin-right: 20px;}
@@ -82,7 +82,7 @@
 	footer{height: 1050px;}
 	
 
-	.drawer-effect.offnav-menu {visibility: hidden;}
+	/*.drawer-effect.offnav-menu {visibility: hidden;}*/
 	.hero{padding:68px 0;height: 550px;margin-bottom: -125px;background-attachment:local;}
 	
 
@@ -101,6 +101,7 @@
 /* 900px 이하 공통 */
 
 @media screen and (max-width:900px) {
+	.drawer-effect.offnav-menu {visibility: hidden;}
 #company-info{
 	border-top: 1px solid #3f3f3f;
 	padding-top: 20px;
