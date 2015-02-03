@@ -13,7 +13,8 @@ Theme defines color and images in this page
 
 
 /*** base css ****/
-
+/*** Layout css ****/
+@import url('layout/layout.css');
 
 @import url('base/base.css');
 @import url('base/normalize.css');
@@ -23,8 +24,7 @@ Theme defines color and images in this page
 
 
 
-/*** Layout css ****/
-@import url('layout/layout.css');
+
 
 
 
