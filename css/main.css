@@ -14,87 +14,8 @@ Theme defines color and images in this page
 
 /*** base css ****/
 /*** Layout css ****/
-.hero{
-	background-color: #00BEDD;
-	padding:200px 0;
-	text-align:center;
-	background: url('../../img/heroplane.jpg') no-repeat top center;
-	background-size: cover;
-	background-attachment: fixed;
-	height: 700px;
 
-}
-
-
-.hero-product{
-	padding:130px 0;
-	text-align:center;
-	background: url('../../img/productbg.jpg') no-repeat top center;
-	background-size: cover;
-	background-attachment: fixed;
-	height: 800px;
-}
-
-
-#usercase{
-	text-align:center;
-	background: url('../../img/herobg.jpg') no-repeat top center;
-	background-size: cover;
-	background-attachment: fixed;
-	height: 500px;
-	padding: 40px;
-}
-
-#press-bg,.short-bg{
-	background: url('../../img/pressbg.jpg') no-repeat center center;
-	
-	background-size: cover;
-	height: 300px;
-	
-}
-
-#down-bg{
-	background: url('../../img/downbg.jpg') no-repeat center center;
-	
-	background-size: cover;
-	height: 300px;
-	
-}
-
-
-.branding { 
-	background: url('../../img/hero.jpg') no-repeat center center; 
-	-webkit-background-size: cover; 
-	-moz-background-size: cover; 
-	-o-background-size: cover; 
-	background-size: cover; 
-	background-attachment: fixed; 
-	padding: 150px 0; 
-
-}
-
-
-
-#api{
-	background: url('../../img/downbg.jpg') no-repeat center center;
-	padding-top: 86px;
-	text-align:center;
-	background-size: cover;
-	border-bottom: 1px solid #e5e5e5;
-}
-
-.about-bg{
-	background: url('../../img/contact.jpg') no-repeat center center;
-	background-size: cover;
-	height: 300px;
-}
-
-
-
-
-
-
-
+@import url('layout/layout.css');
 @import url('base/base.css');
 @import url('base/normalize.css');
 @import url('base/bootstrap.css');
@@ -102,7 +23,7 @@ Theme defines color and images in this page
 @import url('base/font.css');
 
 
-@import url('layout/layout.css');
+
 
 
 
