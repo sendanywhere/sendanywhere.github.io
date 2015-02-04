@@ -180,8 +180,7 @@ border-radius: 13px;
 
 .overlay-card,.droplist{
 	background-color: #00bedd;
-	/*padding:20px 66px;*/
-	padding: 39px 48px;
+	padding: 0 48px;
 	width: 300px;
 	border-top:1px solid #51718A;
 	height: 200px;

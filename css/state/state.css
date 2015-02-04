@@ -80,25 +80,36 @@ footer h5{font-weight: bold;}
 
 #device a{color:white;}
 #devicetag{margin-bottom:20px;font-size:20px;text-align: center;color:white;}
+
+.overlay-card #close-device-btn{
+	right: 43px;
+}
+
+.droplist #close-drop-btn{
+	right: 16px;
+}
+
 .overlay-card #close-device-btn,
 .droplist #close-drop-btn{
-	font-size: 18px;
+	font-size: 16px;
 	color: #223544;
 	position: absolute;
-	right: 16px;
+	
 	top: 13px;
 }
 
+
+#device-list-header{margin-bottom: 20px;}
 #device-list-header h5{
 	font-size: 20px;
 	border-bottom: 1px solid #04869B;
 	padding-bottom: 10px;
 }
 #device-list-header .icon{
-	font-size: 1.5em;
+	font-size: 16px;
 	float: right;
 	position: absolute;
-	right: 48px;
+	right: 66px;
 	top: 12px;
 	color: #223544;
 }
