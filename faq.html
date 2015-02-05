@@ -63,14 +63,40 @@
         </div>
     </div>
 
+   <!--  <div class="panel-view" id="lang-tab">
+        <div class="container">
+            <h4>Select your Language</h4>
+            <div class="btn-group" role="group" aria-label="...">
+              <button type="button" class="btn btn-default">Kor</button>
+              <button type="button" class="btn btn-default">Eng</button>
+            </div>
+        </div>
+    </div> -->
 
     <!--faq-->
-   <div class="faq">
+ <!--    <div class="panel-view" id="lang-tab">
+        <div class="container">
+             <h4>Select your Language</h4>
+            <div class="col-md-6 col-md-offset-3">
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default" id="lang-kor"><span>Kor</span></button>
+                    <button type="button" class="btn btn-default" id="lang-eng"><span>Eng</span></button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+   <div class="faq" id="kor">
+
     <ul class="category-box">
         <li><a class="selected" href="#general">General</a></li>
         <li><a href="#android">Android</a></li>
         <li><a href="#ios">iOS</a></li>
+        <div class="btn-group" role="group" id="lang-btn">
+                    <button type="button" class="btn btn-default" id="lang-kor"><span>Kor</span></button>
+                    <button type="button" class="btn btn-default" id="lang-eng"><span>Eng</span></button>
+                </div>
     </ul> <!-- category-box -->
+
 
     <div class="category-item">
       
@@ -348,13 +374,6 @@
                     <p>같은 네트워크 상에 있는 스마트 기기들 중에서 센드애니웨어가 설치되어 있는 기기를 보여 줍니다. 클릭할 경우 6자리 키를 입력 할 필요 없이 원클릭으로 쉽게 파일을 전송할 수 있습니다.</p>
                 </div> <!-- faq-content -->
             </li>
-
-
-            
-
-
-
-
         </ul> <!-- category-group -->
 
         <ul id="android" class="category-group">
@@ -477,17 +496,157 @@
             </li>
         </ul> <!-- category-group -->
 
-      
-
-        
-        <div class="btn btn-success"><a style="color:#fff;text-decoration:none;" href="#top">Top</a></div>
+      <div class="btn btn-success"><a style="color:#fff;text-decoration:none;" href="#top">Top</a></div>
     </div> <!-- category-item -->
+
+   
     <a href="#0" class="category-close"></a>
    
     </div>
     
 
+    <!-- eng faq section -->
+     <div class="faq hidden" id="eng">
+    <ul class="category-box">
+        <li><a class="selected" href="#general">General</a></li>
+        <li><a href="#ios">iOS</a></li>
+        <div class="btn-group" role="group" id="lang-btn">
+                    <button type="button" class="btn btn-default" id="lang-kor"><span>Kor</span></button>
+                    <button type="button" class="btn btn-default" id="lang-eng"><span>Eng</span></button>
+                </div>
+    </ul> <!-- category-box -->
 
+     <div class="category-item">
+
+          <ul id="general" class="category-group">
+            <h3>FAQ</h3>
+            <li class="faq-title"><h2>General</h2></li>
+            <li>
+                <a class="faq-trigger" href="#0">How does Send Anywhere work?</a>
+                <div class="faq-content">
+                    <p>Send Anywhere pairs two devices with a temporarily generated key confirmation and transfers files instantly via the optimal network path between the devices.</p>
+                </div> <!-- faq-content -->
+            </li>
+
+            <li>
+                <a class="faq-trigger" href="#0">How can I send/receive files?</a>
+                <div class="faq-content">
+                    <h5>By a Temporarily Generated 6-Digit Key</h5>
+                    <p>1.Select files to send and hit the “Send” button on your device.</p>
+                    <p>2.Share the temporarily generated 6-digit key with the receiving device.</p>
+                    <p>3.The transfer process begins when the receiving device inputs the key.</p>
+
+                    <h5>By Selecting a Receiving Device</h5>
+                    <p>1.Select files to send and hit the “Send” button on your device.</p>
+                    <p>2.Select the device that you want to send the files to from the list of nearby or recently used devices.</p>
+                    <p>3.Transferring begins instantly when the receiving device confirms the transfer.</p>
+                </div> <!-- faq-content -->
+            </li>
+
+            <li>
+                <a class="faq-trigger" href="#0">Is Send Anywhere secure?</a>
+                <div class="faq-content">
+                    <p>We use SSL encryption on our website https://send-anywhere.com and mobile apps; however, keeping the temporarily generated 6-digit key away from others is important. You can get enhanced security keys – numerical and alphabetical mixtures – through the application’s settings. Sending files through Send Anywhere is completely secure because the files are never stored on any servers. Instead, they are transferred directly via a peer-to-peer network connection between devices. If the devices are in remote locations or in different networks, the p2p path may sometimes fail. In these instances, Send Anywhere finds the most effective node-server to pass through without storing any files. The process for uploading files for later download follows the same convention as a normal upload/download process. The maximum allotted file storage time is 24 hours so there is no need to worry about security.</p>
+                </div> <!-- faq-content -->
+            </li>
+
+            <li>
+                <a class="faq-trigger" href="#0">Do I need a network connection for Send Anywhere to work?</a>
+                <div class="faq-content">
+                    <p>Yes, you need an Internet connection so that the Send Anywhere app can communicate with our servers. Send Anywhere uses whatever Internet connection is available on your device—whether it be WiFi or cellular.</p>
+                </div> <!-- faq-content -->
+            </li>
+
+             <li>
+                <a class="faq-trigger" href="#0">Does Send Anywhere use my phone’s data plan? Will I be charged?</a>
+                <div class="faq-content">
+                    <p>Yes, if you are connected to the Internet via a cellular service, Send Anywhere will use your data plan. Your standard data plan rates will apply.</p>
+                </div> <!-- faq-content -->
+            </li>
+
+             <li>
+                <a class="faq-trigger" href="#0">Does Send Anywhere require Bluetooth activation?</a>
+                <div class="faq-content">
+                    <p>Nope! Send Anywhere does not use Bluetooth; all you need is an Internet connection.</p>
+                </div> <!-- faq-content -->
+            </li>
+
+             <li>
+                <a class="faq-trigger" href="#0">Is there a file size limit when not uploading to the server?</a>
+                <div class="faq-content">
+                    <p>There is no limitation on file size but storage expiration time for uploaded files is 24 hours.</p>
+                </div> <!-- faq-content -->
+            </li>
+
+            <li>
+                <a class="faq-trigger" href="#0">I just downloaded files from the website, where did they go?</a>
+                <div class="faq-content">
+                    <p>If you used our website to complete the file transfer process, please check the “Downloads” folder on your computer to locate the downloaded files.</p>
+                </div> <!-- faq-content -->
+            </li>
+
+            <li>
+                <a class="faq-trigger" href="#0">Does Send Anywhere transfer files using a p2p connection?</a>
+                <div class="faq-content">
+                    <h5>When sending files directly, the transfer path depends on the network connection between two devices.</h5>
+                    <p>If both two devices are in the same local network, it’s 100% p2p.</p>
+                    <p>If either device is using 3G, 4G, or 4G LTE then it depends on distance, carrier network’s base stations, etc.</p>
+                </div> <!-- faq-content -->
+            </li>
+        </ul> <!-- category-group -->
+
+        <ul id="ios" class="category-group">
+            
+            <li class="faq-title"><h2>iOS</h2></li>
+            <li>
+                <a class="faq-trigger" href="#0">Why can’t I see the received music files in my music player?</a>
+                <div class="faq-content">
+                    <p>Received music files won’t be available on your native music application. iOS does not allow 3rd party apps to save music files in your music library—you can only do this via an iTunes connection. You can play a single music file received on your Send Anywhere app by previewing it in your “My Documents” tab on the bottom menu.</p>
+                </div> <!-- faq-content -->
+            </li>
+
+            <li>
+                <a class="faq-trigger" href="#0">I can’t find the files that I sent to my iPhone/iPad</a>
+                <div class="faq-content">
+                    <p>If this is the case, the first thing that you should do is check in your “My Documents” tab on the bottom menu. If you cannot locate it here, please connect your iOS device to your PC via iTunes and look into “iTunes>Device>App>File Sharing>Send Anywhere”. If you still cannot locate it, there is the possibility that iOS does not support the file format that you sent to it.</p>
+                </div> <!-- faq-content -->
+            </li>
+
+            <li>
+                <a class="faq-trigger" href="#0">Why can’t I transfer my apps?</a>
+                <div class="faq-content">
+                    <p>On iOS, apps are not allowed to be transferred directly from/to other device. Transferring apps with Send Anywhere only stands for Android devices.</p>
+                </div> <!-- faq-content -->
+            </li>
+
+            <li>
+                <a class="faq-trigger" href="#0">I cannot play the video file that I’ve received from other device</a>
+                <div class="faq-content">
+                    <p style="font-weight:bold">The video file you received might not be a supported format on iOS.iOS supports many industry-standard video formats and compression standards, including the following:</p>
+                    <p>1. H.264 video, up to 1.5 Mbps, 640 by 480 pixels, 30 frames per second, Low-Complexity version of the H.264 Baseline Profile with AAC-LC audio up to 160 Kbps, 48 kHz, stereo audio in .m4v, .mp4, and .mov file formats</p>
+                    <p>2. H.264 video, up to 768 Kbps, 320 by 240 pixels, 30 frames per second, Baseline Profile up to Level 1.3 with AAC-LC audio up to 160 Kbps, 48 kHz, stereo audio in .m4v, .mp4, and .mov file formats</p>
+                    <p>3. MPEG-4 video, up to 2.5 Mbps, 640 by 480 pixels, 30 frames per second, Simple Profile with AAC-LC audio up to 160 Kbps, 48 kHz, stereo audio in .m4v, .mp4, and .mov file formats</p>
+                    <p>If it’s not natively supported by iOS, you’ll need to open it with a third-party app that supports the format.</p>
+                </div> <!-- faq-content -->
+            </li>
+
+             <li>
+                <a class="faq-trigger" href="#0">How can I transfer Voice memo recording file?</a>
+                <div class="faq-content">
+                    <p>On your Voice Memos app, select a recording file and tap share button. By default you can share the file using Message and Mail. Now Tap “More” button and you will see “Send Anywhere” on the list of all possible apps sharing activities(Ensure that you have Send Anywhere app installed in your phone). By turning on the switch of Send Anywhere, than you can share your recording files using Send Anywhere.</p>
+                </div> <!-- faq-content -->
+            </li>
+
+            
+        </ul> <!-- category-group -->
+
+
+    </div>
+
+   
+    <a href="#0" class="category-close"></a>
+   
+    </div>
 
 
 
@@ -590,6 +749,22 @@
         <script src="js/vendor/bootstrap.min.js"></script>
          <script src="js/modernizr.js"></script>
           <script src="js/scroll.js"></script>
+          <script>
+            $(document).ready(function(){
+
+                $( "#kor #lang-eng" ).click(function() {
+                    $( "#eng" ).removeClass( "hidden" );
+                     $( "#kor" ).addClass("hidden");
+                });
+
+                $( "#eng #lang-kor" ).click(function() {
+                    $( "#eng" ).addClass( "hidden" );
+                     $( "#kor" ).removeClass("hidden");
+                });
+            });
+
+
+          </script>
       <script>
          $(window).scroll(function() {    
              var scroll = $(window).scrollTop();
