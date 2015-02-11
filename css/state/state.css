@@ -66,10 +66,12 @@ footer h5{font-weight: bold;}
 #product li{padding:11px;margin:20px;float: left;color:white;font-size:16px;}
 #product h2,#download h2,.short-bg h2{font-weight: 300;font-size: 30px;letter-spacing: 3px;margin-bottom: 20px;}
 #product h4{font-weight: 400;}
+
+#support{margin-top: 30px;}
 #support ul{padding:0;}
-#support li{list-style: none;float: left;text-align: center;margin:30px 30px 30px -5px;}
+#support li{list-style: none;float: left;text-align: center;margin:15px 30px 30px 0;}
 #support a{color: #333;}
-#support .icon{font-size:30px;}
+#support .icon{font-size:30px;margin-bottom: 5px;}
 #support a:hover{text-decoration: none;color:rgb(0,190,221);}
 
 
@@ -106,7 +108,7 @@ footer h5{font-weight: bold;}
 	padding-bottom: 10px;
 }
 #device-list-header .icon{
-	font-size: 16px;
+	font-size: 18px;
 	float: right;
 	position: absolute;
 	right: 66px;
@@ -259,16 +261,22 @@ padding-bottom: 50px;}
 
 #usercase h5{font-size: 18px;}
 #usercase p{
-	/*color:#fff;*/opacity: 0;
+	color:#fff;opacity: 0.5;
 	-webkit-transition: all 1.8s;
 	transition: all 1.8s;
 }
 
 /** user case 1,2,3,4 **/
-#case1 p,
+#case1:hover,
+#case2:hover,
+#case3:hover,
+#case4:hover{cursor:pointer; }
+
+#case1:hover p,
 #case2:hover p,
 #case3:hover p,
-#case4:hover p{opacity: 1;color: #333;}
+#case4:hover p{opacity: 1;color: #333;cursor:pointer; }
+
 
 
 #desktop .icon-apple p{text-align: center;}
@@ -493,6 +501,7 @@ button span{font-weight: 300;}
 }
 
 #progress-bar{margin-top:36px;padding:0;}
+#progress-bar #time{color:#333;padding:6px;}
 .progress-bar {
   background-color: #fe7260;
   padding: 5px;

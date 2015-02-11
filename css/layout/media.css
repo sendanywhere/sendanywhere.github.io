@@ -39,7 +39,7 @@
 	.circle-icon{width:70px;height: 70px;border-radius: 100%;}
 	#benefit .icon{font-size: 45px;padding: 13px;}
 	#benefit section{margin-bottom: 50px;}
-	.offnav-content{overflow-y:visible;}
+	/*.offnav-content{overflow-y:visible;}*/
 	.panel-view{padding: 53px 20px 20px 20px;}
 	.circle{width: 70px;height: 70px;}
 	.item{padding: 0;height:290px;}
@@ -155,9 +155,7 @@
 }
 
 @media screen and (min-width: 500px) and (max-width: 768px){
-	/*.carousel-indicators {bottom: -49px;}
 	
-	.offnav-content{overflow-y:visible;}*/
 	footer{height: 950px;}
 	#user{border-top: 1px solid #e5e5e5;}
 	.hero{padding:141px 0;height: 750px;margin-bottom: -125px;background-attachment:local;}

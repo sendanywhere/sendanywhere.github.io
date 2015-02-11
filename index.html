@@ -57,6 +57,30 @@
 
 
 <!-- st container -->
+  <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container nav-padding">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">T</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"><img src="img/brand/sendanywhere_icon_blk.png"/></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="product.html">Product</a></li>
+                <li><a href="down.html">Download</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="http://blog.send-anywhere.com/" target="_balnk">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+              </ul>
+            </div><!--nav-collapse -->
+          </div>
+        </nav>
 
 <div class="offnav-container" id="offnav-container">
        <!--    
@@ -121,7 +145,7 @@
                                     <!-- qr code alert -->
                                     <div class="hidden" id="message-qr">
                                         <div class="icon icon-cancel-circle"></div>
-                                        <div class="icon-qrcode" id="qrcode"><p>Use QRcode Scanner to Download</p></div>
+                                        <div class="icon-qrcode" id="qrcode"><p>Use QRcode Scanner to Receive</p></div>
                                     </div>
 
 
@@ -152,7 +176,7 @@
                                             <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
                                                     Time Left
                                             </div>
-                                            <div style="color:#333;padding:6px;">5:01</div>
+                                            <div id="time">5:01</div>
                                         </div>
                                     </div>
 
@@ -166,23 +190,31 @@
                                         <div id="device">
                                             <div id="device-list-header">
                                                 <h5>File List</h5>
+                                                <div class="icon icon-cycle"></div>
                                             </div>
 
                                             <ul>
-                                                <a href="#">
-                                                    <li>
-                                                        <div class="right carousel-control" href="#send" role="button" data-slide="next"><span class="icon-laptop"></span>File list 1</div>
-                                                    </li>
-                                                </a>
-                                                <a href="#"><li><span class="icon-laptop"></span>File list 2</li></a>
-                                                <a href="#"><li><span class="icon-laptop"></span>File list 3</li></a>
-                                                <a href="#"><li><span class="icon-laptop"></span>File list 4</li></a>
-                                                <a href="#"><li><span class="icon-laptop"></span>File list 5</li></a>
-                                                <a href="#"><li><span class="icon-laptop"></span>File list 6</li></a>
-                                                <a href="#"><li><span class="icon-laptop"></span>File list 7</li></a>
-                                                <a href="#"><li><span class="icon-laptop"></span>File list 8</li></a>
-                                                <a href="#"><li><span class="icon-laptop"></span>File list 9</li></a>
-                                                <a href="#"><li><span class="icon-laptop"></span>File list 10</li></a>
+                                                <li>
+                                                    <span class="icon-laptop"></span>File list 1
+                                                </li>
+                                                <li>
+                                                    <span class="icon-laptop"></span>File list 2
+                                                </li>
+                                                <li>
+                                                    <span class="icon-laptop"></span>File list 3
+                                                </li>
+                                                <li>
+                                                    <span class="icon-laptop"></span>File list 4
+                                                </li>
+                                                <li>
+                                                    <span class="icon-laptop"></span>File list 5
+                                                </li>
+                                                <li>
+                                                    <span class="icon-laptop"></span>File list 6
+                                                </li>
+                                                <li>
+                                                    <span class="icon-laptop"></span>File list 7
+                                                </li>
                                             </ul>
                                         </div>
                                         <a href="#"><div class="icon-cancel-circle" id="close-drop-btn"></div></a>
@@ -227,7 +259,7 @@
                                       <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
                                         file size
                                       </div>
-                                      <span style="color:#333">1:01</span>
+                                      <div id="time">1:01</div>
                                     </div>
 
                                     <button type="submit" class="btn btn-primary left carousel-control" href="#send" role="button" data-slide-to="0">Cancel</button>
@@ -302,7 +334,7 @@
                                         <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
                                                 90%
                                         </div>
-                                        <span style="color:#333">1:01</span>
+                                        <div id="time">1:01</div>
                                     </div>
                                     <button type="submit" class="btn btn-primary right carousel-control" href="#receive" role="button" data-slide="prev">Cancel</button>
 
@@ -424,14 +456,14 @@
                     </div>
                 </div>
 
-                <div class="row" id="sub-text">
-                <div class="col-md-2 col-md-offset-5 col-xs-6 col-xs-offset-3">
-                    <a href="down.html"><button type="button" class="btn btn-warning btn-lg btn-block" id="download-btn"><span>Download</span></button></a>
-                    
-
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-5 col-xs-4 col-xs-offset-4">
+                        <a href="down.html"><button type="button" class="btn btn-warning btn-lg btn-block" id="download-btn"><span>Download</span></button></a>
+                    </div>
                 </div>
-                <div class="col-md-6 col-md-offset-3"><p>Download Send Anywhere for another platform</p></div>
-            </div>
+                <div class="row" id="sub-text">
+                    <div class="col-md-6 col-md-offset-3"><p>Download Send Anywhere for another platform</p></div>
+                </div>
         </div>
     </div><!--container-->
         
@@ -581,7 +613,7 @@
               <div class="col-md-2">
                 <ul>
                     <li><h5>Company</h5></li>
-                    <li><a href="about.html" target="_blank">About us</a></li>
+                    <li><a href="about.html">About us</a></li>
                    <!--  <li><a href="https://send-anywhere.com/terms" target="_blank">Terms</a></li>
                     <li><a href="https://send-anywhere.com/privacy" target="_blank">Privacy</a></li> -->
                     <li><a href="press.html">Press</a></li>
@@ -740,9 +772,15 @@
             
 
             //200mb 넘을
+            // $(".badge").click(function() {
+            //      $("#filesize-push" ).removeClass( "hidden" );
+            //     $( "#filesize-push" ).addClass("animated bounceInUp");
+
+            // });
+
             $(".badge").click(function() {
-                 $("#filesize-push" ).removeClass( "hidden" );
-                $( "#filesize-push" ).addClass("animated bounceInUp");
+                 $(".droplist" ).removeClass( "hidden" );
+                
 
             });
 

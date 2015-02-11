@@ -92,7 +92,7 @@
                                     <img src="img/press/techcrunch.png"/>
                                 </a>
                             </div>
-                            <div class="col-md-9" style="margin-top: 38px;"><p>"Peer to Peer Files Sharing Service Send Anywhere Raises $1M"</p></div>
+                            <div class="col-md-9"><p>"Peer to Peer Files Sharing Service Send Anywhere Raises $1M"</p></div>
                            </div>
                         </li>
                          
@@ -110,7 +110,7 @@
                             <div class="row">
                             <div class="col-md-3">
                                 <a href="http://thenextweb.com/apps/2014/05/12/meet-send-anywhere-the-spiritual-lovechild-of-dropbox-and-snapchat/"><img src="img/press/tnw.png"/></a></div>
-                            <div class="col-md-9">"Meet Send Anywhere, the spiritual lovechild of Dropbox and Snapchat"</div>
+                            <div class="col-md-9"><p>"Meet Send Anywhere, the spiritual lovechild of Dropbox and Snapchat"</p></div>
                            </div>
                         </li>
 
@@ -120,7 +120,7 @@
                                 <a href="http://www.cnet.com/how-to/share-files-securely-with-send-anywhere/">  <img src="img/press/cnet.png"/>
                                 </a>
                             </div>
-                            <div class="col-md-9"><p>"Send Anywhere skips the middleman in the file transfer process. Couldn't have been easier"</p></div>
+                            <div class="col-md-9" style="padding-top: 30px;"><p>"Send Anywhere skips the middleman in the file transfer process. Couldn't have been easier"</p></div>
                            </div>
                         </li>
 
@@ -135,7 +135,7 @@
                         <li>
                             <div class="row">
                             <div class="col-md-3"><a href="http://www.tuaw.com/2014/09/17/amazingly-fast-and-file-transfer-with-send-anywhere/"><img src="img/press/tuaw.png"/></a></div>
-                            <div class="col-md-9"><p>Amazingly fast and file transfer with Send Anywhere</p></div>
+                            <div class="col-md-9" style="padding-top: 20px;"><p>Amazingly fast and file transfer with Send Anywhere</p></div>
                            </div>
                         </li>
                     </ul>
@@ -199,7 +199,7 @@
 
                     <nav>
                       <ul class="pager">
-                        <li class="previous disabled"><a href="#"><span class="icon-arrow-left2"></span></a></li>
+                        <li class="previous hidden"><a href="#"><span class="icon-arrow-left2"></span></a></li>
                         <li class="next"><a href="#"><span class="icon-arrow-right2"></span></a></li>
                       </ul>
                     </nav>
@@ -233,7 +233,7 @@
               <div class="col-md-2">
                 <ul>
                     <li><h5>Company</h5></li>
-                    <li><a href="about.html" target="_blank">About us</a></li>
+                    <li><a href="about.html">About us</a></li>
                    <!--  <li><a href="https://send-anywhere.com/terms" target="_blank">Terms</a></li>
                     <li><a href="https://send-anywhere.com/privacy" target="_blank">Privacy</a></li> -->
                     <li><a href="press.html">Press</a></li>
@@ -328,13 +328,15 @@
          $(function() {
                 $('nav .next').click(function() {
                    $('#page2').removeClass('hidden');
-                   $('.pager li').removeClass('disabled');
+                   $('.previous').removeClass('hidden');
                    $('#page1').addClass('hidden');
+                   $('.next').addClass('hidden');
                 });
 
                  $('nav .previous').click(function() {
                    $('#page1').removeClass('hidden');
-                   $('.pager .previous').addClass('disabled');
+                   $('.next').removeClass('hidden');
+                   $('.previous').addClass('hidden');
                    $('#page2').addClass('hidden');
                 });
              });
