@@ -260,8 +260,8 @@ padding-bottom: 50px;}
 #usercase h5{font-size: 18px;}
 #usercase p{
 	color:#fff;opacity: 0.5;
-	-webkit-transition: all 1.8s;
-	transition: all 1.8s;
+	-webkit-transition: all 0.4s;
+	transition: all 0.4s;
 }
 
 /** user case 1,2,3,4 **/
