@@ -8,9 +8,21 @@ Theme
 ***************/
 
 body{background-color: #fff;}
+/*
+[contenteditable="true"].limited-text {
+        white-space: nowrap;
+        width:200px;
+        overflow: hidden;
+    } 
+    [contenteditable="true"].limited-text br {
+        display:none;
 
-
-
+    }
+    [contenteditable="true"].limited-text * {
+        display:inline;
+        white-space:nowrap;
+    }
+*/
 
 
 
