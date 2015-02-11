@@ -893,12 +893,12 @@
             });
            
 
-          alert('Dropped files: ' + files.length + '\n' +
-                'First file: ' + files.first().name + '\n' +
-                'File recently changed: ' + files.newest().name + '\n' +
-                'Biggest file: ' + files.largest().name + '\n' +
-                'Number of images: ' + files.images().length + '\n' +
-                'Files starting with "A": ' + files.named(/^a/i).length)
+          // alert('Dropped files: ' + files.length + '\n' +
+          //       'First file: ' + files.first().name + '\n' +
+          //       'File recently changed: ' + files.newest().name + '\n' +
+          //       'Biggest file: ' + files.largest().name + '\n' +
+          //       'Number of images: ' + files.images().length + '\n' +
+          //       'Files starting with "A": ' + files.named(/^a/i).length)
 
           files.sortBy(function (f) { return f.size })
           files.reverse()
