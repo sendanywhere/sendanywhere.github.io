@@ -76,7 +76,7 @@ footer h5{font-weight: bold;}
 
 
 #device span{font-size:1.5em;margin-right: 20px;}
-#device li{list-style: none;float: left;font-size:15px;margin-bottom:13px;}
+#device li{list-style: none;/*float: left;*/font-size:15px;margin-bottom:13px;}
 #device{margin-top: 7px;/*color:#333;*/}
 #device p{color:white;}
 
