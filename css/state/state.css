@@ -147,7 +147,9 @@ sup{font-size: 13px;top:-1.5em;}
 	color:#fff;
 	position: absolute;
 	right: 20px;
-	top: 42px;
+	top: 38px;
+	padding: 5px;
+
 }
 
 #widget .badge{
