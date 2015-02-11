@@ -76,8 +76,8 @@ footer h5{font-weight: bold;}
 
 
 #device span{font-size:1.5em;margin-right: 20px;}
-#device li{list-style: none;/*float: left;*/font-size:15px;margin-bottom:13px;}
-#device{margin-top: 7px;/*color:#333;*/}
+#device li{list-style: none;float: left;width: 100%;font-size:15px;margin-bottom:13px;}
+#device{margin-top: 12px;/*color:#333;*/}
 #device p{color:white;}
 
 #device a{color:white;}
@@ -103,7 +103,7 @@ footer h5{font-weight: bold;}
 
 #device-list-header{margin-bottom: 20px;}
 #device-list-header h5{
-	font-size: 20px;
+	font-size: 18px;
 	border-bottom: 1px solid #04869B;
 	padding-bottom: 10px;
 }
