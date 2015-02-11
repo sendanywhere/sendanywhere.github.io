@@ -321,6 +321,7 @@ header h1 {
     font-size: 24px;
     font-weight: 300;
     margin: 0;
+    color: #223544;
     /*padding: 24px 72px 24px 24px;*/
   }
   .faq-trigger::before, .faq-trigger::after {
@@ -374,12 +375,12 @@ header h1 {
 .faq-content p {
   font-size: 14px;
   line-height: 1.4;
-  color: #6c7d8e;
+  color: #333;
 }
 @media only screen and (min-width: 768px) {
   .faq-content {
     /*display: none;*/
-    padding: 30px;
+    padding: 15px 0 50px 0;
     /*padding: 0 24px 30px;*/
   }
   .faq-content p {

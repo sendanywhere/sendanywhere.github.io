@@ -149,17 +149,21 @@ sup{font-size: 13px;top:-1.5em;}
 	right: 20px;
 	top: 38px;
 	padding: 5px;
+	cursor: pointer;
 
 }
 
 #widget .badge{
 	background-color: #00bedd;
 	color:#333;
+
 }
 #faq,#contact,#about,#support,#team{color:#333;}
 #team{text-align: center;}
 #team p{text-align: left;}
+
 #team h3{margin-bottom: 50px;}
+#team h4{margin: 16px 0 20px 0;}
 #team ul{padding:10px 0 0 0;}
 .carousel-control{
 position: relative;
