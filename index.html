@@ -132,7 +132,7 @@
                                     </div>
                                     <p id="sub-info">Web Widget Max. file size: 200MB</p>
 
-                                    <button type="submit" class="btn btn-primary right carousel-control" href="#send" role="button" data-slide="next">
+                                    <button type="submit" class="btn btn-primary right carousel-control" href="#send" role="button" data-slide="next" id="send-btn">
                                         <span class="icon-paperplane"></span>Send
                                     </button>
                                 </div>
@@ -777,9 +777,14 @@
 
             $(".badge").click(function() {
                  $(".droplist" ).removeClass( "hidden" );
-                
-
+            
             });
+
+            $( "#send-btn" ).click(function() {
+                $( ".droplist" ).addClass( "hidden" );
+                
+            });
+
 
              $(".icon-cancel-circle").click(function() {
                $("#filesize-push").addClass( "hidden" );
