@@ -28,7 +28,7 @@
 /* 480px 이하 고옹 */
 @media screen and (max-width:480px) {
 	
-	.hero h2{font-size: 1.5em;line-height: 1.4em;font-weight: 100;}
+	.hero h2{font-size: 1.2em;line-height: 1.4em;font-weight: 100;}
 	#platform{padding-bottom: 50px;margin-left: 7.090909%;}
 	#platform section div{margin-right: 20px;}
 	#platform .icon{padding: 8px;}
@@ -45,7 +45,7 @@
 	.item{padding: 0;height:290px;}
 	#user{border-top: 1px solid #e5e5e5;}
 	#testimony p{font-size:12px;}
-
+	sup{top: -1.0em;}
 	.circlebg{width: 70px;height: 70px;border-radius: 70px;margin-bottom: 30px;}
 	.circlebg img{margin:18px -19px;}
 
