@@ -73,6 +73,17 @@
 
 	#contact h3,#support h3{font-size: 18px;}
 	#contact h4,#support h4{font-size: 16px;}
+
+	#press-bg h3{font-size:18px;}
+	#down-bg button, #press-bg button{
+		margin-top: 15px;
+	}
+	#page1 p,#page2 p{
+		margin-top:20px;
+		font-size: 14px;
+		line-height: 22px;
+	}
+	#press-list ul{padding: 0;}
 }
 
 
