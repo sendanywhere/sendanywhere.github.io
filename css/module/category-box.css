@@ -22,19 +22,19 @@ header h1 {
   }
 }
 
-.faq {
+.faq,.faq-kr {
   width: 90%;
   max-width: 1024px;
  /* margin: 2em auto;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);*/
 }
-.faq:after {
+.faq:after,.faq-kr:after {
   content: "";
   display: table;
   clear: both;
 }
 @media only screen and (min-width: 768px) {
-  .faq {
+  .faq,.faq-kr {
     position: relative;
     margin: 4em auto;
     box-shadow: none;
