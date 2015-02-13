@@ -4,7 +4,7 @@
 	footer{height: 1100px;}
 	
 	.hero{padding:68px 0;height: 550px;margin-bottom: -125px;background-attachment:local;}
-	#press div{padding: 0 38px;}
+	#press div{padding: 0 19px;}
 	
 	
 
@@ -46,15 +46,15 @@
 	#user{border-top: 1px solid #e5e5e5;}
 	#testimony p{font-size:12px;}
 	sup{top: -1.0em;}
-	.circlebg{width: 70px;height: 70px;border-radius: 70px;margin-bottom: 30px;}
-	.circlebg img{margin:18px -19px;}
+	.circlebg{/*width: 70px;height: 70px;border-radius: 70px;*/margin-bottom: 30px;}
+	.circlebg img{margin:65px -19px;}
 
 
-	#press #cnet{width: 40px;}
-	#press #tc{width: 40px; padding: 7px 0;}
-	#press #tnw{width: 40px; padding:10px 0;}
-	#press #bbc{width: 40px; padding:12px 0;}
-	#press div{padding: 0 22.25%;}
+	/*#press #cnet{width: 40px;}*/
+	#press #tc{/*width: 40px;*/ padding: 7px 0;}
+	#press #tnw{/*width: 40px;*/ padding:10px 0;}
+	#press #bbc{/*width: 40px;*/ padding:12px 0;}
+	/*#press div{padding: 0 22.25%;}*/
 
 	.hero-product{padding:77px 0;height: 500px;}
 	#product h2,#download h2{font-weight: 300;font-size: 2em;line-height: 1.4em;}
