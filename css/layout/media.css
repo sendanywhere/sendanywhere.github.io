@@ -6,7 +6,9 @@
 	.hero{padding:68px 0;height: 550px;margin-bottom: -125px;background-attachment:local;}
 	
 	
-	
+	#press div {
+padding: 0 7%;
+}
 
 
 	
@@ -101,7 +103,7 @@
 		border: none;
 		padding:30px 15px;
 	}
-	#press div{padding: 0 10%;}
+	
 }
 
 
@@ -109,7 +111,7 @@
 /* 480px (WVGA - Low End Windows Phone) */
 @media (min-width:322px) and (max-width:480px) {
 	footer{height: 1050px;}
-	
+	#press div{padding: 0 10%;}
 
 	/*.drawer-effect.offnav-menu {visibility: hidden;}*/
 	.hero{padding:68px 0;height: 550px;margin-bottom: -125px;background-attachment:local;}
