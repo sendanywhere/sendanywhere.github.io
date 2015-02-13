@@ -103,14 +103,14 @@ padding: 0 7%;
 		border: none;
 		padding:30px 15px;
 	}
-	
+footer{height: 600px;}
 }
 
 
 
 /* 480px (WVGA - Low End Windows Phone) */
 @media (min-width:322px) and (max-width:480px) {
-	footer{height: 1050px;}
+	/*footer{height: 600px;}*/
 	#press div{padding: 0 10%;}
 
 	/*.drawer-effect.offnav-menu {visibility: hidden;}*/
