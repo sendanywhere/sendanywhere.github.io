@@ -254,9 +254,17 @@ padding-bottom: 50px;}
 #press-list img{width: 100px;}
 #press-list .icon{font-size:30px;}
 #press-list ul{margin-top: 50px}
+#press-list .icon-microphone button{margin-top: 22px;}
 #press-divider{border-left:1px solid #e5e5e5;padding-left: 32px;}
 #press-bg .ribbon {margin-top: -7px;}
 
+
+.about-bg h3{
+	color: white;
+	font-size: 20px;
+	padding-top: 100px;
+	line-height: 32px;
+}
 #usercase{
 	color:#333;
 }
@@ -288,7 +296,8 @@ padding-bottom: 50px;}
 #tab-content p{margin-top:20px;text-align: left;font-size: 14px;line-height: 22px;}
 
 
-#team-profile p{text-align: center;}
+#team-profile{margin-top: 78px;}
+#team-profile p{text-align: center;font-size: 13px;}
 
 
 /** alert warning for widget ***/

@@ -28,7 +28,7 @@
 /* 480px 이하 고옹 */
 @media screen and (max-width:480px) {
 	
-	.hero h2{font-size: 1.2em;line-height: 1.4em;font-weight: 100;}
+	.hero h2{font-size: 1.2em;line-height: 1.8em;font-weight: 100;}
 	#platform{padding-bottom: 50px;margin-left: 7.090909%;}
 	#platform section div{margin-right: 20px;}
 	#platform .icon{padding: 8px;}
@@ -84,6 +84,23 @@
 		line-height: 22px;
 	}
 	#press-list ul{padding: 0;}
+	#about-hero{padding: 146px 0;}
+	#about h3{font-size: 20px;}
+	#about-description p,#press-list p{
+		font-size: 14px;
+		line-height: 21px;
+		margin-bottom: 40px;
+	}
+	#team .col-md-8 .col-md-6:nth-child(2){
+		margin-top: 40px;
+	}
+	#team-profile .col-md-3,#team .col-md-3{margin-top: 35px;}
+	#team-profile{margin-top: 0;}
+
+	#press-divider{
+		border: none;
+		padding:30px 15px;
+	}
 }
 
 
