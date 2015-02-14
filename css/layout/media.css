@@ -101,13 +101,13 @@ padding: 0 7%;
 	}
 	footer{height: 600px;}
 	footer p{font-size: 13px;}
-	
+
 	#feature h2{margin-bottom:0px;}
 	#feature h2,#usercase h2{font-size: 26px;}
 	#case1,#case2,#case3,#case4{margin-bottom: 41px;}
 	#sns-responsive li:nth-child(4) img{width: 23px;}
 	#company-info {margin-top: 30px;}
-	.short-bg .icon{padding-top: 13px;}
+	/*.short-bg .icon{padding-top: 13px;}*/
 	.short-bg .icon, #api .icon{font-size: 40px;}
 	#down-bg h3{font-size: 22px;}
 	#downtab h4{font-size: 16px;}
@@ -121,7 +121,7 @@ padding: 0 7%;
 	#widget-api p{padding: 0 31px;}
 	#press-list li:nth-child(7) .col-md-9{padding-top: 0;}
 	#press-bg .col-md-6{padding: 51px 0;}
-	#contact-bg .col-md-6 {padding-top: 62px;}
+	#contact-bg .icon,#top .icon,#down-bg .icon {padding-top: 62px;}
 }
 
 
