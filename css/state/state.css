@@ -252,8 +252,8 @@ border-bottom-left-radius: 0;
 #press-bg div,#press-bg .icon{text-align: center;}
 #press-list{color:#333;font-size: 18px;}
 #press-list span{float: left;margin-right: 20px;}
-#press-list li{margin-bottom: 50px;list-style: none;border-bottom: 1px dotted #999;
-padding-bottom: 50px;}
+#press-list li{list-style: none;border-bottom: 1px dotted #999;
+padding: 50px 0;}
 #press-list img{width: 100px;}
 #press-list .icon{font-size:30px;}
 #press-list ul{margin-top: 50px}

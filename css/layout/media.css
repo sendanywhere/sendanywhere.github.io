@@ -80,25 +80,21 @@ padding: 0 7%;
 	#down-bg button, #press-bg button{
 		margin-top: 15px;
 	}
-	#page1 p,#page2 p{
-		margin-top:20px;
-		font-size: 14px;
-		line-height: 22px;
-	}
+	
 	#press-list ul{padding: 0;}
 	#about-hero{padding: 146px 0;}
 	#about h3{font-size: 20px;}
 	#about-description p,#press-list p{
 		font-size: 14px;
 		line-height: 21px;
-		margin-bottom: 40px;
+		/*margin-bottom: 40px;*/
 	}
 	#team .col-md-8 .col-md-6:nth-child(2){
 		margin-top: 40px;
 	}
 	#team-profile .col-md-3,#team .col-md-3{margin-top: 35px;}
 	#team-profile{margin-top: 0;}
-
+	#team h4,#team-profile h4{font-size: 16px;}
 	#press-divider{
 		border: none;
 		padding:30px 15px;
@@ -116,12 +112,14 @@ padding: 0 7%;
 	#downtab h4{font-size: 16px;}
 	#tab-content h3{font-size: 22px;}
 	#download-area h4{font-size: 16px;margin-bottom: 20px;}
-	#press-list img{width: 84px;}
+	/*#press-list img{width: 84px;}*/
 	#press-list #page2 img{width: 124px;}
 	.pager{margin-left: -7px;}
 	#api h3{font-size: 20px;line-height: 29px;}
 	#widget-api h3, #rest-api h3{font-size: 18px;margin-bottom: 30px;}
 	#widget-api p{padding: 0 31px;}
+	#press-list li:nth-child(7) .col-md-9{padding-top: 0;}
+	#press-bg .col-md-6{padding: 51px 0;}
 }
 
 
@@ -151,13 +149,16 @@ padding: 0 7%;
 
 @media screen and (max-width:900px) {
 	.drawer-effect.offnav-menu {visibility: hidden;}
-#company-info{
-	border-top: 1px solid #3f3f3f;
-	padding-top: 20px;
-}
-/*#sns-responsive{margin:0 0 48px 44px;}*/
-#sns-responsive .icon{font-size: 25px;}
-.navbar-default{background-color: white;}
+	#company-info{
+		border-top: 1px solid #3f3f3f;
+		padding-top: 20px;
+	}
+	/*#sns-responsive{margin:0 0 48px 44px;}*/
+	#sns-responsive .icon{font-size: 25px;}
+	.navbar-default{background-color: white;}
+	#page1 p,#page2 p{margin-top:20px;font-size: 14px;line-height: 22px;}
+
+
 }
 
 
@@ -169,7 +170,7 @@ padding: 0 7%;
 @media (min-width:768px) and (max-width:990px) {
 	#user{border-top: 1px solid #e5e5e5;}
 	#platform{margin-left: 15.669039%;}
-
+	#page1 p,#page2 p{margin-top:20px;font-size: 14px;line-height: 22px;}
 
 
 }
@@ -186,6 +187,7 @@ padding: 0 7%;
 	
 	#feature h3{line-height: 1.4em;text-align: center;}
 	#tab-content p{font-size: 13px;line-height: 21px;}
+	#press-list img {width: 84px;}
 
 }
 
