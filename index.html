@@ -87,22 +87,26 @@
                 these menus will be on top of the push wrapper
             -->
             <nav class="offnav-menu drawer-effect" id="menu">
-                 <div class="widget-btn" id="offnav-trigger-effects">
-                    <div data-effect="drawer-effect">
+                 <div class="widget-btn">
+                    
                         <div id="widget-img">
                             <img src="img/brand/logo.png"/>
                             <h5>Widget</h5>
                         </div>
-                        <div id="send-widget-btn">
-                            <div class="icon icon-paperplane"></div>
-                            <h5>Send</h5>
-                        </div>
+                        <div id="offnav-trigger-effects">
+                            <div data-effect="drawer-effect">
+                                <div id="send-widget-btn">
+                                    <div class="icon icon-paperplane"></div>
+                                    <h5>Send</h5>
+                                </div>
 
-                        <div id="receive-widget-btn">
-                            <div class="icon icon-drawer3"></div>
-                            <h5>Receive</h5>
+                                <div id="receive-widget-btn">
+                                    <div class="icon icon-drawer3"></div>
+                                    <h5>Receive</h5>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    
                 </div>
 
                
@@ -766,7 +770,7 @@
 
              $("#close-drop-btn").click(function() {
                 $( ".droplist" ).addClass( "hidden" );
-                
+
             });
         
             $( ".icon-pencil" ).click(function() {
@@ -784,6 +788,7 @@
 
             $(".badge").click(function() {
                  $(".droplist" ).removeClass( "hidden" );
+                 $( ".droplist" ).addClass("animated fadeInDown");
             
             });
 
@@ -838,7 +843,7 @@
                 
             });
 
-            //widget send /receive btn
+            //widget send /send btn
             $( "#send-widget-btn" ).click(function() {
                  $("#send" ).removeClass( "hidden" );
                 $( "#receive" ).addClass("hidden");
@@ -851,7 +856,7 @@
             $( "#receive-widget-btn" ).click(function() {
                  $("#receive" ).removeClass( "hidden" );
                 $( "#send" ).addClass("hidden");
-                $( this ).addClass("widget-active");
+                $(this).addClass("widget-active");
                 $("#send-widget-btn").removeClass("widget-active");
                             
             });

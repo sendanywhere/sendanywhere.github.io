@@ -67,6 +67,9 @@ widget 의 Send 부분을 .card-top이  Receive 부분이 .card-bottom이 맡아
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
+.card-bottom, .dotted-bottom{margin-bottom: 40px;}
+	
+
 
 
 #send,#receive{
