@@ -6,9 +6,7 @@
 	.hero{padding: 111px 0;height: 600px;margin-bottom: -125px;background-attachment:local;}
 	
 	
-	#press div {
-padding: 0 7%;
-}
+	#press div {padding: 0 7%;}
 
 
 	
@@ -48,8 +46,8 @@ padding: 0 7%;
 	#user{border-top: 1px solid #e5e5e5;}
 	#testimony p{font-size:12px;}
 	sup{top: -1.0em;}
-	.circlebg{/*width: 70px;height: 70px;border-radius: 70px;*/margin-bottom: 30px;}
-	.circlebg img{margin:65px -19px;}
+	
+	.circlebg img{margin:70px -19px;}
 
 
 	/*#press #cnet{width: 40px;}*/
@@ -130,10 +128,44 @@ padding: 0 7%;
 }
 
 
+@media (min-width:322px) and (max-width:400px) {
+	.circlebg{padding: 0;margin-left: 16.5697674%;}
+
+
+}
+
+@media (min-width:400px) and (max-width:500px) {
+.circlebg{margin-left:25.2631579%;}
+}
+
+
+@media (min-width:501px) and (max-width:600px) {
+.circlebg{margin-left:28.263158%;}
+}
+
+@media (min-width:601px) and (max-width:700px) {
+.circlebg{margin-left:33.263158%;}
+}
+
+
+@media (min-width:701px) and (max-width:800px) {
+.circlebg{margin-left:35.263158%;}
+}
+
+
+@media (min-width:801px) and (max-width:999px) {
+.circlebg{margin-left:36.263158%;}
+}
+/*
+@media (min-width:400px) and (max-width:600px) {
+	.circlebg{padding: 0;margin-left: 18%;}
+
+
+}*/
 
 /* 480px (WVGA - Low End Windows Phone) */
 @media (min-width:322px) and (max-width:480px) {
-	#press div{padding: 0 10%;}
+	/*#press div{padding: 0 10%;}*/
 	.hero{padding: 115px 0;height: 600px;margin-bottom: -125px;background-attachment:local;}
 	#img1 h3,
 	#img2 h3,
@@ -164,8 +196,6 @@ padding: 0 7%;
 
 
 
-
-
 /* xGA iPad */
 @media (min-width:768px) and (max-width:990px) {
 	#user{border-top: 1px solid #e5e5e5;}
@@ -178,6 +208,7 @@ padding: 0 7%;
 }
 /* 1200px (Small Desktop, Netbook) */
 @media (min-width:990px) and (max-width:1180px) {
+	
 	#platform{margin-left:2.302923%;}
 	#user{border-top: 1px solid #e5e5e5;}
 }
@@ -186,7 +217,7 @@ padding: 0 7%;
 	#platform{margin-left:3.802923%;}
 }
 @media screen and (max-width:1180px) {
-	
+	.circlebg{margin-bottom: 30px;}
 	#feature h3{line-height: 1.4em;text-align: center;}
 	#tab-content p{font-size: 13px;line-height: 21px;}
 	#press-list img {width: 84px;}
@@ -215,7 +246,7 @@ padding: 0 7%;
 	#platform{margin:20px 0 0 16.6666667%;}
 	#benefit section{margin-bottom: 50px;}
 
-	#press-icon div{float: left;margin-right: 146px;}
+	/*#press-icon div{float: left;margin-right: 146px;}*/
 	#product h2, #download h2, .short-bg h2{font-size: 23px;}
 
 	#feature img{width: 100%;}
