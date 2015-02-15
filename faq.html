@@ -63,20 +63,50 @@
         </div>
     </div>
 
-<!-- faq korean -->
+   <!--  <div class="panel-view" id="lang-tab">
+        <div class="container">
+            <h4>Select your Language</h4>
+            <div class="btn-group" role="group" aria-label="...">
+              <button type="button" class="btn btn-default">Kor</button>
+              <button type="button" class="btn btn-default">Eng</button>
+            </div>
+        </div>
+    </div> -->
+
+    <!--faq-->
+ <!--    <div class="panel-view" id="lang-tab">
+        <div class="container">
+             <h4>Select your Language</h4>
+            <div class="col-md-6 col-md-offset-3">
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default" id="lang-kor"><span>Kor</span></button>
+                    <button type="button" class="btn btn-default" id="lang-eng"><span>Eng</span></button>
+                </div>
+            </div>
+        </div>
+    </div> -->
    <div class="faq" id="kor">
 
     <ul class="category-box">
         <li><a class="selected" href="#general">General</a></li>
         <li><a href="#android">Android</a></li>
         <li><a href="#ios">iOS</a></li>
-        <div class="btn-group" role="group" id="lang-btn">
+
+        <li class="btn-group" role="group" id="lang-btn">
                     <button type="button" class="btn btn-default" id="lang-kor"><span>Kor</span></button>
                     <button type="button" class="btn btn-default" id="lang-eng"><span>Eng</span></button>
-                </div>
+                    
+                </li>
+                <li>
+                    <a style="color:#fff;background:none;text-decoration:none;padding:0;margin-top:300px;" href="#top">
+                        <button class="btn btn-success btn-block">Top</button>
+                    </a>
+                </li>
+        
     </ul> <!-- category-box -->
 
 
+    
     <div class="category-item">
       
        <!--  <div class="circle-btn kor">KOR</div>
@@ -475,16 +505,17 @@
             </li>
         </ul> <!-- category-group -->
 
-      <div class="btn btn-success"><a style="color:#fff;text-decoration:none;" href="#top">Top</a></div>
+      
     </div> <!-- category-item -->
 
-   
+   <!-- <div class="btn btn-success"><a style="color:#fff;text-decoration:none;" href="#top">Top</a></div> -->
     <a href="#0" class="category-close"></a>
    
     </div>
     
 
 
+    
 
 
 
@@ -602,22 +633,22 @@
        
         <script src="js/vendor/bootstrap.min.js"></script>
           <script src="js/scroll.js"></script>
-          <script>
-            $(document).ready(function(){
+          // <script>
+          //   $(document).ready(function(){
 
-                $( "#kor #lang-eng" ).click(function() {
-                    $( "#eng" ).removeClass( "hidden" );
-                     $( "#kor" ).addClass("hidden");
-                });
+          //       $( "#kor #lang-eng" ).click(function() {
+          //           $( "#eng" ).removeClass( "hidden" );
+          //            $( "#kor" ).addClass("hidden");
+          //       });
 
-                $( "#eng #lang-kor" ).click(function() {
-                    $( "#eng" ).addClass( "hidden" );
-                     $( "#kor" ).removeClass("hidden");
-                });
-            });
+          //       $( "#eng #lang-kor" ).click(function() {
+          //           $( "#eng" ).addClass( "hidden" );
+          //            $( "#kor" ).removeClass("hidden");
+          //       });
+          //   });
 
 
-          </script>
+          // </script>
       <script>
          $(document).scroll(function() {    
              var scroll = $(window).scrollTop();

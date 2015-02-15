@@ -55,6 +55,8 @@ header h1 {
   white-space: nowrap;
   border-bottom: 1px solid #555b61;
   text-overflow: ellipsis;
+  text-decoration: none;
+}
 }
 .category-box a::before, .category-box a::after {
   /* plus icon on the right */
@@ -72,6 +74,7 @@ header h1 {
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
+
 }
 .category-box li:last-child a {
   border-bottom: none;
@@ -86,7 +89,6 @@ header h1 {
   .category-box a {
     font-size: 13px;
     font-weight: 600;
-    padding-left: 24px;
     padding: 0 24px;
     -webkit-transition: background 0.2s, padding 0.2s;
     -moz-transition: background 0.2s, padding 0.2s;
@@ -126,7 +128,8 @@ header h1 {
     transition: opacity 0.2s;
   }
   .category-box .selected {
-    background: #42464b !important;
+    background: #00bedd !important;
+    border-bottom: 1px solid #00bedd;
   }
   .category-box .selected::before {
     opacity: 1;
@@ -279,9 +282,9 @@ header h1 {
 }
 .category-group .faq-title h2 {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 700;
-  color: #bbbbc7;
+  color: #bbbbbb;
 }
 .no-js .category-group {
   display: block;
