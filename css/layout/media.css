@@ -3,7 +3,7 @@
 @media screen and (max-width:320px) {
 	footer{height: 1100px;}
 	
-	.hero{padding:68px 0;height: 550px;margin-bottom: -125px;background-attachment:local;}
+	.hero{padding:68px 0;height: 700px;margin-bottom: -125px;background-attachment:local;}
 	
 	
 	#press div {
@@ -125,6 +125,7 @@ padding: 0 7%;
 
 	#widget-api p, #rest-api p{font-size: 14px;line-height: 20px;}
 	.highlight{margin-bottom: 50px;}
+	#extra-page img{width: 129px;}
 }
 
 
