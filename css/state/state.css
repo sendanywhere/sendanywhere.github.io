@@ -90,7 +90,8 @@ footer h5{font-weight: bold;font-size: 16px;}
 #product h2,#download h2,.short-bg h2{font-weight: 300;font-size: 30px;letter-spacing: 3px;margin-bottom: 20px;}
 #product h4{font-weight: 400;}
 
-#support{margin-top: 30px;}
+#support{border-top: 1px solid #e5e5e5;}
+#support,#press-support{margin-top: 30px;}
 #support ul{padding:0;}
 #support li{list-style: none;float: left;text-align: center;margin:15px 30px 30px 0;}
 #support a{color: #333;}
