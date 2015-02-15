@@ -371,7 +371,8 @@ border-color: #333;
 	margin:0 auto;
 }
 
-#download-area h4{color:#223544;line-height:1.5em;text-align:center;font-size: 22px;}
+#download-area{padding:80px 20px;}
+#download-area h4{color:#223544;line-height:1.6em;text-align:center;font-size: 20px;margin-bottom: 30px;}
 
 
 #platform .icon{padding: 13px;color:white;}
