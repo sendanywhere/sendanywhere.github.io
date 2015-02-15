@@ -109,7 +109,18 @@
                     
                 </div>
 
-               
+                 <div class="item hidden" id="browser">
+                    <div class="hidden" id="browser-push">
+                        <div class="icon icon-cancel-circle"></div>
+                        <div style="margin-bottom:20px">
+                            <h5>Update Browser</h5><p>Your browser is out of date, and may not be compatible with the widget function.</p>
+                        </div>
+                        <a href="https://whatbrowser.org/" target="_blank">
+                            <button type="button" class="btn btn-warning btn-sm" id="download-btn"><span>Update your Browser</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
 
                 
                     <!-- send -->
@@ -119,7 +130,7 @@
                             <!-- 2. Sending and Drag and drop-->
                              <div class="item active">
                                 <div class="row">
-                                     <div class="hidden" id="filesize-push">
+                                    <div class="hidden" id="filesize-push">
                                         <div class="icon icon-cancel-circle"></div>
                                         <div style="margin-bottom:20px">Web widget max. file size 200MB. Try our desktop version. It's unlimited and FREE!</div>
                                         <button type="button" class="btn btn-warning btn-sm btn-block" id="download-btn"><span>Download</span></button> 
@@ -297,6 +308,9 @@
                         </div>
                        
                     </div> <!-- send end -->
+
+                       
+
 
 
                     <!-- receive -->
@@ -859,6 +873,29 @@
                 $(this).addClass("widget-active");
                 $("#send-widget-btn").removeClass("widget-active");
                             
+            });
+
+             //update browser demo 나중에 지우셔도 됩니다.
+            $( "#widget-img" ).click(function() {
+                $("#browser" ).removeClass( "hidden" );
+                 $("#browser-push" ).removeClass( "hidden" );
+                 $("#send-widget-btn").removeClass("widget-active");
+                 $("#send-widget-btn").addClass("disabled");
+                  $("#receive-widget-btn").removeClass("widget-active");
+                 $("#receive-widget-btn").addClass("disabled");
+                $( "#send" ).addClass("hidden");
+                $( "#receive" ).addClass("hidden");
+                
+                            
+            });
+
+
+            $( "#browser .icon-cancel-circle" ).click(function() {
+                $( "#browser" ).addClass( "hidden" );
+                $( "#send" ).removeClass("hidden");
+                $("#send-widget-btn").removeClass("disabled");
+                $("#receive-widget-btn").removeClass("disabled");
+                
             });
 
             $(function () {

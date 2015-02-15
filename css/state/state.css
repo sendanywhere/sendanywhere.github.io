@@ -8,6 +8,8 @@ Theme
 ***************/
 
 body{background-color: #fff;}
+.disabled{pointer-events: none;} /*  위젯이나 버튼을 deactivation 할때 사용 */
+
 pre code{white-space:normal;}
 .highlight pre {
 padding: 20px;
@@ -235,7 +237,9 @@ border-bottom-left-radius: 0;
 /*
 .nav-tabs{border-bottom: none;}
 .nav-tabs > li > a{margin:0;}*/
-
+#browser .icon{font-size: 16px;margin-top: 0px;}
+#browser h5{font-weight: bold;font-size: 15px;}
+#browser p{font-size: 13px;}
 #widget-api h4,#rest-api h4{font-size: 15px;font-weight: bold;margin-bottom: 15px;}
 
 #widget-api,#rest-api{color: #333;}
@@ -517,7 +521,7 @@ button span{font-weight: 300;}
 	text-align: center;}
 #code-generate span,#sending span, #receiving span,#succeed span,#send span,#receive span{margin-right: 15px;}
 
-#filesize-push, #receive-push,#message-qr,#message-url{
+#filesize-push, #receive-push,#message-qr,#message-url,#browser-push{
 	margin-bottom: 127px;
 	background-color: #e5e5e5;
 	border-radius: 5px;
