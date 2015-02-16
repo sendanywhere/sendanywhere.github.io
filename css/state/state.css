@@ -366,7 +366,9 @@ border-color: #333;
 	letter-spacing: 4px;
 }
 #downtab span{font-size: 30px;}
-#downtab a{color:#333;text-decoration: none;}
+#downtab a{color:#333;text-decoration: none;font-size: 30px;}
+#downtab .active a{color: #00bedd;}
+
 #benefit .icon{
 	font-size: 50px;
 	color:white;
