@@ -444,7 +444,7 @@
           } else if (!ns[1]) {
             this.events[ns[0]] = []
           } else if (this.events[ns[0]]) {
-            for (var fi = this.events[ns[0]].length - 1; fi >= 0; fi--) {
+            for (var fi = this.events[ns[0]].length - 1; fi>= 0; fi--) {
               if (global.funcNS( this.events[ns[0]][fi] ) == ns[1]) {
                 this.events[ns[0]].splice(fi, 1)
               }
@@ -1487,7 +1487,7 @@
           console.warn('FileDrop fallback upload triggered but iframe options' +
                        ' were not configured - doing nothing.')
         }
-      } else if (files.length > 0) {
+      } else if (files.length> 0) {
         // Dropped one or more files and we have FileAPI available (Firefox,
         // Chrome-based) so fire off the usual on-drop event.
         global.callAllOfObject(self, 'send', [files])
@@ -1529,7 +1529,7 @@
 
             // Directories have zero size but in Chrome they are useful
             // since you can access underlying DIrectoryEntry and read files.
-            if (file.size > 0 || file.nativeEntry) {
+            if (file.size> 0 || file.nativeEntry) {
               result.push(file)
             }
           }
@@ -1607,7 +1607,7 @@
 
     // Returns undefind if this list is empty.
     self.pop = function () {
-      if (self.length > 0) {
+      if (self.length> 0) {
         var file = self.last()
         delete self[--self.length]
         return file
@@ -1668,7 +1668,7 @@
     // func = function (File a, File b, aIndex, bIndex) - if returns < 0 second
     // file (b) must go before first (a). Very similar to Array.sort().
     //
-    //? sort(function (a, b) { return a.name > b.name ? +1 : -1 })
+    //? sort(function (a, b) { return a.name> b.name ? +1 : -1 })
     self.sort = function (func, cx) {
       for (var i = 0; i < self.length; i++) {
         for (var j = 0; j < self.length; j++) {
@@ -1698,7 +1698,7 @@
       }
 
       list.sort(function (a, b) {
-        return a[1] > b[1] ? +1 : (a[1] < b[1] ? -1 : 0)
+        return a[1]> b[1] ? +1 : (a[1] < b[1] ? -1 : 0)
       })
 
       for (var i = 0; i < list.length; i++) {
@@ -2206,7 +2206,7 @@
         return error('support', e)
       }
 
-      if (opt.start > 0 || opt.end != null && opt.end) {
+      if (opt.start> 0 || opt.end != null && opt.end) {
         if (opt.blob.slice) {
           opt.end == null && (opt.end = opt.blob.size || opt.blob.fileSize)
           opt.blob = opt.blob.slice(opt.start, opt.end, opt.mime)

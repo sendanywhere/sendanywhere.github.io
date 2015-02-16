@@ -608,7 +608,7 @@
       });
     } else if (!ZeroClipboard.isFlashUnusable() && _flashState.bridge === null) {
       var maxWait = _globalConfig.flashLoadTimeout;
-      if (typeof maxWait === "number" && maxWait >= 0) {
+      if (typeof maxWait === "number" && maxWait>= 0) {
         _flashCheckTimeout = _setTimeout(function() {
           if (typeof _flashState.deactivated !== "boolean") {
             _flashState.deactivated = true;
@@ -1089,7 +1089,7 @@
  * @private
  */
   var _queueEmitClipboardErrors = function(aftercopyEvent) {
-    if (aftercopyEvent.errors && aftercopyEvent.errors.length > 0) {
+    if (aftercopyEvent.errors && aftercopyEvent.errors.length> 0) {
       var errorEvent = _deepCopy(aftercopyEvent);
       _extend(errorEvent, {
         type: "error",
@@ -1149,7 +1149,7 @@
  */
   var _watchForSwfFallbackContent = function() {
     var maxWait = _globalConfig.flashLoadTimeout;
-    if (typeof maxWait === "number" && maxWait >= 0) {
+    if (typeof maxWait === "number" && maxWait>= 0) {
       var pollWait = Math.min(1e3, maxWait / 10);
       var fallbackContentId = _globalConfig.swfObjectId + "_fallbackContent";
       _swfFallbackCheckInterval = _setInterval(function() {
@@ -1481,7 +1481,7 @@
       }
       var trustedDomains = _extractAllDomains(configOptions.trustedDomains);
       var len = trustedDomains.length;
-      if (len > 0) {
+      if (len> 0) {
         if (len === 1 && trustedDomains[0] === "*") {
           return "always";
         }
@@ -1519,7 +1519,7 @@
     if (typeof value === "string" && value) {
       classNames = value.split(/\s+/);
     }
-    if (element && element.nodeType === 1 && classNames.length > 0) {
+    if (element && element.nodeType === 1 && classNames.length> 0) {
       if (element.classList) {
         for (c = 0, cl = classNames.length; c < cl; c++) {
           element.classList.add(classNames[c]);
@@ -1547,8 +1547,8 @@
     if (typeof value === "string" && value) {
       classNames = value.split(/\s+/);
     }
-    if (element && element.nodeType === 1 && classNames.length > 0) {
-      if (element.classList && element.classList.length > 0) {
+    if (element && element.nodeType === 1 && classNames.length> 0) {
+      if (element.classList && element.classList.length> 0) {
         for (c = 0, cl = classNames.length; c < cl; c++) {
           element.classList.remove(classNames[c]);
         }
@@ -1626,13 +1626,13 @@
       return false;
     }
     var styles = _getComputedStyle(el, null);
-    var hasCssHeight = _parseFloat(styles.height) > 0;
-    var hasCssWidth = _parseFloat(styles.width) > 0;
-    var hasCssTop = _parseFloat(styles.top) >= 0;
-    var hasCssLeft = _parseFloat(styles.left) >= 0;
+    var hasCssHeight = _parseFloat(styles.height)> 0;
+    var hasCssWidth = _parseFloat(styles.width)> 0;
+    var hasCssTop = _parseFloat(styles.top)>= 0;
+    var hasCssLeft = _parseFloat(styles.left)>= 0;
     var cssKnows = hasCssHeight && hasCssWidth && hasCssTop && hasCssLeft;
     var rect = cssKnows ? null : _getElementPosition(el);
-    var isVisible = styles.display !== "none" && styles.visibility !== "collapse" && (cssKnows || !!rect && (hasCssHeight || rect.height > 0) && (hasCssWidth || rect.width > 0) && (hasCssTop || rect.top >= 0) && (hasCssLeft || rect.left >= 0));
+    var isVisible = styles.display !== "none" && styles.visibility !== "collapse" && (cssKnows || !!rect && (hasCssHeight || rect.height> 0) && (hasCssWidth || rect.width> 0) && (hasCssTop || rect.top>= 0) && (hasCssLeft || rect.left>= 0));
     return isVisible;
   };
   /**
@@ -2297,7 +2297,7 @@
     }
     var meta = _clientMeta[this.id];
     var clippedEls = meta && meta.elements;
-    var hasClippedEls = !!clippedEls && clippedEls.length > 0;
+    var hasClippedEls = !!clippedEls && clippedEls.length> 0;
     var goodTarget = !event.target || hasClippedEls && clippedEls.indexOf(event.target) !== -1;
     var goodRelTarget = event.relatedTarget && hasClippedEls && clippedEls.indexOf(event.relatedTarget) !== -1;
     var goodClient = event.client && event.client === this;

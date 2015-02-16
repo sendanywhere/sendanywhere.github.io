@@ -290,7 +290,7 @@ window.Modernizr = (function( window, document, undefined ) {
     };
 
     tests['hashchange'] = function() {
-      return isEventSupported('hashchange', window) && (document.documentMode === undefined || document.documentMode > 7);
+      return isEventSupported('hashchange', window) && (document.documentMode === undefined || document.documentMode> 7);
     };
 
     tests['history'] = function() {
@@ -425,7 +425,7 @@ window.Modernizr = (function( window, document, undefined ) {
         var bool;
 
         injectElementWithStyles(['#',mod,'{font:0/0 a}#',mod,':after{content:"',smile,'";visibility:hidden;font:3px/1 a}'].join(''), function( node ) {
-          bool = node.offsetHeight >= 3;
+          bool = node.offsetHeight>= 3;
         });
 
         return bool;

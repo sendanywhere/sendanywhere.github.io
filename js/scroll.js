@@ -42,7 +42,7 @@ $(document).ready(function($){
 
     //update category sidebar while scrolling
     $(window).on('scroll', function(){
-        if ( $(window).width() > MqL ) {
+        if ( $(window).width()> MqL ) {
             (!window.requestAnimationFrame) ? updateCategory() : window.requestAnimationFrame(updateCategory); 
         }
     });
@@ -80,7 +80,7 @@ $(document).ready(function($){
         var top = $('.faq').offset().top,
             height = jQuery('.faq').height() - jQuery('.category-box').height(),
             margin = 80;
-        if( top - margin <= $(window).scrollTop() && top - margin + height > $(window).scrollTop() ) {
+        if( top - margin <= $(window).scrollTop() && top - margin + height> $(window).scrollTop() ) {
             var leftValue = faqsCategoriesContainer.offset().left,
                 widthValue = faqsCategoriesContainer.width();
             faqsCategoriesContainer.addClass('is-fixed').css({
@@ -120,7 +120,7 @@ $(document).ready(function($){
                 activeCategory = $('.category-box a[href="#'+actual.attr('id')+'"]'),
                 topSection = (activeCategory.parent('li').is(':first-child')) ? 0 : Math.round(actual.offset().top);
             
-            if ( ( topSection - 20 <= $(window).scrollTop() ) && ( Math.round(actual.offset().top) + actual.height() + margin - 20 > $(window).scrollTop() ) ) {
+            if ( ( topSection - 20 <= $(window).scrollTop() ) && ( Math.round(actual.offset().top) + actual.height() + margin - 20> $(window).scrollTop() ) ) {
                 activeCategory.addClass('selected');
             }else {
                 activeCategory.removeClass('selected');

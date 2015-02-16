@@ -214,7 +214,7 @@ font-size: 1em;
 #feature h2, #usecase h2{margin-bottom:50px;text-align: center;/*text-transform: uppercase;*/}
 #feature img{width: 100%;}
 
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+.nav-tabs> li.active> a, .nav-tabs> li.active> a:hover, .nav-tabs> li.active> a:focus{
 
 	border:none;
 	background-color: transparent;
@@ -223,7 +223,7 @@ font-size: 1em;
 #lang-btn{padding:20px 0 0 27px;}
 #download h4{margin:30px 0 60px 0;}
 
-#downtab .nav > li > a{padding: 0;border:none;}
+#downtab .nav> li> a{padding: 0;border:none;}
 #downtab li:first-child button{
 	border-top-right-radius: 0;
 border-bottom-right-radius: 0;
@@ -241,7 +241,7 @@ border-bottom-left-radius: 0;
 }
 /*
 .nav-tabs{border-bottom: none;}
-.nav-tabs > li > a{margin:0;}*/
+.nav-tabs> li> a{margin:0;}*/
 #browser .icon{font-size: 16px;margin-top: 0px;}
 #browser h5{font-weight: bold;font-size: 15px;}
 #browser p{font-size: 13px;}
@@ -400,7 +400,7 @@ border-color: #333;
 
 
 
-
+#top-btn a{color:#fff;text-decoration:none;padding:0;margin-top:200px;}
 
 
 #testimony p{

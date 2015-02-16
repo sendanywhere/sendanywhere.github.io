@@ -29,7 +29,7 @@
 		var container = document.getElementById( 'offnav-container' ),
 			send = document.getElementById( 'send-widget-btn' ),
 			receive = document.getElementById( 'receive-widget-btn' ),
-			buttons = Array.prototype.slice.call( document.querySelectorAll( '#offnav-trigger-effects > div' ) ),
+			buttons = Array.prototype.slice.call( document.querySelectorAll( '#offnav-trigger-effects> div' ) ),
 			// event type (if mobile use touch events)
 			eventtype = mobilecheck() ? 'touchstart' : 'click',
 			resetMenu = function() {
