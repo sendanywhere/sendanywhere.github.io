@@ -151,7 +151,7 @@
 	border-top:1px solid #e5e5e5;
 }
 #menu{position: fixed;}
-#menu .icon{font-size: 30px;text-align: center;}
+#menu #send-widget-btn .icon,#menu #receive-widget-btn .icon{font-size: 30px;text-align: center;}
 
 footer {
   bottom: 0;
