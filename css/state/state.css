@@ -547,7 +547,7 @@ button span{font-weight: 300;}
 }
 
 .bar-guage{margin-top:36px;padding:0;}
-.bar-guage #time{color:#333;padding:6px;}
+.bar-guage .time{color:#333;padding:6px;}
 .progress-bar {
   background-color: #fe7260;
   padding: 5px;
