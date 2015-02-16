@@ -184,12 +184,13 @@
 
 .category-close {
   position: fixed;
-  top: 5px;
+  top: 20px;
   right: -100%;
   display: block;
-  height: 40px;
-  width: 40px; 
-  overflow: hidden; 
+  color: #333;
+  /*height: 40px;*/
+  /*width: 40px; */
+  /*overflow: hidden;*/
   text-indent: 100%;
   white-space: nowrap;
   z-index: 200000;
@@ -205,32 +206,8 @@
   -moz-transition: right 0.4s;
   transition: right 0.4s;
 }
-.category-close::before, .category-close::after {
-  /* close icon in CSS */
-  position: absolute;
-  top: 16px;
-  left: 12px;
-  display: inline-block;
-  height: 3px;
-  width: 18px;
-  background: #6c7d8e;
-}
-.category-close::before {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.category-close::after {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
 .category-close.move-left {
-  right: 2%;
+  right: 5%;
 }
 @media only screen and (min-width: 768px) {
   .category-close {
