@@ -118,8 +118,8 @@
 	#widget-api h3, #rest-api h3{font-size: 18px;margin-bottom: 30px;}
 	#widget-api p{padding: 0 31px;}
 	#press-list li:nth-child(7) .col-md-9{padding-top: 0;}
-	#press-bg .col-md-6{padding: 51px 0;}
-	#contact-bg .icon,#top .icon,#down-bg .icon {padding-top: 62px;}
+	/*#press-bg .col-md-6{padding: 51px 0;}*/
+	/*#contact-bg .icon,#top .icon,#down-bg .icon {padding-top: 62px;}*/
 
 	#widget-api p, #rest-api p{font-size: 14px;line-height: 20px;}
 	.highlight{margin-bottom: 50px;}
