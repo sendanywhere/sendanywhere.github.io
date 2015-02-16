@@ -63,6 +63,8 @@ border-radius: 4px;
 
 .icon-white{font-size: 40px;color:white;}
 
+
+#contact-bg,#down-bg,#top{padding-top:92px;}
 #about-hero{padding:252px 0}
 #about-hero p{font-size:18px;color:white;}
 #down-bg button,#press-bg button{margin-top:20px;}
