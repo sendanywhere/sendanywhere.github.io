@@ -191,6 +191,7 @@
 	#page1 p,#page2 p{margin-top:20px;font-size: 14px;line-height: 22px;}
 	footer{height: 680px;}
 	footer ul{padding-left:40px;}
+	.circlebg p{padding: 10px;}
 }
 
 
