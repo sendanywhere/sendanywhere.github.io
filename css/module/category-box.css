@@ -1,40 +1,15 @@
-header {
-  position: relative;
-  height: 180px;
-  line-height: 180px;
-  text-align: center;
-  background-color: #a9c056;
-}
-header h1 {
-  color: #ffffff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 20px;
-}
-@media only screen and (min-width: 1024px) {
-  header {
-    height: 240px;
-    line-height: 240px;
-  }
-  header h1 {
-    font-size: 36px;
-    font-weight: 300;
-  }
-}
 
-.faq,.faq-kr {
+.faq{
   width: 90%;
   max-width: 1024px;
- /* margin: 2em auto;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);*/
 }
-.faq:after,.faq-kr:after {
+.faq:after{
   content: "";
   display: table;
   clear: both;
 }
 @media only screen and (min-width: 768px) {
-  .faq,.faq-kr {
+  .faq{
     position: relative;
     margin: 4em auto;
     box-shadow: none;
@@ -83,8 +58,6 @@ header h1 {
   .category-box {
     width: 20%;
     float: left;
-    
-    /*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);*/
   }
   .category-box a {
     font-size: 13px;
@@ -212,16 +185,16 @@ header h1 {
 .category-close {
   position: fixed;
   top: 5px;
-  /*right: -100%;*/
+  right: -100%;
   display: block;
-  /*height: 40px;*/
-  /*width: 40px;*/
-  overflow: hidden;
-  /*text-indent: 100%;*/
-  /*white-space: nowrap;*/
+  height: 40px;
+  width: 40px; 
+  overflow: hidden; 
+  text-indent: 100%;
+  white-space: nowrap;
   z-index: 200000;
-  /* Force Hardware Acceleration in WebKit */
-  /*-webkit-transform: translateZ(0);
+   Force Hardware Acceleration in WebKit 
+  -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
@@ -230,7 +203,7 @@ header h1 {
   backface-visibility: hidden;
   -webkit-transition: right 0.4s;
   -moz-transition: right 0.4s;
-  transition: right 0.4s;*/
+  transition: right 0.4s;
 }
 .category-close::before, .category-close::after {
   /* close icon in CSS */
