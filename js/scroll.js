@@ -20,7 +20,7 @@ $(document).ready(function($){
             closeFaqsContainer.addClass('move-left');
             $('body').addClass('category-overlay');
         } else {
-            $('body,html').animate({ 'scrollTop': target.offset().top - 20}, 200); 
+            $('body,html').animate({ 'scrollTop': target.offset().top - 20}, 2000); 
         }
     });
 
@@ -136,17 +136,17 @@ $(document).ready(function($){
 
 
 //smooth scroll 
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
+// $(function() {
+//   $('a[href*=#]:not([href=#])').click(function() {
+//     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+//       var target = $(this.hash);
+//       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+//       if (target.length) {
+//         $('html,body').animate({
+//           scrollTop: target.offset().top
+//         }, 5000);
+//         return false;
+//       }
+//     }
+//   });
+// });
