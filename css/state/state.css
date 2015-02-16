@@ -224,18 +224,18 @@ font-size: 1em;
 #download h4{margin:30px 0 60px 0;}
 
 #downtab .nav> li> a{padding: 0;border:none;}
-#downtab li:first-child button{
+#downtab li:first-child span{
 	border-top-right-radius: 0;
 border-bottom-right-radius: 0;
-border-right: none;
 }
 
-#downtab li:nth-child(2) button{
-	border-radius: 0;
-	border-right: none;
+#downtab li:nth-child(2) span{
+	border-left: 0;
+border-right: 0;
+border-radius: 0;
 }
 
-#downtab li:nth-child(3) button{
+#downtab li:nth-child(3) span{
 	border-top-left-radius: 0;
 border-bottom-left-radius: 0;
 }
