@@ -232,5 +232,5 @@ border-radius: 13px;
 	/*visibility: hidden;*/
 }
 
-#download-btn:hover{background-color: #fe7260;border-color: #fe7260;}
+.download-btn:hover{background-color: #fe7260;border-color: #fe7260;}
 .hero a:hover{text-decoration: none;}
