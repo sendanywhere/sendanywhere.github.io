@@ -202,8 +202,8 @@
 
                             <!-- drag & drop list -->
                                <div class="droplist hidden">
-                                        <div id="device">
-                                            <div id="device-list-header">
+                                        <div class="device">
+                                            <div class="list-header">
                                                 <h5>File List</h5>
                                             </div>
 
@@ -237,8 +237,8 @@
 
                                 <!-- device list -->
                             <div class="overlay-card hidden">
-                                        <div id="device">
-                                            <div id="device-list-header">
+                                        <div class="device">
+                                            <div class="list-header">
                                                 <h5>Device List</h5>
                                                 <div class="icon icon-cycle"></div>
                                             </div>
@@ -772,7 +772,7 @@
                  $( ".overlay-card" ).addClass("animated fadeInDown");
             });
 
-            $( "#device li:first-child" ).click(function() {
+            $( ".device li:first-child" ).click(function() {
                 $( ".overlay-card" ).addClass( "hidden" );
             });
 
