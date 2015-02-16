@@ -259,7 +259,7 @@ border-bottom-left-radius: 0;
 #rest-api li{text-align: left;margin-bottom: 8px;}
 
 
-#about-description p{color:#777;font-size: 16px; line-height: 23px;}
+.about-description p{color:#777;font-size: 16px; line-height: 23px;}
 #contact-form{text-align: left;margin-top:40px;}
 #contact-form textarea{margin-bottom:30px;}
 #extra-page{
