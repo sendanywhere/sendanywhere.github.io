@@ -35,17 +35,13 @@ Theme defines color and images in this page
 /*** module css ****/
 @import url('module/panel.css');
 @import url('module/shape.css');
-@import url('module/carousel.css');
-@import url('module/table.css');
 @import url('module/offnav.css');
 @import url('module/card.css');
 @import url('module/category-box.css');
-@import url('module/popup.css');
 
 /*** State css ****/
 @import url('state/navbar.css');
 @import url('state/state.css');
-@import url('state/animated.css');
 @import url('state/button.css');
 @import url('state/animated.css');
 @import url('layout/media.css');
