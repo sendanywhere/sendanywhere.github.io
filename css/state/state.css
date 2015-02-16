@@ -546,8 +546,8 @@ button span{font-weight: 300;}
     visibility: visible;
 }
 
-#progress-bar{margin-top:36px;padding:0;}
-#progress-bar #time{color:#333;padding:6px;}
+.bar-guage{margin-top:36px;padding:0;}
+.bar-guage #time{color:#333;padding:6px;}
 .progress-bar {
   background-color: #fe7260;
   padding: 5px;
