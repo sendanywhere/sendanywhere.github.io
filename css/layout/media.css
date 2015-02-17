@@ -82,6 +82,7 @@
 
 	#press-list{padding: 40px 51px;}
 	#press-list ul{padding: 0;}
+	#press-list .icon-microphone{margin-bottom: 0;}
 	#press-list h4{font-size: 16px; line-height: 23px;}
 	#about-hero{padding: 146px 0;}
 	#about h3{font-size: 20px;}

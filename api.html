@@ -82,12 +82,15 @@
                     <div class="card dotted-bottom"></div>
                     <h4>Copy the code</h4>
                     <p>Copy and paste this code into your page where you want your button or widget to appear:</p>
+                    <div class="zero-clipboard">
+                        <span class="btn-clipboard" data-clipboard-target="send-api">Copy</span>
+                    </div>
                     <div class="highlight">
                         <pre>
-                            <code class="language-html" data-lang="html">
+                            <code class="language-html" data-lang="html" id="send-api">
                                 <span class="cp">&lt;!DOCTYPE html&gt;</span>
                                 <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
-                                ...
+                                Send api
                                 <span class="nt">&lt;/html&gt;</span>
                             </code>
                         </pre>
@@ -103,12 +106,15 @@
                     </div>
                     <h4>Copy the code</h4>
                     <p>Copy and paste this code into your page where you want your button or widget to appear:</p>
+                    <div class="zero-clipboard">
+                        <span class="btn-clipboard" data-clipboard-target="send-receive">Copy</span>
+                    </div>
                     <div class="highlight">
                         <pre>
-                            <code class="language-html" data-lang="html">
+                            <code class="language-html" data-lang="html" id="send-receive">
                                 <span class="cp">&lt;!DOCTYPE html&gt;</span>
                                 <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
-                                ...
+                                Send and Receive api
                                 <span class="nt">&lt;/html&gt;</span>
                             </code>
                         </pre>
@@ -122,12 +128,15 @@
                     </div>
                     <h4>Copy the code</h4>
                     <p>Copy and paste this code into your page where you want your button or widget to appear:</p>
+                    <div class="zero-clipboard">
+                        <span class="btn-clipboard" data-clipboard-target="receive-api">Copy</span>
+                    </div>
                     <div class="highlight">
                         <pre>
-                            <code class="language-html" data-lang="html">
+                            <code class="language-html" data-lang="html" id="receive-api">
                                 <span class="cp">&lt;!DOCTYPE html&gt;</span>
                                 <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
-                                ...
+                                Receive api
                                 <span class="nt">&lt;/html&gt;</span>
                             </code>
                         </pre>
@@ -258,7 +267,7 @@
 
             <div class="row" id="company-info">
                 <div class="col-md-12 text-center">
-                    <p>Copyright © 2014 ESTmob Inc</p>
+                    <p>Copyright © 2015 ESTmob Inc</p>
         
                 </div>
             </div>
@@ -272,9 +281,13 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
-        
-        
+         <script type="text/javascript" src="js/ZeroClipboard.js"></script>
+            <script type="text/javascript">
+             var client = new ZeroClipboard( $('.btn-clipboard') );
 
+                  
+
+            </script>
          <script>
         $(document).scroll(function() {    
             var scroll = $(window).scrollTop();
