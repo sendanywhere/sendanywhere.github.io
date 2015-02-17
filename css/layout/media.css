@@ -79,7 +79,10 @@
 		margin-top: 15px;
 	}
 	
+
+	#press-list{padding: 40px 51px;}
 	#press-list ul{padding: 0;}
+	#press-list h4{font-size: 16px; line-height: 23px;}
 	#about-hero{padding: 146px 0;}
 	#about h3{font-size: 20px;}
 	.about-description p,#press-list p{
@@ -90,12 +93,12 @@
 	#team .col-md-8 .col-md-6:nth-child(2){
 		margin-top: 40px;
 	}
-	.team-profile .col-md-3,#team .col-md-3{margin-top: 35px;}
+	.team-profile .col-md-3,#team .col-md-3{margin-top: 20px;}
 	.team-profile{margin-top: 0;}
 	#team h4,.team-profile h4{font-size: 16px;}
 	#press-divider{
 		border: none;
-		padding:30px 15px;
+		padding:50px 15px;
 	}
 	footer{height: 600px;}
 	footer p{font-size: 13px;}

@@ -283,7 +283,7 @@ border-bottom-left-radius: 0;
 #press-bg h4{font-size: 20px;}
 
 #press-bg div,#press-bg .icon{text-align: center;}
-#press-list{color:#333;font-size: 18px;}
+#press-list{color:#333;font-size: 18px;border-top: 1px solid #e5e5e5;}
 #press-list span{float: left;margin-right: 20px;}
 #press-list li{list-style: none;border-bottom: 1px dotted #999;
 padding: 50px 0;}
@@ -334,7 +334,11 @@ padding: 50px 0;}
 
 
 .team-profile{margin-top: 78px;}
-#team .team-profile p{text-align: center;font-size: 13px;}
+#team .team-profile p{
+	text-align: center;
+	font-size: 13px;
+	margin-bottom: 30px;
+}
 
 
 /** alert warning for widget ***/
