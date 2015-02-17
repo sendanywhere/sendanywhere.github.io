@@ -400,7 +400,14 @@ border-color: #333;
 
 
 
-#top-btn a{color:#fff;text-decoration:none;padding:0;margin-top:200px;}
+#top-btn a{
+	color:#fff;
+	text-decoration:none;
+	padding:0;
+	margin-top:200px;
+	height:30px;
+	line-height: 29px;
+}
 
 
 #testimony p{
