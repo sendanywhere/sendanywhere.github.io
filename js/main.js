@@ -2,7 +2,7 @@
 $(document).ready(function() {
 
 	$('.wp1').waypoint(function() {
-		$('.wp1').addClass('animated fadeInLeft');
+		$('.wp1').addClass('animated fadeInUp');
 	}, {
 		offset: '65%'
 	});
@@ -12,12 +12,12 @@ $(document).ready(function() {
 		offset: '75%'
 	});
 	$('.wp3').waypoint(function() {
-		$('.wp3').addClass('animated fadeInUp');
+		$('.wp3').addClass('animated fadeInLeft');
 	}, {
 		offset: '55%'
 	});
 	$('.wp4').waypoint(function() {
-		$('.wp4').addClass('animated fadeInDown');
+		$('.wp4').addClass('animated fadeInRight');
 	}, {
 		offset: '75%'
 	});
@@ -27,7 +27,7 @@ $(document).ready(function() {
 		offset: '75%'
 	});
 	$('.wp6').waypoint(function() {
-		$('.wp6').addClass('animated fadeInRight');
+		$('.wp6').addClass('animated fadeInUp');
 	}, {
 		offset: '75%'
 	});

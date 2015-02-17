@@ -90,9 +90,9 @@
 	#team .col-md-8 .col-md-6:nth-child(2){
 		margin-top: 40px;
 	}
-	#team-profile .col-md-3,#team .col-md-3{margin-top: 35px;}
-	#team-profile{margin-top: 0;}
-	#team h4,#team-profile h4{font-size: 16px;}
+	.team-profile .col-md-3,#team .col-md-3{margin-top: 35px;}
+	.team-profile{margin-top: 0;}
+	#team h4,.team-profile h4{font-size: 16px;}
 	#press-divider{
 		border: none;
 		padding:30px 15px;
@@ -174,7 +174,7 @@
 	#img2 h3,
 	#img3 h3{text-align: center;font-size: 1.5em;}
 	#download-area button{margin-left: 29.8507463%;}
-	.about-description p,#team p,#team-profile p{font-size: 14px;line-height: 1.5em;}
+	.about-description p,#team p,.team-profile p{font-size: 14px;line-height: 1.5em;}
 	#press-divider{border:none;padding-left: 15px;margin-top: 30px;}
 
 }

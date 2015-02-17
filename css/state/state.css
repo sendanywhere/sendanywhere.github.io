@@ -171,7 +171,7 @@ footer h5{font-weight: bold;font-size: 16px;}
 
 #img1 div:nth-child(2),
 #img2 div:nth-child(2),
-#img3 div:nth-child(2){margin-top: 100px;}
+#img3 div:nth-child(2){margin-top: 155px;}
 
 sup{font-size: 13px;top:-1.5em;}
 .badge{
@@ -195,7 +195,7 @@ sup{font-size: 13px;top:-1.5em;}
 #team p{text-align: left;}
 
 #team h3{margin-bottom: 50px;}
-#team h4{margin: 16px 0 10px 0;}
+#team h4{margin: 16px 0 10px 0;font-size: 16px;}
 #team ul{padding:10px 0 0 0;}
 .carousel-control{
 position: relative;
@@ -333,8 +333,8 @@ padding: 50px 0;}
 #tab-content p{margin-top:20px;text-align: left;font-size: 14px;line-height: 22px;}
 
 
-#team-profile{margin-top: 78px;}
-#team-profile p{text-align: center;font-size: 13px;}
+.team-profile{margin-top: 78px;}
+#team .team-profile p{text-align: center;font-size: 13px;}
 
 
 /** alert warning for widget ***/
@@ -435,7 +435,6 @@ ul.legals li:last-child::after { content: ""; }
 	font-weight:normal;
 	font-size:18px;
 	text-align:left;
-	/*border-bottom: 1px solid #5984A6;*/
 	padding-bottom: 10px;
 }
 /*.short-bg .icon{padding-top: 50px;}*/
