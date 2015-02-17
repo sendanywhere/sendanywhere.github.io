@@ -21,7 +21,9 @@ border: 1px solid #e1e1e8;
 border-radius: 0 4px 0 4px;
 }
 
-
+.btn-clipboard:active{
+	background-color: #223544;
+}
 .zero-clipboard {
 position: relative;
 display: block;
