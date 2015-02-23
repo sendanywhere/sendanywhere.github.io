@@ -42,7 +42,7 @@
 	/*.offnav-content{overflow-y:visible;}*/
 	.panel-view{padding: 40px 20px;}
 	.circle{width: 70px;height: 70px;}
-	.item{padding: 0;height:290px;}
+	.item{height:290px;}
 	#user{border-top: 1px solid #e5e5e5;}
 	#testimony p{font-size:12px;}
 	sup{top: -1.0em;}
@@ -199,6 +199,7 @@
 	footer{height: 680px;}
 	footer ul{padding-left:40px;}
 	.circlebg p{padding: 10px;}
+
 }
 
 
@@ -230,6 +231,11 @@
 	#tab-content p{font-size: 13px;line-height: 21px;}
 	#press-list img {width: 84px;}
 	#press div{padding:0;}
+	#social-btn span{
+	margin-left: 37px;
+	float: left;
+}
+
 }
 
 

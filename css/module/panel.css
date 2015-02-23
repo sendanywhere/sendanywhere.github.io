@@ -137,8 +137,9 @@ widget 의 Send 부분을 .card-top이  Receive 부분이 .card-bottom이 맡아
 #secure-code{
 	font-size: 20px;
 	background-color: rgba(255,255,255,0.3);
-padding: 9px;
-border-radius: 13px;
+	padding: 9px;
+	border-radius: 13px;
+	height: 37px;
 }
 #secure-code a{float:left;margin-right: 30px;color: white;}
 #secure-code p{
@@ -179,7 +180,9 @@ border-radius: 13px;
 	
 }
 
-#social-btn span{margin-left:46px;}
+#social-btn span{
+	margin-left: 46px;
+}
 
 .overlay-card,.droplist{
 	background-color: #00bedd;
