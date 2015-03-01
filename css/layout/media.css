@@ -132,6 +132,7 @@
 	#lang-btn{padding: 20px 0 0 85px;}
 	.category-box{margin: 40px 0;}
 	#top-btn{display: none;}
+	#user .item{padding:0;}
 }
 
 
