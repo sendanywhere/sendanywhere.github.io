@@ -102,7 +102,7 @@
                             <!-- 2. Sending and Drag and drop-->
                              <div class="item active">
                                 <div class="row">
-                                    <div class="hidden" id="filesize-push">
+                                    <div class="hidde" id="filesize-push">
                                         <div class="icon icon-cancel-circle"></div>
                                         <div style="margin-bottom:20px">Web widget max. file size 200MB. Try our desktop version. It's unlimited and FREE!</div>
                                         <button type="button" class="btn btn-warning btn-sm btn-block download-btn"><span>Download</span></button> 
@@ -754,18 +754,19 @@
                 });
             
 
-            //200mb 넘을
+           
+             $(".badge").click(function() {
+                  $("#filesize-push" ).removeClass( "hidden" );
+                 $( "#filesize-push" ).addClass("animated bounceInUp");
+                    $(".badge" ).addClass( "hidden" );
+
+             });
+
             // $(".badge").click(function() {
-            //      $("#filesize-push" ).removeClass( "hidden" );
-            //     $( "#filesize-push" ).addClass("animated bounceInUp");
-
-            // });
-
-            $(".badge").click(function() {
-                 $(".droplist" ).removeClass( "hidden" );
-                 $( ".droplist" ).addClass("animated fadeInDown");
+            //      $(".droplist" ).removeClass( "hidden" );
+            //      $( ".droplist" ).addClass("animated fadeInDown");
             
-            });
+            // });
 
             $( "#send-btn" ).click(function() {
                 $( ".droplist" ).addClass( "hidden" );
@@ -775,6 +776,7 @@
 
              $(".icon-cancel-circle").click(function() {
                $("#filesize-push").addClass( "hidden" );
+                $(".badge" ).removeClass( "hidden" );
             });
 
             //receive push
