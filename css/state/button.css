@@ -1,4 +1,10 @@
-.btn{border-radius: 5px;}
+.btn{
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+}
 
 .btn:focus,
 .btn:active:focus,
@@ -103,7 +109,9 @@
 */
 
 .btn,.btn-animation{
--webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -113,6 +121,8 @@
   content: '';
   position: absolute;
   z-index: -1;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
@@ -123,8 +133,10 @@
   line-height: 20px;
   font-size: 18px;
   overflow: hidden;
-  -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -138,12 +150,19 @@
   display: inline-block;
   width: 100%;
   height: 100%;
-  -webkit-transition: all 0.5s;
+ 
   -webkit-backface-visibility: hidden;
-  -moz-transition: all 0.5s;
   -moz-backface-visibility: hidden;
-  transition: all 0.5s;
+  -o-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
   backface-visibility: hidden;
+
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  
 }
 
 .btn-animation:before {
@@ -152,6 +171,9 @@
   width: 100%;
   line-height: 2.5;
   font-size: 150%;
+
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
@@ -167,6 +189,7 @@
   -webkit-transform: translateY(300%);
   -moz-transform: translateY(300%);
   -ms-transform: translateY(300%);
+  -o-transform: translateY(300%);
   transform: translateY(300%);
 }
 

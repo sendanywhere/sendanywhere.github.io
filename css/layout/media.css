@@ -33,10 +33,24 @@
 	#platform section div{margin-right: 20px;}
 	#platform .icon{padding: 8px;}
 	.hero .icon{font-size: 22px;}
-	.circle-50{width:40px;height: 40px;border-radius: 100%;}
+	.circle-50{
+		width:40px;
+		height: 40px;
+	}
 	.btn-lg, .btn-group-lg> .btn{padding:11px;font-size: 14px;}
 	.navbar-brand> img{width: 75%}
-	.circle-icon{width:70px;height: 70px;border-radius: 100%;}
+	.circle-icon{
+		width:70px;
+		height: 70px;
+	}
+
+	.circle-50,.circle-icon{
+		border-radius: 100%;
+		-webkit-border-radius: 100%;
+		-moz-border-radius: 100%;
+		-o-border-radius: 100%;
+		-ms-border-radius: 100%;
+	}
 	#benefit .icon{font-size: 45px;padding: 13px;}
 	#benefit section{margin-bottom: 50px;}
 	/*.offnav-content{overflow-y:visible;}*/
@@ -265,7 +279,9 @@
 	/*#press-icon div{float: left;margin-right: 146px;}*/
 	#product h2, #download h2, .short-bg h2{font-size: 23px;}
 
-	#feature img{width: 100%;}
+	#feature img{width: 50%;margin-left: 25%;}
 	
-
+	#img1 div:nth-child(2), #img2 div:nth-child(2), #img3 div:nth-child(2){margin:0px 121px 100px 121px;}
+	#img2 .col-md-6:first-child{ float: none;}
+	#usercase{height: 1000px;}
 }

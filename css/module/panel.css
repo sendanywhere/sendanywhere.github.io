@@ -14,12 +14,20 @@
 
 }
 
+
+.card, .box-panel{
+	-o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+	border-radius: 10px;
+
+}
 .box-panel{
 	background-color: #ecf0f1;
 	padding:20px;
 	height: 270px;
 
-	border-radius: 10px;
 	margin: 0 10px 30px 10px;
 	-webkit-box-shadow: 0 6px 10px -6px #333;
 	   -moz-box-shadow: 0 6px 10px -6px #333;
@@ -27,7 +35,7 @@
 }
 .card{
 	height:460px;
-	border-radius: 10px;
+	
 	width: 300px;
 	margin: 0 auto;
 	overflow: hidden;
@@ -52,7 +60,6 @@ widget 의 Send 부분을 .card-top이  Receive 부분이 .card-bottom이 맡아
 	background-color: #00bedd;
 	width:200px;
 	height:150px;
-	border-radius: 0;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 
@@ -63,9 +70,15 @@ widget 의 Send 부분을 .card-top이  Receive 부분이 .card-bottom이 맡아
 	background-color:#fe7260;
 	width:200px;
 	height:150px;
-	border-radius: 0;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
+}
+.card-top, .card-bottom{
+	-o-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+	border-radius: 0px;
 }
 .card-bottom, .dotted-bottom{margin-bottom: 40px;}
 	
@@ -107,9 +120,7 @@ widget 의 Send 부분을 .card-top이  Receive 부분이 .card-bottom이 맡아
 .dotted-bottom{
 	border:2px dotted #00bedd;
 	border-top: none;
-	width:200px;
-	height:150px;
-	border-radius: 0;
+	
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
@@ -117,13 +128,21 @@ widget 의 Send 부분을 .card-top이  Receive 부분이 .card-bottom이 맡아
 .dotted-top{
 	border:2px dotted #fe7260;
 	border-bottom: none;
-	width:200px;
-	height:150px;
-	border-radius: 0;
+	
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 }
 
+.dotted-top, .dotted-bottom{
+	width:200px;
+	height:150px;
+	-o-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+	border-radius: 0px;
+
+}
 
 
 
@@ -138,6 +157,10 @@ widget 의 Send 부분을 .card-top이  Receive 부분이 .card-bottom이 맡아
 	font-size: 20px;
 	background-color: rgba(255,255,255,0.3);
 	padding: 9px;
+	-o-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -webkit-border-radius: 13px;
 	border-radius: 13px;
 	height: 37px;
 }
@@ -192,6 +215,8 @@ widget 의 Send 부분을 .card-top이  Receive 부분이 .card-bottom이 맡아
 	height: 200px;
 	position: relative;
 	overflow: scroll;
+	-o-box-shadow:    inset 0 0 5px #044E5A;
+	-ms-box-shadow:    inset 0 0 5px #044E5A;
 	-moz-box-shadow:    inset 0 0 5px #044E5A;
    -webkit-box-shadow: inset 0 0 5px #044E5A;
    box-shadow:         inset 0 0 5px #044E5A;
@@ -208,9 +233,17 @@ widget 의 Send 부분을 .card-top이  Receive 부분이 .card-bottom이 맡아
 	padding:15px;
 	z-index: 100;
 	-webkit-box-shadow: 0 8px 6px -6px #333;
+	-ms-box-shadow: 0 8px 6px -6px #333;
+	-o-box-shadow: 0 8px 6px -6px #333;
 	   -moz-box-shadow: 0 8px 6px -6px #333;
 	        box-shadow: 0 8px 6px -6px #333;
+
+	-webkit-transition: background-color 0.8s ease;
+	-moz-transition: background-color 0.8s ease;
+	-o-transition: background-color 0.8s ease;
+	-ms-transition: background-color 0.8s ease;
 	transition: background-color 0.8s ease;
+	
 	cursor: pointer;
 }
 .widget-btn h5{text-align: center;}
