@@ -147,7 +147,7 @@
 	.category-box{margin: 40px 0;}
 	#top-btn{display: none;}
 	#user .item{padding:0;}
-	
+	#testimony .carousel-inner {height: 330px;}
 }
 
 
@@ -228,7 +228,7 @@
 	#page1 p,#page2 p{margin-top:20px;font-size: 14px;line-height: 22px;}
 	footer{height: 700px;}
 	#company-info{border-top: 1px solid #3f3f3f;padding-top: 20px;margin-top: 20px;}
-	
+	#testimony .carousel-inner {height: 365px;}
 
 }
 /* 1200px (Small Desktop, Netbook) */
@@ -251,7 +251,7 @@
 	margin-left: 37px;
 	float: left;
 }
-#testimony .carousel-inner {height: 266px;}
+
 }
 
 
@@ -284,4 +284,6 @@
 	#img1 div:nth-child(2), #img2 div:nth-child(2), #img3 div:nth-child(2){margin:0px 121px 100px 121px;}
 	#img2 .col-md-6:first-child{ float: none;}
 	#usercase{height: 1000px;}
+	#testimony p{font-size:12px;}
+	#testimony .carousel-inner {height: 365px;}
 }
