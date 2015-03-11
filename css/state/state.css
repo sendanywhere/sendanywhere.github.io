@@ -44,10 +44,13 @@ padding: 20px;
 /*margin-bottom: 0;*/
 margin: 40px 20px;
 word-break: normal;
+-epub-word-break:normal;
+-ms-word-break:normal;
 white-space: nowrap;
 background-color: transparent;
 border: 0;
 }
+
 .highlight {
 padding: 10px;
 margin-bottom: 14px;
@@ -593,6 +596,11 @@ button span{font-weight: 300;}
 	margin-bottom: 127px;
 	background-color: #e5e5e5;
 	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-moz-border-radius: 5px;
+
 	padding:20px;
 	color: #333;
 }

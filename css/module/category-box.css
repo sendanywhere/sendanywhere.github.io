@@ -253,10 +253,19 @@
 .category-group .faq-title {
   background: transparent;
   box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+
   margin: 1em 0;
 }
 .no-touch .category-group .faq-title:hover {
   box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
 }
 .category-group .faq-title h2 {
   text-transform: uppercase;
