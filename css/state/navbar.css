@@ -1,7 +1,7 @@
 
 /******* NAVBAR *******/
 .navbar-default{
-	background: none;
+	background-color:rgba(255,255,255,0);
 	border: none;
 	-webkit-box-shadow: 0 3px 6px -6px #333;
 	   -moz-box-shadow: 0 3px 6px -6px #333;
@@ -10,9 +10,7 @@
 }
 
  /* 스크롤 할때 하얀색 배경으로 바꾸는 클래스*/
- .scrolling {
-    background: rgba(255,255,255,1);
-}
+ .scrolling {background-color: rgba(255,255,255,1);}
 .navbar-default .navbar-brand, .navbar-default .navbar-nav> li> a{color:#333;}
 .navbar #nav> .active> a {
     color: red;
