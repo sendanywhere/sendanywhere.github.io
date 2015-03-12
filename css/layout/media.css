@@ -215,7 +215,7 @@
 	footer{height: 680px;}
 	footer ul{padding-left:40px;}
 	.circlebg p{padding: 10px;}
-
+	#testimony p {font-size: 14px;}
 }
 
 
@@ -229,13 +229,18 @@
 	footer{height: 700px;}
 	#company-info{border-top: 1px solid #3f3f3f;padding-top: 20px;margin-top: 20px;}
 	#testimony .carousel-inner {height: 365px;}
-
+	#usercase {height:950px;padding: 20px 12px;}
+	#usercase p{padding: 0 122px;}
+	#feature img {width: 50%;margin-left: 25%;}
+	#img1 div:nth-child(2), #img2 div:nth-child(2), #img3 div:nth-child(2){margin:20px 107px 72px 107px;}
+	#img2 .col-md-6:first-child {float: none;}
 }
 /* 1200px (Small Desktop, Netbook) */
 @media (min-width:990px) and (max-width:1180px) {
 	
 	#platform{margin-left:2.302923%;}
 	#user{border-top: 1px solid #e5e5e5;}
+
 }
 
 @media (min-width:1180px) and (max-width:1900px) {
@@ -247,11 +252,8 @@
 	#tab-content p{font-size: 13px;line-height: 21px;}
 	#press-list img {width: 84px;}
 	#press div{padding:0;}
-	#social-btn span{
-	margin-left: 37px;
-	float: left;
-}
-
+	#social-btn span{margin-left: 37px;float: left;}
+	.circlebg p{padding: 0 23px;}
 }
 
 
@@ -261,9 +263,7 @@
 	#secure-code div:nth-child(2) p{top: 28px;left: 14px;}
 	#secure-code div:nth-child(3) p{top: 28px;left: 10px;}
 	#secure-code a{margin-right: 20px;}
-	#img1 div:nth-child(2), #img2 div:nth-child(2), #img3 div:nth-child(2){
-		margin-top:50px;
-	}
+	/*#img1 div:nth-child(2), #img2 div:nth-child(2), #img3 div:nth-child(2){margin-top:50px;}*/
 	#feature h3{line-height: 1.5em;}
 
 }
@@ -284,6 +284,6 @@
 	#img1 div:nth-child(2), #img2 div:nth-child(2), #img3 div:nth-child(2){margin:0px 121px 100px 121px;}
 	#img2 .col-md-6:first-child{ float: none;}
 	#usercase{height: 1000px;}
-	#testimony p{font-size:12px;}
+	/*#testimony p{font-size:12px;}*/
 	#testimony .carousel-inner {height: 365px;}
 }
