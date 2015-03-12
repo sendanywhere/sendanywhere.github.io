@@ -9,6 +9,8 @@
 	        padding:5px;
 }
 
+.navbar-fixed-top, .navbar-fixed-bottom{z-index: 100000;}
+
  /* 스크롤 할때 하얀색 배경으로 바꾸는 클래스*/
  .scrolling {background-color: rgba(255,255,255,1);}
 .navbar-default .navbar-brand, .navbar-default .navbar-nav> li> a{color:#333;}

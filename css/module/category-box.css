@@ -119,6 +119,9 @@
   .category-box.is-fixed {
     /* top and left value assigned in jQuery */
     position: fixed;
+    _position:absolute;
+    top:0;
+    _top:expression(eval(document.body.scrollTop));
   }
   .no-js .category-box {
     position: relative;
@@ -134,7 +137,7 @@
   background: #ffffff;
   padding: 0 5% 1em;
   overflow: auto;
-  z-index: 100000;
+  z-index: 10000;
   -webkit-overflow-scrolling: touch;
   -moz-overflow-scrolling: touch;
   -o-overflow-scrolling: touch;
