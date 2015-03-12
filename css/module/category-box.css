@@ -313,10 +313,10 @@
 }
 @media only screen and (min-width: 768px) {
   .faq-trigger {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 300;
     margin: 0;
-    color: #223544;
+    color: black;
     /*padding: 24px 72px 24px 24px;*/
   }
   .faq-trigger::before, .faq-trigger::after {
