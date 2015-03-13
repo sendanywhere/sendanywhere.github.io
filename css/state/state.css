@@ -262,13 +262,13 @@ font-size: 1em;
 #lang-btn{padding:20px 0 0 27px;}
 #download h4{margin:30px 0 60px 0;}
 
-#downtab .nav> li> a{padding: 0;border:none;}
-#downtab li:first-child span{
+#downtab .nav> li> a{/*padding: 0;*/border:1px solid #ccc;}
+#downtab li:first-child a{
 	border-top-right-radius: 0;
 border-bottom-right-radius: 0;
 }
 
-#downtab li:nth-child(2) span{
+#downtab li:nth-child(2) a{
 	border-left: 0;
 	border-right: 0;
 	border-radius: 0;
@@ -278,13 +278,13 @@ border-bottom-right-radius: 0;
 	-ms-border-radius: 0;
 }
 
-#downtab li:nth-child(3) span{
+#downtab li:nth-child(3) a{
 	border-top-left-radius: 0;
 border-bottom-left-radius: 0;
 }
-/*
+
 .nav-tabs{border-bottom: none;}
-.nav-tabs> li> a{margin:0;}*/
+.nav-tabs> li> a{margin:0;border-radius: 4px;}
 #browser .icon{font-size: 16px;margin-top: 0px;}
 #browser h5{font-weight: bold;font-size: 15px;}
 #browser p{font-size: 13px;}
