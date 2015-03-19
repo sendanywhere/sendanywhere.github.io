@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge;IE=9">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Send Anywhere</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +17,7 @@
         <script src="//use.typekit.net/zhp6yor.js"></script>
         <script>try{Typekit.load();}catch(e){}</script>
         <style>
-
+        .lt-ie9 .drawer-effect.offnav-menu{visibility: hidden;}
         /* Essential FileDrop zone element configuration: */
     .fd-zone {
       position: relative;
@@ -46,10 +46,19 @@
     /* Provides visible feedback when use drags a file over the drop zone: */
     .fd-zone.over { border-color: maroon; background: #eee; }
 
+
     </style>
     </head>
     <body>
         <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+         <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+         <!--[if lt IE 9]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
