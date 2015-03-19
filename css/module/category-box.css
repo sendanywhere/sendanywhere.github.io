@@ -36,7 +36,7 @@
   text-overflow: ellipsis;
   text-decoration: none;
 }
-/*}*/
+
 .category-box a::before, .category-box a::after {
   /* plus icon on the right */
   position: absolute;
