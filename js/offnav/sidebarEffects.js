@@ -46,18 +46,28 @@
 
 
 
+
 		buttons.forEach( function( el, i ) {
 			var effect = el.getAttribute( 'data-effect' );
 
 			el.addEventListener( eventtype, function( ev ) {
 				ev.stopPropagation();
-				ev.preventDefault();
+				// ev.preventDefault();
+				if(event.preventDefault) event.preventDefault();
+
 				container.className = 'offnav-container'; // clear
 				classie.add( container, effect );
 				setTimeout( function() {
 					classie.add( container, 'offnav-menu-open' );
 				}, 25 );
-				document.addEventListener( eventtype, bodyClickFn );
+				if (el.addEventListener) {
+					document.addEventListener( eventtype, bodyClickFn );
+				}
+
+				else if (el.attachEvent)  {
+  					document.attachEvent( eventtype, bodyClickFn );
+				}
+
 			});
 		} );
 	}
