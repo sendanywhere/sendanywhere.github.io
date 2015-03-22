@@ -143,7 +143,7 @@
   position: fixed;
   height: 100%;
   width: 90%;
-  top: 0;
+  top: 59px;
   right: 0;
   background: #ffffff;
   padding: 0 5% 1em;
@@ -221,7 +221,7 @@
 
 .category-close {
   position: fixed;
-  top: 20px;
+  top: 69px;
   right: -100%;
   display: block;
   color: #333;
@@ -326,13 +326,14 @@
 .faq-trigger {
   position: relative;
   display: block;
-  margin: 1.6em 0 .4em;
-  line-height: 1.2;
+  margin: 1.6em 0 0.9em .4em;
+  line-height: 1.6em;
+  font-weight: bold;
 }
 @media only screen and (min-width: 768px) {
   .faq-trigger {
     font-size: 18px;
-    font-weight: 300;
+    /*font-weight: 300;*/
     margin: 0;
     color: black;
     /*padding: 24px 72px 24px 24px;*/
