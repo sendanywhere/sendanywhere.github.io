@@ -62,8 +62,13 @@
 
 @media only screen and (min-width: 768px) {
   .category-box {
-    width: 20%;
-    float: left;
+    /*width: 20%;
+    float: left;*/
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  z-index: 2;
   }
   .category-box a {
     font-size: 13px;
@@ -88,7 +93,7 @@
 }
 
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .category-box {
     position: absolute;
     top: 0;
@@ -189,7 +194,7 @@
   .category-item {
     position: static;
     height: auto;
-    width: 78%;
+    width: 74%;
     float: right;
     overflow: visible;
     -webkit-transform: translateZ(0) translateX(0);
