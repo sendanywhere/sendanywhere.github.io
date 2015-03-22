@@ -13,7 +13,7 @@ $.reject = function(options) {
         // Specifies which browsers/versions will be blocked
 		reject : {
 			all: false, // Covers Everything (Nothing blocked)
-			msie: 6 // Covers MSIE <= 6 (Blocked by default)
+			msie: 9 // Covers MSIE <= 6 (Blocked by default)
 			/*
 			 * Many possible combinations.
              * You can specify browser (msie, chrome, firefox)
