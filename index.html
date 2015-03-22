@@ -47,6 +47,7 @@
     .fd-zone.over { border-color: maroon; background: #eee; }
 
  .modal{z-index: 104000;}
+ .modal li{float:left;}
     </style>
 
     </head>
@@ -65,7 +66,17 @@
         <h4 class="modal-title" id="myModalLabel">Notice</h4>
       </div>
       <div class="modal-body">
-        Your browser is out of date, and may not be compatible with the widget function. Please update your browser with the most recent one.
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/browser.png" alt="chrome">
+            </div>
+
+             <div class="col-md-6" style="padding: 34px;">
+                <p>Your browser is out of date, and may not be compatible with the widget function. Please update your browser with the most recent one.</p>
+            </div>
+</div>
+
+        
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
