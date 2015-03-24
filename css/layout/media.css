@@ -302,7 +302,7 @@
   }
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 767px) {
   .category-box
   {
     width: 350px;

@@ -20,9 +20,12 @@ $(document).ready(function($){
             closeFaqsContainer.addClass('move-left');
             $('body').addClass('category-overlay');
         } else {
-            $('body,html').animate({ 'scrollTop': target.offset().top - 20}, 5000); 
+            // $('body,html').animate({ 'scrollTop': target.offset().top - 20}, 5000);
+                $('body, html').animate({ scrollTop: target.offset().top - 20 }, 5000); 
         }
     });
+
+
 
     //close faq lateral panel - mobile only
     $('body').bind('click touchstart', function(event){
