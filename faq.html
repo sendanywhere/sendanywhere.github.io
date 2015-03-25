@@ -746,29 +746,29 @@
            <script>
              $(document).ready(function(){
 
-                 $( "#lang-eng" ).click(function() {
-                     $( "#eng" ).removeClass( "hidden" );
-                      $( "#kor" ).addClass("hidden");
-                      $( "#eng-box" ).removeClass( "hidden" );
-                      $( "#kor-box" ).addClass("hidden");
-                      $( "#android" ).addClass("hidden");
-                      $( "#lang-kor" ).removeClass( "active" );
-                      $( "#lang-eng" ).addClass( "active" );
-                      $( "#kor-box li:nth-child(2) a" ).removeClass( "selected" );
-                      $( "#kor-box li:nth-child(3) a" ).removeClass( "selected" );
+                 $("#lang-eng").click(function() {
+                     $("#eng").removeClass("hidden");
+                      $("#kor").addClass("hidden");
+                      $("#eng-box").removeClass("hidden");
+                      $("#kor-box").addClass("hidden");
+                      $("#android").addClass("hidden");
+                      $("#lang-kor").removeClass( "active");
+                      $("#lang-eng").addClass( "active");
+                      $("#kor-box li:nth-child(2) a").removeClass("selected");
+                      $("#kor-box li:nth-child(3) a").removeClass("selected");
                  });
 
-                 $( "#lang-kor" ).click(function() {
-                     $( "#eng" ).addClass( "hidden" );
-                      $( "#kor" ).removeClass("hidden");
-                      $( "#eng-box" ).addClass( "hidden" );
-                      $( "#kor-box" ).removeClass("hidden");
-                      $( "#android" ).removeClass("hidden");
-                      $( "#lang-eng" ).removeClass( "active" );
-                      $( "#lang-kor" ).addClass( "active" );
+                 $("#lang-kor").click(function() {
+                     $("#eng").addClass("hidden");
+                      $("#kor").removeClass("hidden");
+                      $("#eng-box").addClass("hidden");
+                      $("#kor-box").removeClass("hidden");
+                      $("#android").removeClass("hidden");
+                      $("#lang-eng").removeClass("active");
+                      $("#lang-kor").addClass("active");
                       // $( "#eng-box li:nth-child(2) a" ).removeClass( "selected" );
-                       $( "#kor-box li:nth-child(2) a" ).removeClass( "selected" );
-                      $( "#kor-box li:nth-child(3) a" ).removeClass( "selected" );
+                       $("#kor-box li:nth-child(2) a").removeClass("selected");
+                      $("#kor-box li:nth-child(3) a").removeClass("selected");
                  });
              });
 

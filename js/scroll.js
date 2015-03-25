@@ -1,6 +1,6 @@
 $(document).ready(function($){
     //update these values if you change these breakpoints in the style.css file (or _layout.scss if you use SASS)
-    var MqM= 768,
+    var MqM= 800,
         MqL = 768;
 
     var faqsSections = $('.category-group'),
@@ -21,7 +21,7 @@ $(document).ready(function($){
             $('body').addClass('category-overlay');
         } else {
             // $('body,html').animate({ 'scrollTop': target.offset().top - 20}, 5000);
-                $('body, html').animate({ scrollTop: target.offset().top - 20 }, 5000); 
+                $('body, html').animate({ scrollTop: target.offset().top - 90 }, 5000); 
         }
     });
 
@@ -81,7 +81,7 @@ $(document).ready(function($){
 
     function updateCategoryPosition() {
         var top = $('.faq').offset().top,
-            height = jQuery('.faq').height() - jQuery('.category-box').height(),
+            height = $('.faq').height() - $('.category-box').height(),
             margin = 80;
         if( top - margin <= $(window).scrollTop() && top - margin + height> $(window).scrollTop() ) {
             var leftValue = faqsCategoriesContainer.offset().left,
@@ -134,22 +134,3 @@ $(document).ready(function($){
 
 });
 
-
-
-
-
-//smooth scroll 
-// $(function() {
-//   $('a[href*=#]:not([href=#])').click(function() {
-//     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-//       var target = $(this.hash);
-//       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-//       if (target.length) {
-//         $('html,body').animate({
-//           scrollTop: target.offset().top
-//         }, 5000);
-//         return false;
-//       }
-//     }
-//   });
-// });
