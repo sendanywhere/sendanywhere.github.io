@@ -6,7 +6,7 @@
  * 
  */
 
- /* some of part of Javascript is modified for specification of widget app*/
+ /* 일부 자바스크립트 내용이 수정되었습니다.*/
 
  var SidebarMenuEffects = (function() {
 

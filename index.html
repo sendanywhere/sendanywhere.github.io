@@ -52,9 +52,6 @@
 
     </head>
     <body>
-        <!--[if lt IE 9]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
 
 
 <!-- 브라우저 버전 확인후 업데이트 요청 메세지 Modal -->
@@ -694,14 +691,8 @@
         <script src="js/vendor/bootstrap.min.js"></script> 
 
         <script src="js/main.js"></script>
-        
-        <script src="js/jquery.reject.js"></script>
-
         <script src="js/offnav/classie.js"></script>
         <script src="js/offnav/sidebarEffects.js"></script>
-
-
-        
         <script src="js/filedrop.js"></script>
         
 
@@ -899,14 +890,6 @@
                 $( ".droplist" ).addClass( "hidden animated fadeInDown" );
                 
             });
-           
-
-          // alert('Dropped files: ' + files.length + '\n' +
-          //       'First file: ' + files.first().name + '\n' +
-          //       'File recently changed: ' + files.newest().name + '\n' +
-          //       'Biggest file: ' + files.largest().name + '\n' +
-          //       'Number of images: ' + files.images().length + '\n' +
-          //       'Files starting with "A": ' + files.named(/^a/i).length)
 
           files.sortBy(function (f) { return f.size })
           files.reverse()
